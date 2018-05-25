@@ -1,0 +1,132 @@
+
+g=@(x)sin(x+0.001)
+
+g =
+
+  <a href="matlab:helpPopup function_handle" style="font-weight:bold">function_handle</a> with value:
+
+    @(x)sin(x+0.001)
+
+bisect(g, [-0.5,0.5])
+{Undefined function or variable 'bisect'.
+} 
+ezplot(’sign(x-2)*sqrt(abs(x-2))’,0,4)
+ ezplot(’sign(x-2)*sqrt(abs(x-2))’,0,4)
+        ↑
+{Error: The input character is not valid in MATLAB statements or expressions.
+} 
+ezplot('sign(x-2)*sqrt(abs(x-2))',0,4)
+[Warning: MATLAB has disabled some advanced graphics rendering features by switching to software OpenGL.
+For more information, click <a href="matlab:opengl('problems')">here</a>.] 
+
+
+
+
+
+%fhdiff
+%df è la derivata come function handle di un function handle f. Utilizza una symfun, una funzione simbolica.
+%help symfun
+
+syms fsym(x)
+fsym(x)
+ 
+ans =
+ 
+fsym(x)
+ 
+%è una funzione simbolica astratta: è stata solo inizializzata, non ha ancora un valore. Il valore di solito è un'espressione analitica
+fsym(x)=cos(x)
+ 
+fsym(x) =
+ 
+cos(x)
+ 
+fsym(0.44)
+ 
+ans =
+ 
+cos(11/25)
+ 
+vpa(fsym(0.44))
+ 
+ans =
+ 
+0.90475166321996341716553738899837
+ 
+%Il vantaggio di symfun è che non bisogna usare source: faccio f(quellochevoglio):
+fsym(sqrt(x^2-1))
+ 
+ans =
+ 
+cos((x^2 - 1)^(1/2))
+ 
+%poi se voglio il numero uso vpa.
+%ritorno al codice fhdiff.m: eval: ha come argomento una stringa che viene valutata. È un modo di costruire comandi dinamici
+%riga 3: ho dato a fsym una espressione che è quella della nostra function handle. Ora ho una funzione simbolica che ha come espressione quella della nostra fun handle.
+%quindi ne calcolo le derivata
+%(prima era riga 4)
+
+%esempio:
+
+g
+
+g =
+
+  <a href="matlab:helpPopup function_handle" style="font-weight:bold">function_handle</a> with value:
+
+    @(x)sin(x+0.001)
+
+fhdiff(g)
+
+ans =
+
+  <a href="matlab:helpPopup function_handle" style="font-weight:bold">function_handle</a> with value:
+
+    @(x)cos(x+1/1000)
+
+fsym
+ 
+fsym(x) =
+ 
+cos(x)
+ 
+diff(fsym)
+ 
+ans(x) =
+ 
+-sin(x)
+ 
+%symfun: ha argomenti simboli e ritorna simboli
+%------------------------------------------------------------------
+
+%N.B.: Zeroin
+
+ezplot(@(x)besselj(0,x))
+ezplot(@(x)besselj(0,x),[0,20])
+ezplot(@(x)besselj(0,x),[0,200])
+ezplot(@(x)besselj(0,x),[0,100])
+ylim([-1 1]
+ ylim([-1 1]
+            ↑
+{Error: Expression or statement is incorrect--possibly unbalanced (, {, or [.
+} 
+ylim([-1 1])
+Error: <a href="matlab: opentoline('untitled2',7,20)">File: untitled2 Line: 7 Column: 20
+</a>The input character is not valid in MATLAB statements or expressions.
+
+Error: <a href="matlab: opentoline('untitled2',7,20)">File: untitled2 Line: 7 Column: 20
+</a>The input character is not valid in MATLAB statements or expressions.
+
+z(n) = fzerotx(J0,[(n-1) n]*pi)
+
+z =
+
+    2.4048    5.5201    8.6537   11.7915   14.9309   18.0711   21.2116   24.3525   27.4935   30.6346
+
+z(n) = fzero(J0,[(n-1) n]*pi)
+
+z =
+
+    2.4048    5.5201    8.6537   11.7915   14.9309   18.0711   21.2116   24.3525   27.4935   30.6346
+
+diary off

@@ -1,0 +1,473 @@
+>> pwd
+
+ans =
+
+    '/home/filippo'
+
+>> phi = (1+sqrt(5))/2
+
+phi =
+
+    1.6180
+
+>> format long 
+>> phi = (1+sqrt(5))/2
+
+phi =
+
+   1.618033988749895
+
+>> phi=sym((1+sqrt(5))/2)
+ 
+phi =
+ 
+910872158600853/562949953421312
+ 
+>> double(phi)
+
+ans =
+
+   1.618033988749895
+
+>> isprime(910872158600853)
+
+ans =
+
+  logical
+
+   0
+
+>> phi=sym(1)+sqrt(5)/2
+ 
+phi =
+ 
+5^(1/2)/2 + 1
+ 
+>> phi=(sym(1)+sqrt(5))/2
+ 
+phi =
+ 
+5^(1/2)/2 + 1/2
+ 
+>> vpa(phi)
+ 
+ans =
+ 
+1.6180339887498948482045868343656
+ 
+>> digits
+ 
+Digits = 32
+ 
+>> vpa(phi,64)
+ 
+ans =
+ 
+1.618033988749894848204586834365638117720309179805762862135448623
+ 
+>> digits(128)
+>> vpa(phi)
+ 
+ans =
+ 
+1.6180339887498948482045868343656381177203091798057628621354486227052604628189024497072072041893911374847540880753868917521266339
+ 
+>> digits(32)
+>> vpa(phi)
+ 
+ans =
+ 
+1.6180339887498948482045868343656
+ 
+>> p = [1 -1 -1]
+
+p =
+
+     1    -1    -1
+
+>> poly2str(p)
+Not enough input arguments.
+
+Error in poly2str (line 43)
+      s=[s,' ',tvar,'^',num2str(nd-j)];
+ 
+>> help polu2str
+--- help for poly2str ---
+
+ poly2str Return polynomial as string.
+    S = poly2str(P,'s') or S=poly2str(P,'z') returns a string S 
+    consisting of the polynomial coefficients in the vector P 
+    multiplied by powers of the transform variable 's' or 'z'.
+ 
+        Example: poly2str([1 0 2],'s') returns the string  's^2 + 2'. 
+ 
+    [S,LEN] = poly2str(P,'s') also returns the maximum wrapped length
+    of the polynomial.
+ 
+    See also: printsys.
+
+>> poly2str(p)
+Not enough input arguments.
+
+Error in poly2str (line 43)
+      s=[s,' ',tvar,'^',num2str(nd-j)];
+ 
+>> poly2str(p,'x')
+
+ans =
+
+    '   x^2 - 1 x - 1'
+
+>> poly2sym(p)
+ 
+ans =
+ 
+x^2 - x - 1
+ 
+>> roots(p)
+
+ans =
+
+  -0.618033988749895
+   1.618033988749895
+
+>> q=[1 -1 -1 4]
+
+q =
+
+     1    -1    -1     4
+
+>> polu2sym(q)
+Undefined function or variable 'polu2sym'.
+ 
+Did you mean:
+>> poly2sym(q)
+ 
+ans =
+ 
+x^3 - x^2 - x + 4
+ 
+>> roots(q)
+
+ans =
+
+ -1.485583997688601 + 0.000000000000000i
+  1.242791998844300 + 1.071453153192258i
+  1.242791998844300 - 1.071453153192258i
+
+>> solve(poly2sym(p)==0)
+ 
+ans =
+ 
+ 1/2 - 5^(1/2)/2
+ 5^(1/2)/2 + 1/2
+ 
+>> solve(poly2sym(q)==0)
+ 
+ans =
+ 
+ root(z^3 - z^2 - z + 4, z, 1)
+ root(z^3 - z^2 - z + 4, z, 2)
+ root(z^3 - z^2 - z + 4, z, 3)
+ 
+>> vpa(ans)
+ 
+ans =
+ 
+                                      -1.485583997688600206378450387443
+ 1.2427919988443001031892251937215 - 1.0714531531922579958323080186942i
+ 1.2427919988443001031892251937215 + 1.0714531531922579958323080186942i
+
+f=@(x)1./x-(x-1)
+
+f =
+
+  <a href="matlab:helpPopup function_handle" style="font-weight:bold">function_handle</a> with value:
+
+    @(x)1./x-(x-1)
+
+helpPopup function_handle
+g=@acos
+
+g =
+
+  <a href="matlab:helpPopup function_handle" style="font-weight:bold">function_handle</a> with value:
+
+    @acos
+
+g(1)
+
+ans =
+
+     0
+
+g(-1)
+
+ans =
+
+   3.141592653589793
+
+f(3)
+
+ans =
+
+  -1.666666666666667
+
+f(rand(10,1))
+
+ans =
+
+   1.412686313710105
+   1.198214357381511
+   8.747846408036560
+   1.181463681471657
+   1.949020335031701
+  11.154621250532507
+   4.312189018085759
+   2.281668111533547
+   1.086872131893313
+   1.071500605639123
+
+f=@(x)1/x-(x-1)
+
+f =
+
+  <a href="matlab:helpPopup function_handle" style="font-weight:bold">function_handle</a> with value:
+
+    @(x)1/x-(x-1)
+
+f(rand(10,1))
+
+ans =
+
+  Columns 1 through 6
+
+   0.842386918322452   1.872685122463266   0.842386918322452   0.842386918322452   0.842386918322452   0.842386918322452
+   0.029407218239384   1.059705422380199   0.029407218239384   0.029407218239384   0.029407218239384   0.029407218239384
+   0.042833051757054   1.073131255897869   0.042833051757054   0.042833051757054   0.042833051757054   0.042833051757054
+   0.514624351277159   1.544922555417974   0.514624351277159   0.514624351277159   0.514624351277159   0.514624351277159
+   0.199719531111200   1.230017735252015   0.199719531111200   0.199719531111200   0.199719531111200   0.199719531111200
+   0.858113661372785   1.888411865513599   0.858113661372785   0.858113661372785   0.858113661372785   0.858113661372785
+   0.578238717373725   1.608536921514540   0.578238717373725   0.578238717373725   0.578238717373725   0.578238717373725
+   0.084264474810933   1.114562678951748   0.084264474810933   0.084264474810933   0.084264474810933   0.084264474810933
+   0.207792670440446   1.238090874581260   0.207792670440446   0.207792670440446   0.207792670440446   0.207792670440446
+   0.040507573607097   1.070805777747912   0.040507573607097   0.040507573607097   0.040507573607097   0.040507573607097
+
+  Columns 7 through 10
+
+   0.842386918322452   0.842386918322452   0.842386918322452   0.842386918322452
+   0.029407218239384   0.029407218239384   0.029407218239384   0.029407218239384
+   0.042833051757054   0.042833051757054   0.042833051757054   0.042833051757054
+   0.514624351277159   0.514624351277159   0.514624351277159   0.514624351277159
+   0.199719531111200   0.199719531111200   0.199719531111200   0.199719531111200
+   0.858113661372785   0.858113661372785   0.858113661372785   0.858113661372785
+   0.578238717373725   0.578238717373725   0.578238717373725   0.578238717373725
+   0.084264474810933   0.084264474810933   0.084264474810933   0.084264474810933
+   0.207792670440446   0.207792670440446   0.207792670440446   0.207792670440446
+   0.040507573607097   0.040507573607097   0.040507573607097   0.040507573607097
+
+f=@(x)1./x-(x-1)
+
+f =
+
+  <a href="matlab:helpPopup function_handle" style="font-weight:bold">function_handle</a> with value:
+
+    @(x)1./x-(x-1)
+
+ezplot(f)
+[Warning: MATLAB has disabled some advanced graphics rendering features by switching to software OpenGL. For more
+information, click <a href="matlab:opengl('problems')">here</a>.] 
+ezplot(f,[0 10])
+ezplot(f,[0 2])
+grid
+fzero(f,1)
+
+ans =
+
+   1.618033988749895
+
+hold
+Current plot held
+hold on
+hold off
+hold
+Current plot held
+plot([ans 0],'ro')
+plot(ans, 0,'ro')
+
+f=@(x)1./x-(x-1)
+
+f =
+
+  <a href="matlab:helpPopup function_handle" style="font-weight:bold">function_handle</a> with value:
+
+    @(x)1./x-(x-1)
+
+fzero(f,1)
+
+ans =
+
+    1.6180
+
+plot(ans, 0,'ro')
+[Warning: MATLAB has disabled some advanced graphics rendering features by switching to software OpenGL. For more
+information, click <a href="matlab:opengl('problems')">here</a>.] 
+ezplot(f,[0 2])
+plot(ans, 0,'ro')
+
+hold
+Current plot held
+plot(ans, 0,'ro')
+f=@(x)1./x-(x-1)
+
+f =
+
+  <a href="matlab:helpPopup function_handle" style="font-weight:bold">function_handle</a> with value:
+
+    @(x)1./x-(x-1)
+
+fzero(f,1)
+
+ans =
+
+    1.6180
+
+hold
+Current plot released
+plot(ans, 0,'ro')
+ezplot(f,[0 2])
+grid
+fzero(f,1)
+
+ans =
+
+    1.6180
+
+hold
+Current plot held
+plot(ans, 0,'ro')
+figure
+figure
+figure
+goldrect
+mygoldrect
+
+h = 
+
+  2×1 <a href="matlab:helpPopup matlab.graphics.chart.primitive.Line" style="font-weight:bold">Line</a> array:
+
+  Line
+  Line
+
+mygoldrect
+h
+
+h = 
+
+  2×1 <a href="matlab:helpPopup matlab.graphics.chart.primitive.Line" style="font-weight:bold">Line</a> array:
+
+  Line
+  Line
+
+h(1)
+
+ans = 
+
+  <a href="matlab:helpPopup matlab.graphics.chart.primitive.Line" style="font-weight:bold">Line</a> with properties:
+
+              Color: [0 0 1]
+          LineStyle: '-'
+          LineWidth: 0.5000
+             Marker: 'none'
+         MarkerSize: 6
+    MarkerFaceColor: 'none'
+              XData: [0 1.6180 1.6180 0 0]
+              YData: [0 0 1 1 0]
+              ZData: [1×0 double]
+
+  Show <a href="matlab:if exist('ans', 'var'), matlab.graphics.internal.getForDisplay('ans', ans, 'matlab.graphics.chart.primitive.Line'), else, matlab.graphics.internal.getForDisplay('ans'), end">all properties</a>
+
+h(1).Color
+
+ans =
+
+     0     0     1
+
+h(1).Color=[0 1 0]
+
+h = 
+
+  2×1 <a href="matlab:helpPopup matlab.graphics.chart.primitive.Line" style="font-weight:bold">Line</a> array:
+
+  Line
+  Line
+
+mygoldrect
+h(1).Color=[0 1 0]
+
+h = 
+
+  2×1 <a href="matlab:helpPopup matlab.graphics.chart.primitive.Line" style="font-weight:bold">Line</a> array:
+
+  Line
+  Line
+
+set(h(1),'color','y')
+h(1).Color=[0 1 1]
+
+h = 
+
+  2×1 <a href="matlab:helpPopup matlab.graphics.chart.primitive.Line" style="font-weight:bold">Line</a> array:
+
+  Line
+  Line
+
+h(1).Color=[0 0.5 0.5]
+
+h = 
+
+  2×1 <a href="matlab:helpPopup matlab.graphics.chart.primitive.Line" style="font-weight:bold">Line</a> array:
+
+  Line
+  Line
+
+h(1).Color=[0 0 0]
+
+h = 
+
+  2×1 <a href="matlab:helpPopup matlab.graphics.chart.primitive.Line" style="font-weight:bold">Line</a> array:
+
+  Line
+  Line
+
+set(h(1),'color','g','linewidth',4)
+set(h(1),'color','r','linewidth',4)
+set(h(1),'color','k','linewidth',4)
+xlim([0 5])
+mygoldfract(4)
+
+p =
+
+    '1+1/(1+1/(1+1/(1+1/(1))))'
+
+
+p =
+
+    '8/5'
+
+
+p =
+
+   1.600000000000000
+
+
+err =
+
+    0.0180
+
+mygoldfract(4)
+
+p =
+
+    '1+1/(1+1/(1+1/(1+1/(1))))'
+

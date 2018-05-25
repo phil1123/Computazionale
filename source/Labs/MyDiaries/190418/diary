@@ -1,0 +1,680 @@
+open brownian.m
+brownian
+[Warning: MATLAB has disabled some advanced graphics rendering features by switching to software OpenGL. For more
+information, click <a href="matlab:opengl('problems')">here</a>.] 
+{Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('matlab.ui.control.UIControl/get')" style="font-weight:bold">matlab.ui.control.UIControl/get</a>
+Invalid or deleted object.
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('brownian', 'C:\Users\f.quarenghi\Downloads\ncm\brownian.m', 16)" style="font-weight:bold">brownian</a> (<a href="matlab: opentoline('C:\Users\f.quarenghi\Downloads\ncm\brownian.m',16,0)">line 16</a>)
+stop = uicontrol('style','toggle','string','stop');
+} 
+N = 500;
+myrwalk
+{Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('matlab.ui.control.UIControl/get')" style="font-weight:bold">matlab.ui.control.UIControl/get</a>
+Invalid or deleted object.
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('myrwalk', 'C:\Users\f.quarenghi\Documents\MATLAB\190418\myrwalk.m', 17)" style="font-weight:bold">myrwalk</a> (<a href="matlab: opentoline('C:\Users\f.quarenghi\Documents\MATLAB\190418\myrwalk.m',17,0)">line 17</a>)
+while get(stop,'value') == 0
+} 
+N = 5000;
+myrwalk
+{Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('matlab.ui.control.UIControl/get')" style="font-weight:bold">matlab.ui.control.UIControl/get</a>
+Invalid or deleted object.
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('myrwalk', 'C:\Users\f.quarenghi\Documents\MATLAB\190418\myrwalk.m', 17)" style="font-weight:bold">myrwalk</a> (<a href="matlab: opentoline('C:\Users\f.quarenghi\Documents\MATLAB\190418\myrwalk.m',17,0)">line 17</a>)
+while get(stop,'value') == 0
+} 
+% eq. del moto browniano: mx'' = -m(gamma)x' + F dove F è una forza impulsiva random
+% per gamma molto maggiore di 1 allora x'=F/m*gamma
+% -> x(t+dt) = x(t) + eta dt
+%x(ntau) = xn
+% x_n+1 = x_n + eta tau
+%eta tau è una variabile gaussiana random con larghezza delta
+% quindi media ti eta(t) ha media zero
+% prodotto scalare tra le coordinate <eta_j(t)eta_k(t')>= delta jk * delta (t-t')
+% <eta_jn eta_kn'> = 1/tau delta_jk delta_nn'
+% ho rimpiazzato la delta (distribuzione) con una distribuzione discreta: distribuzione di variabili discrete con larghezza 1/tau
+
+help norm
+ <strong>norm</strong>   Matrix or vector norm.
+      <strong>norm</strong>(X,2) returns the 2-norm of X.
+ 
+      <strong>norm</strong>(X) is the same as <strong>norm</strong>(X,2).
+ 
+      <strong>norm</strong>(X,1) returns the 1-norm of X.
+ 
+      <strong>norm</strong>(X,Inf) returns the infinity norm of X.
+ 
+      <strong>norm</strong>(X,'fro') returns the Frobenius norm of X.
+ 
+    In addition, for vectors...
+ 
+      <strong>norm</strong>(V,P) returns the p-norm of V defined as SUM(ABS(V).^P)^(1/P).
+ 
+      <strong>norm</strong>(V,Inf) returns the largest element of ABS(V).
+ 
+      <strong>norm</strong>(V,-Inf) returns the smallest element of ABS(V).
+ 
+    By convention, NaN is returned if X or V contains NaNs.
+ 
+    See also <a href="matlab:help cond">cond</a>, <a href="matlab:help rcond">rcond</a>, <a href="matlab:help condest">condest</a>, <a href="matlab:help normest">normest</a>, <a href="matlab:help hypot">hypot</a>.
+
+    <a href="matlab:doc norm">Reference page for norm</a>
+    <a href="matlab:matlab.internal.language.introspective.overloads.displayOverloads('norm')">Other functions named norm</a>
+
+myrwalk
+{Operation terminated by user during <a href="matlab:matlab.internal.language.introspective.errorDocCallback('myrwalk', 'C:\Users\f.quarenghi\Documents\MATLAB\190418\myrwalk.m', 23)" style="font-weight:bold">myrwalk</a> (<a href="matlab: opentoline('C:\Users\f.quarenghi\Documents\MATLAB\190418\myrwalk.m',23,0)">line 23</a>)
+} 
+N = 100;
+myrwalk
+myrwalk
+
+nmax =
+
+      100000
+
+N = 500
+
+N =
+
+   500
+
+myrwalk
+
+nmax =
+
+      100000
+
+{Operation terminated by user during <a href="matlab:matlab.internal.language.introspective.errorDocCallback('myrwalk', 'C:\Users\f.quarenghi\Documents\MATLAB\190418\myrwalk.m', 26)" style="font-weight:bold">myrwalk</a> (<a href="matlab: opentoline('C:\Users\f.quarenghi\Documents\MATLAB\190418\myrwalk.m',26,0)">line 26</a>)
+} 
+myrwalk
+side(adx)
+{Undefined function or variable 'side'.
+} 
+size(adx)
+
+ans =
+
+           1        2232
+
+figure
+loglog(adx)
+hold
+Current plot held
+loglog(Mdx)
+ployfit(log(1:length(adx)),log(adx),1) %fit con regressione lineare
+{Undefined function or variable 'ployfit'.
+} 
+polyfit(log(1:length(adx)),log(adx),1) %fit con regressione lineare
+
+ans =
+
+    0.4998   -5.9910
+
+format long
+ans
+
+ans =
+
+   0.499774517327570  -5.990994049645393
+
+exp(ans(2))
+
+ans =
+
+   0.002501176520410
+
+% la media di (x_n)^2 = tau^2 * n
+% radice di n che è uscita è la LEGGE DEI GRANDI NUMERI
+% l'eq. di x_n+1 è risolvibile esattamente: 
+% x_n = x_0 + sum_rho=1^n(eta_rho)
+% <(x_n)^2> media su tutte le estrazioni di eta (numero random)
+% x_0 può essere anche lei una variabile casuale (nel moler parte tutto da zero) ->
+% <(x_n)^2> = <(x_0)^2> + tau^2 sum_rohroh'(<eta_rho eta_roh'>
+% nel caso di moler <(x_0)^2> è zero
+% <(x_n)^2> = <(x_0)^2> + tau^2*d*n 
+% da qui vediamo che va come radice di n: legge dei grandi numeri
+% ciascun salto è indipendente dall'altro: catena Markoviana: ogni step è indipendente da tutta la sua storia, in particolare lo step dipende solo da dove mi trovo
+% in questo caso è super markoviano perchè non dipende nemmeno da dove mi trovo.
+% tau*d*n !!
+% n*tau è il tempo
+% posso prendere il limite per tau che va a zero e n va all'infinito
+% d*t
+% da dove viene d^1/2? forse dalla media delle radici
+% ... dax
+
+myrwalk
+figure
+loglog(adx)
+hold
+Current plot held
+loglog(dax)
+loglog(Mdx)
+polyfit(log(1:length(adx)),log(adx),1) 
+
+ans =
+
+   0.506757187969149  -6.022999264711235
+
+polyfit(log(1:length(Mdx)),log(Mdx),1)
+
+ans =
+
+   0.529543012604945  -5.142578234246290
+
+polyfit(log(1:length(dax)),log(dax),1)
+
+ans =
+
+   0.508351361320483  -2.807156496037915
+
+exp(ans(2))
+
+ans =
+
+   0.060376429151818
+
+polyfit(log(1:length(dax)),log(dax),1)
+
+ans =
+
+   0.508351361320483  -2.807156496037915
+
+exp(ans(2))
+
+ans =
+
+   0.060376429151818
+
+polyfit(log(1:length(dax)),log(dax),1)
+
+ans =
+
+   0.508351361320483  -2.807156496037915
+
+exp(ans(2))
+
+ans =
+
+   0.060376429151818
+
+loglog(dax)
+polyfit(log(1:length(dax)),log(dax),1)
+
+ans =
+
+   0.508351361320483  -2.807156496037915
+
+exp(ans(2))
+
+ans =
+
+   0.060376429151818
+
+dax=dax*sqrt(N);
+polyfit(log(1:length(dax)),log(dax),1)
+
+ans =
+
+   0.508351361320488   0.300147553173141
+
+exp(ans(2))
+
+ans =
+
+   1.350057998221598
+
+loglog(dax)
+polyfit(log(1:length(dax)),log(dax),1)
+
+ans =
+
+   0.508351361320488   0.300147553173141
+
+exp(ans(2))
+
+ans =
+
+   1.350057998221598
+
+myrwalk
+loglog(dax)
+polyfit(log(1:length(dax)),log(dax),1)
+
+ans =
+
+   0.486393933221391  -5.795581476192059
+
+exp(ans(2))
+
+ans =
+
+   0.003040961665684
+
+%OK
+myrwalk
+{Index exceeds matrix dimensions.
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('myrwalk', 'C:\Users\f.quarenghi\Documents\MATLAB\190418\myrwalk.m', 17)" style="font-weight:bold">myrwalk</a> (<a href="matlab: opentoline('C:\Users\f.quarenghi\Documents\MATLAB\190418\myrwalk.m',17,0)">line 17</a>)
+h = plot(x(:,1),x(:,2),'.',x(:,3),'.');
+} 
+myrwalk
+{Index exceeds matrix dimensions.
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('myrwalk', 'C:\Users\f.quarenghi\Documents\MATLAB\190418\myrwalk.m', 17)" style="font-weight:bold">myrwalk</a> (<a href="matlab: opentoline('C:\Users\f.quarenghi\Documents\MATLAB\190418\myrwalk.m',17,0)">line 17</a>)
+h = plot3(x(:,1),x(:,2),'.',x(:,3),'.');
+} 
+myrwalk
+{Index exceeds matrix dimensions.
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('myrwalk', 'C:\Users\f.quarenghi\Documents\MATLAB\190418\myrwalk.m', 17)" style="font-weight:bold">myrwalk</a> (<a href="matlab: opentoline('C:\Users\f.quarenghi\Documents\MATLAB\190418\myrwalk.m',17,0)">line 17</a>)
+h = plot3(x(:,1),x(:,2),x(:,3),'.');
+} 
+figure(1)
+figure(2)
+myrwalk
+{Index exceeds matrix dimensions.
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('myrwalk', 'C:\Users\f.quarenghi\Documents\MATLAB\190418\myrwalk.m', 17)" style="font-weight:bold">myrwalk</a> (<a href="matlab: opentoline('C:\Users\f.quarenghi\Documents\MATLAB\190418\myrwalk.m',17,0)">line 17</a>)
+h = plot3(x(:,1),x(:,2),x(:,3),'.');
+} 
+myrwalk
+{Index exceeds matrix dimensions.
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('myrwalk', 'C:\Users\f.quarenghi\Documents\MATLAB\190418\myrwalk.m', 17)" style="font-weight:bold">myrwalk</a> (<a href="matlab: opentoline('C:\Users\f.quarenghi\Documents\MATLAB\190418\myrwalk.m',17,0)">line 17</a>)
+h = plot3(x(:,1),x(:,2),x(:,3),'.');
+} 
+% vedi suo codice
+
+
+
+
+
+% oltre alla legge dei grandi numeri si può dimostrare il teorema centrale del limite
+myrwalk
+myrwalk
+{Operation terminated by user during <a href="matlab:matlab.internal.language.introspective.errorDocCallback('myrwalk', 'C:\Users\f.quarenghi\Documents\MATLAB\190418\myrwalk.m', 29)" style="font-weight:bold">myrwalk</a> (<a href="matlab: opentoline('C:\Users\f.quarenghi\Documents\MATLAB\190418\myrwalk.m',29,0)">line 29</a>)
+} 
+myrwalk
+{Operation terminated by user during <a href="matlab:matlab.internal.language.introspective.errorDocCallback('myrwalk', 'C:\Users\f.quarenghi\Documents\MATLAB\190418\myrwalk.m', 24)" style="font-weight:bold">myrwalk</a> (<a href="matlab: opentoline('C:\Users\f.quarenghi\Documents\MATLAB\190418\myrwalk.m',24,0)">line 24</a>)
+} 
+opentoline('C:\Users\f.quarenghi\Documents\MATLAB\190418\myrwalk.m',24,0)
+opentoline('C:\Users\f.quarenghi\Documents\MATLAB\190418\myrwalk.m',29,0)
+%................................................................................................
+
+
+
+
+
+g=graph
+
+g = 
+
+  <a href="matlab:helpPopup graph" style="font-weight:bold">graph</a> with properties:
+
+    Edges: [0×1 table]
+    Nodes: [0×0 table]
+
+helpPopup graph
+% grafo: punti collegati da un trattino (disgiunto, connesso). Nodi o vertici, edges. Loop: cammino chiuso
+
+A=[0 1;1 0] %matrice di adiacenza
+
+A =
+
+     0     1
+     1     0
+
+g=graph(A)
+
+g = 
+
+  <a href="matlab:helpPopup graph" style="font-weight:bold">graph</a> with properties:
+
+    Edges: [1×2 table]
+    Nodes: [2×0 table]
+
+g.Edges
+
+ans = 
+
+    <strong>EndNodes</strong><strong>    Weight</strong>
+    <strong>________</strong>    <strong>______</strong>
+
+    1    2      1     
+
+plot(g)
+A=randn(6);
+A=A>0
+
+A =
+
+  6×6 <a href="matlab:helpPopup logical" style="font-weight:bold">logical</a> array
+
+   0   0   0   0   0   1
+   0   1   1   1   1   0
+   1   1   1   1   0   1
+   1   0   1   0   0   1
+   0   1   0   0   1   1
+   0   1   0   0   0   1
+
+A=2*((A+A')/2) %così la matrice è simmetrica
+
+A =
+
+     0     0     1     1     0     1
+     0     2     2     1     2     1
+     1     2     2     2     0     1
+     1     1     2     0     0     1
+     0     2     0     0     2     1
+     1     1     1     1     1     2
+
+A=A-diag(diag(A))
+
+A =
+
+     0     0     1     1     0     1
+     0     0     2     1     2     1
+     1     2     0     2     0     1
+     1     1     2     0     0     1
+     0     2     0     0     0     1
+     1     1     1     1     1     0
+
+A(A==2)=1
+
+A =
+
+     0     0     1     1     0     1
+     0     0     1     1     1     1
+     1     1     0     1     0     1
+     1     1     1     0     0     1
+     0     1     0     0     0     1
+     1     1     1     1     1     0
+
+% matrice di adiacenza: matrice di un grafo (indiretto) quadrata simmetrica che ha zero sulla diagonale e 1 dove il nodo Ajk sono collegati
+g=graph(A)
+
+g = 
+
+  <a href="matlab:helpPopup graph" style="font-weight:bold">graph</a> with properties:
+
+    Edges: [11×2 table]
+    Nodes: [6×0 table]
+
+g.Edges
+
+ans = 
+
+    <strong>EndNodes</strong><strong>    Weight</strong>
+    <strong>________</strong>    <strong>______</strong>
+
+    1    3      1     
+    1    4      1     
+    1    6      1     
+    2    3      1     
+    2    4      1     
+    2    5      1     
+    2    6      1     
+    3    4      1     
+    3    6      1     
+    4    6      1     
+    5    6      1     
+
+plot(g)
+p=plot(g)
+
+p = 
+
+  <a href="matlab:helpPopup matlab.graphics.chart.primitive.GraphPlot" style="font-weight:bold">GraphPlot</a> with properties:
+
+     NodeColor: [0 0.447000000000000 0.741000000000000]
+    MarkerSize: 4
+        Marker: 'o'
+     EdgeColor: [0 0.447000000000000 0.741000000000000]
+     LineWidth: 0.500000000000000
+     LineStyle: '-'
+     NodeLabel: {'1'  '2'  '3'  '4'  '5'  '6'}
+     EdgeLabel: {}
+         XData: [1×6 double]
+         YData: [1×6 double]
+         ZData: [0 0 0 0 0 0]
+
+  Show <a href="matlab:if exist('p', 'var'), matlab.graphics.internal.getForDisplay('p', p, 'matlab.graphics.chart.primitive.GraphPlot'), else, matlab.graphics.internal.getForDisplay('p'), end">all properties</a>
+
+layout(p, 'layered')
+% usare il grafo ha i suoi vantaggi (visione grafica)
+layout(p, 'circle')
+methods(g)
+
+Methods for class graph:
+
+addedge           centrality        findnode          maxflow           plot              subgraph          
+addnode           conncomp          graph             minspantree       reordernodes      
+adjacency         degree            incidence         nearest           rmedge            
+bctree            dfsearch          isisomorphic      neighbors         rmnode            
+bfsearch          distances         isomorphism       numedges          shortestpath      
+biconncomp        findedge          laplacian         numnodes          shortestpathtree  
+
+% grafo diretto: 
+g=digraph(A)
+
+g = 
+
+  <a href="matlab:helpPopup digraph" style="font-weight:bold">digraph</a> with properties:
+
+    Edges: [22×2 table]
+    Nodes: [6×0 table]
+
+p=plot(g)
+
+p = 
+
+  <a href="matlab:helpPopup matlab.graphics.chart.primitive.GraphPlot" style="font-weight:bold">GraphPlot</a> with properties:
+
+     NodeColor: [0 0.447000000000000 0.741000000000000]
+    MarkerSize: 4
+        Marker: 'o'
+     EdgeColor: [0 0.447000000000000 0.741000000000000]
+     LineWidth: 0.500000000000000
+     LineStyle: '-'
+     NodeLabel: {'1'  '2'  '3'  '4'  '5'  '6'}
+     EdgeLabel: {}
+         XData: [1×6 double]
+         YData: [1×6 double]
+         ZData: [0 0 0 0 0 0]
+
+  Show <a href="matlab:if exist('p', 'var'), matlab.graphics.internal.getForDisplay('p', p, 'matlab.graphics.chart.primitive.GraphPlot'), else, matlab.graphics.internal.getForDisplay('p'), end">all properties</a>
+
+% ognuno dei collegamenti è stato raddoppiato perchè per un grafo diretto c'è differenza nel verso del collegamento
+g.Edges
+
+ans = 
+
+    <strong>EndNodes</strong><strong>    Weight</strong>
+    <strong>________</strong>    <strong>______</strong>
+
+    1    3      1     
+    1    4      1     
+    1    6      1     
+    2    3      1     
+    2    4      1     
+    2    5      1     
+    2    6      1     
+    3    1      1     
+    3    2      1     
+    3    4      1     
+    3    6      1     
+    4    1      1     
+    4    2      1     
+    4    3      1     
+    4    6      1     
+    5    2      1     
+    5    6      1     
+    6    1      1     
+    6    2      1     
+    6    3      1     
+    6    4      1     
+    6    5      1     
+
+% posso voler eliminare alcuni Edges, posso eliminarli dalla matrice o attraverso la sintassi:
+A
+
+A =
+
+     0     0     1     1     0     1
+     0     0     1     1     1     1
+     1     1     0     1     0     1
+     1     1     1     0     0     1
+     0     1     0     0     0     1
+     1     1     1     1     1     0
+
+A(5:6,2)=0
+
+A =
+
+     0     0     1     1     0     1
+     0     0     1     1     1     1
+     1     1     0     1     0     1
+     1     1     1     0     0     1
+     0     0     0     0     0     1
+     1     0     1     1     1     0
+
+p=plot(g)
+
+p = 
+
+  <a href="matlab:helpPopup matlab.graphics.chart.primitive.GraphPlot" style="font-weight:bold">GraphPlot</a> with properties:
+
+     NodeColor: [0 0.447000000000000 0.741000000000000]
+    MarkerSize: 4
+        Marker: 'o'
+     EdgeColor: [0 0.447000000000000 0.741000000000000]
+     LineWidth: 0.500000000000000
+     LineStyle: '-'
+     NodeLabel: {'1'  '2'  '3'  '4'  '5'  '6'}
+     EdgeLabel: {}
+         XData: [1×6 double]
+         YData: [1×6 double]
+         ZData: [0 0 0 0 0 0]
+
+  Show <a href="matlab:if exist('p', 'var'), matlab.graphics.internal.getForDisplay('p', p, 'matlab.graphics.chart.primitive.GraphPlot'), else, matlab.graphics.internal.getForDisplay('p'), end">all properties</a>
+
+A(4,2:3)=0
+
+A =
+
+     0     0     1     1     0     1
+     0     0     1     1     1     1
+     1     1     0     1     0     1
+     1     0     0     0     0     1
+     0     0     0     0     0     1
+     1     0     1     1     1     0
+
+p=plot(g)
+
+p = 
+
+  <a href="matlab:helpPopup matlab.graphics.chart.primitive.GraphPlot" style="font-weight:bold">GraphPlot</a> with properties:
+
+     NodeColor: [0 0.447000000000000 0.741000000000000]
+    MarkerSize: 4
+        Marker: 'o'
+     EdgeColor: [0 0.447000000000000 0.741000000000000]
+     LineWidth: 0.500000000000000
+     LineStyle: '-'
+     NodeLabel: {'1'  '2'  '3'  '4'  '5'  '6'}
+     EdgeLabel: {}
+         XData: [1×6 double]
+         YData: [1×6 double]
+         ZData: [0 0 0 0 0 0]
+
+  Show <a href="matlab:if exist('p', 'var'), matlab.graphics.internal.getForDisplay('p', p, 'matlab.graphics.chart.primitive.GraphPlot'), else, matlab.graphics.internal.getForDisplay('p'), end">all properties</a>
+
+p=plot(g)
+
+p = 
+
+  <a href="matlab:helpPopup matlab.graphics.chart.primitive.GraphPlot" style="font-weight:bold">GraphPlot</a> with properties:
+
+     NodeColor: [0 0.447000000000000 0.741000000000000]
+    MarkerSize: 4
+        Marker: 'o'
+     EdgeColor: [0 0.447000000000000 0.741000000000000]
+     LineWidth: 0.500000000000000
+     LineStyle: '-'
+     NodeLabel: {'1'  '2'  '3'  '4'  '5'  '6'}
+     EdgeLabel: {}
+         XData: [1×6 double]
+         YData: [1×6 double]
+         ZData: [0 0 0 0 0 0]
+
+  Show <a href="matlab:if exist('p', 'var'), matlab.graphics.internal.getForDisplay('p', p, 'matlab.graphics.chart.primitive.GraphPlot'), else, matlab.graphics.internal.getForDisplay('p'), end">all properties</a>
+
+A([1 3],6)=0
+
+A =
+
+     0     0     1     1     0     0
+     0     0     1     1     1     1
+     1     1     0     1     0     0
+     1     0     0     0     0     1
+     0     0     0     0     0     1
+     1     0     1     1     1     0
+
+p=plot(g)
+
+p = 
+
+  <a href="matlab:helpPopup matlab.graphics.chart.primitive.GraphPlot" style="font-weight:bold">GraphPlot</a> with properties:
+
+     NodeColor: [0 0.447000000000000 0.741000000000000]
+    MarkerSize: 4
+        Marker: 'o'
+     EdgeColor: [0 0.447000000000000 0.741000000000000]
+     LineWidth: 0.500000000000000
+     LineStyle: '-'
+     NodeLabel: {'1'  '2'  '3'  '4'  '5'  '6'}
+     EdgeLabel: {}
+         XData: [1×6 double]
+         YData: [1×6 double]
+         ZData: [0 0 0 0 0 0]
+
+  Show <a href="matlab:if exist('p', 'var'), matlab.graphics.internal.getForDisplay('p', p, 'matlab.graphics.chart.primitive.GraphPlot'), else, matlab.graphics.internal.getForDisplay('p'), end">all properties</a>
+
+A
+
+A =
+
+     0     0     1     1     0     0
+     0     0     1     1     1     1
+     1     1     0     1     0     0
+     1     0     0     0     0     1
+     0     0     0     0     0     1
+     1     0     1     1     1     0
+
+g=graph(A)
+{Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('graph', 'C:\Program Files\MATLAB\R2016b\toolbox\matlab\graphfun\@graph\graph.m', 233)" style="font-weight:bold">graph</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2016b\toolbox\matlab\graphfun\@graph\graph.m',233,0)">line 233</a>)
+Adjacency matrix must be symmetric.
+} 
+g=digraph(A)
+
+g = 
+
+  <a href="matlab:helpPopup digraph" style="font-weight:bold">digraph</a> with properties:
+
+    Edges: [16×2 table]
+    Nodes: [6×0 table]
+
+p=plot(g)
+
+p = 
+
+  <a href="matlab:helpPopup matlab.graphics.chart.primitive.GraphPlot" style="font-weight:bold">GraphPlot</a> with properties:
+
+     NodeColor: [0 0.447000000000000 0.741000000000000]
+    MarkerSize: 4
+        Marker: 'o'
+     EdgeColor: [0 0.447000000000000 0.741000000000000]
+     LineWidth: 0.500000000000000
+     LineStyle: '-'
+     NodeLab
