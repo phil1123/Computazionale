@@ -1,0 +1,410 @@
+%plotta E-E0(t) per myswinger
+%plot (theta1,theta2)(t), ci aspettiamo una differenza tra ode23 e ode 113?
+%prova a mettere bottone pause
+myswinger
+myswinger
+myswinger(0,0.7)
+myswinger(0,-0.7)
+myswinger(0,-0.5)
+myswinger(0,-0.5)
+myswinger
+myswinger
+predprey(300,150,5)
+{Undefined function or variable 'predprey'.
+} 
+predprey(300,150,5)
+148 successful steps
+0 failed attempts
+445 function evaluations
+
+ans =
+
+    0.0146    0.0220
+
+open predprey.m
+format longg
+format longg
+predprey(300,150,5)
+[Warning: P-file /home/phil/Dropbox/Università/AA201718/Fisica
+computazionale/codice/lezioni/150318/predprey.p is older than MATLAB file
+/home/phil/Dropbox/Università/AA201718/Fisica
+computazionale/codice/lezioni/150318/predprey.m.
+/home/phil/Dropbox/Università/AA201718/Fisica
+computazionale/codice/lezioni/150318/predprey.p may be obsolete and may need to be
+regenerated.
+Type "help pcode" for information about generating P-files.] 
+148 successful steps
+0 failed attempts
+445 function evaluations
+
+ans =
+
+        0.0146000695906423         0.021978140007576
+
+help pcode
+ <strong>pcode</strong>  Create content-obscured, executable files (pcoded files).
+    <strong>pcode</strong> F1 F2... makes content-obscured versions of F1, F2...
+ 
+    The arguments F1, F2... must describe MATLAB functions or files 
+    containing MATLAB code.  
+ 
+    If the flag -INPLACE is used, the result is placed in the same
+    directory in which the corresponding file was found.
+    Otherwise, the result is placed in the current directory.  Any
+    existing results will be overwritten.  Needed private and class 
+    directories will be created in the current directory if they do
+    not already exist.
+ 
+    Once created, a pcoded file takes precedence over the corresponding 
+    .m file for execution, even if the .m file is subsequently changed.
+    Each created pcoded file has the suffix .p.
+ 
+    An argument that has no file extension and is not a directory must 
+    be a function found on the MATLAB path or in the current directory.  
+    The found file is used for input.
+ 
+    If ISDIR(F) is true for an argument F and neither '..' nor '*' 
+    appears in F, pcoded files are created for all MATLAB code files in F 
+    (but not in its subdirectories). 
+ 
+    The file part F of an argument of the form DIR/F (where DIR/ might
+    be absent) can contain wildcards '*'.  The wildcards are expanded.  
+    Files with extensions other than  '.m', '.M' or '.p' are ignored. 
+    The '.p' extension is a special case, indicating either '.m' or '.M'.
+ 
+
+    <a href="matlab:doc pcode">Reference page for pcode</a>
+
+predprey(300,150,5)
+[Warning: P-file /home/phil/Dropbox/Università/AA201718/Fisica
+computazionale/codice/lezioni/150318/predprey.p is older than MATLAB file
+/home/phil/Dropbox/Università/AA201718/Fisica
+computazionale/codice/lezioni/150318/predprey.m.
+/home/phil/Dropbox/Università/AA201718/Fisica
+computazionale/codice/lezioni/150318/predprey.p may be obsolete and may need to be
+regenerated.
+Type "help pcode" for information about generating P-files.] 
+148 successful steps
+0 failed attempts
+445 function evaluations
+
+ans =
+
+        0.0146000695906423         0.021978140007576
+
+predprey(300,150,5)
+[Warning: P-file /home/phil/Dropbox/Università/AA201718/Fisica
+computazionale/codice/lezioni/150318/predprey.p is older than MATLAB file
+/home/phil/Dropbox/Università/AA201718/Fisica
+computazionale/codice/lezioni/150318/predprey.m.
+/home/phil/Dropbox/Università/AA201718/Fisica
+computazionale/codice/lezioni/150318/predprey.p may be obsolete and may need to be
+regenerated.
+Type "help pcode" for information about generating P-files.] 
+148 successful steps
+0 failed attempts
+445 function evaluations
+
+ans =
+
+        0.0146000695906423         0.021978140007576
+
+h1.FontSize = 14;
+help h1
+h1 is a variable of type struct.
+
+help h
+
+h not found.
+
+Use the Help browser search field to <a href="matlab:docsearch h">search the documentation</a>, or
+type "<a href="matlab:help help">help help</a>" for help command options, such as help for methods.
+
+h1.Parent
+{Reference to non-existent field 'Parent'.
+} 
+help graphics
+  Handle Graphics.
+  
+  Figure window creation and control.
+    <a href="matlab:help figure">figure</a>     	  - Create figure window.
+    <a href="matlab:help gcf">gcf</a>        	  - Get handle to current figure.
+    <a href="matlab:help clf">clf</a>        	  - Clear current figure.
+    <a href="matlab:help shg">shg</a>        	  - Show graph window.
+    <a href="matlab:help close">close</a>      	  - Close figure.
+    <a href="matlab:help refresh">refresh</a>    	  - Refresh figure.
+    <a href="matlab:help refreshdata">refreshdata</a>   - Refresh data in plot
+    <a href="matlab:help openfig">openfig</a>       - Open new copy or raise existing copy of saved figure.
+  
+  Axis creation and control.
+    <a href="matlab:help subplot">subplot</a>    	  - Create axes in tiled positions.
+    <a href="matlab:help axes">axes</a>       	  - Create axes in arbitrary positions.
+    <a href="matlab:help gca">gca</a>        	  - Get handle to current axis.
+    <a href="matlab:help cla">cla</a>        	  - Clear current axis.
+    <a href="matlab:help axis">axis</a>       	  - Control axis scaling and appearance.
+    <a href="matlab:help box">box</a>        	  - Axis box.
+    <a href="matlab:help caxis">caxis</a>      	  - Control pseudocolor axis scaling.
+    <a href="matlab:help hold">hold</a>       	  - Hold current graph
+    <a href="matlab:help ishold">ishold</a>     	  - Return hold state.
+ 
+  Handle Graphics objects.
+    <a href="matlab:help figure">figure</a>     	  - Create figure window.
+    <a href="matlab:help axes">axes</a>       	  - Create axes in arbitrary positions.
+    <a href="matlab:help line">line</a>       	  - Create line.
+    <a href="matlab:help text">text</a>       	  - Create text.
+    <a href="matlab:help patch">patch</a>      	  - Create patch.
+    <a href="matlab:help rectangle">rectangle</a>     - Create rectangle, rounded-rectangle, or ellipse.
+    <a href="matlab:help surface">surface</a>    	  - Create surface.
+    <a href="matlab:help image">image</a>      	  - Create image.
+    <a href="matlab:help light">light</a>      	  - Create light.
+    <a href="matlab:help uibuttongroup">uibuttongroup</a>      	- Component to exclusively manage radiobuttons/togglebuttons.
+    <a href="matlab:help uicontextmenu">uicontextmenu</a> - Create user interface context menu.
+    <a href="matlab:help uicontrol">uicontrol</a>  	  - Create user interface control.
+    <a href="matlab:help uimenu">uimenu</a>     	  - Create user interface menu.
+    <a href="matlab:help uipushtool">uipushtool</a>          - Create a pushbutton in the toolbar of a figure window.
+    <a href="matlab:help uitable">uitable</a>		- creates a two dimensional graphic table component.
+    <a href="matlab:help uitoggletool">uitoggletool</a>        - Create a togglebutton in the toolbar of a figure window.
+    <a href="matlab:help uitoolbar">uitoolbar</a>           - Create a toolbar in a figure window.
+ 
+  Handle Graphics operations.
+    <a href="matlab:help set">set</a>        	  - Set object properties.
+    <a href="matlab:help get">get</a>        	  - Get object properties.
+    <a href="matlab:help reset">reset</a>      	  - Reset graphics object properties to their defaults.
+    <a href="matlab:help delete">delete</a>     	  - Delete object.
+    <a href="matlab:help gco">gco</a>        	  - Get handle to current object.
+    <a href="matlab:help gcbo">gcbo</a>       	  - Get handle to current callback object.
+    <a href="matlab:help gcbf">gcbf</a>       	  - Get handle to current callback figure.
+    <a href="matlab:help drawnow">drawnow</a>    	  - Flush pending graphics events.
+    <a href="matlab:help findobj">findobj</a>    	  - Find objects with specified property values.
+    <a href="matlab:help copyobj">copyobj</a>    	  - Make copy of graphics object and its children.
+    <a href="matlab:help isappdata">isappdata</a>     - True if application-defined data exists.
+    <a href="matlab:help getappdata">getappdata</a>    - Get value of application-defined data.
+    <a href="matlab:help setappdata">setappdata</a>    - Set application-defined data.
+    <a href="matlab:help rmappdata">rmappdata</a>     - Remove application-defined data.
+ 
+  Hardcopy and printing.
+    <a href="matlab:help print">print</a>      	  - Print figure or model. Save to disk as image or MATLAB file.
+    <a href="matlab:help printopt">printopt</a>   	  - Printer defaults.
+    <a href="matlab:help orient">orient</a>     	  - Set paper orientation for printing. 
+    <a href="matlab:help printdlg">printdlg</a>		- Print dialog box.
+    <a href="matlab:help printpreview">printpreview</a>		- Display preview of figure to be printed
+    <a href="matlab:help figureheaderdlg">figureheaderdlg</a>	- Show figure header dialog
+    <a href="matlab:help copyoptionsfcn">copyoptionsfcn</a>  - brings up the preferences dialog with Copy Options selected.
+    <a href="matlab:help exportsetupdlg">exportsetupdlg</a>  - Figure style editor
+ 
+  Utilities.
+    <a href="matlab:help closereq">closereq</a>   	- Figure close request function.
+    <a href="matlab:help newplot">newplot</a>    	- Prepares figure, axes for graphics according to NextPlot.
+    <a href="matlab:help ishandle">ishandle</a>   	- True for graphics handles.
+    <a href="matlab:help findall">findall</a>		- find all objects.
+ 
+  ActiveX Client Functions (PC Only).
+    <a href="matlab:help actxcontrol">actxcontrol</a>   - Create an ActiveX control.
+    <a href="matlab:help actxserver">actxserver</a>    - Create an ActiveX server.
+ 
+  See also <a href="matlab:help graph2d">graph2d</a>, <a href="matlab:help graph3d">graph3d</a>, <a href="matlab:help specgraph">specgraph</a>, <a href="matlab:help winfun">winfun</a>.
+
+
+  <a href="matlab:help control">control</a> <a href="matlab:help library">library</a> - Graphics.
+ 
+  Version 10.3 24-Jul-2017
+
+
+Contents of graphics:
+
+<a href="matlab:help uiaxes">uiaxes</a>                         - Create a UIAxes object
+
+predprey(300,150,5)
+148 successful steps
+0 failed attempts
+445 function evaluations
+
+ans =
+
+        0.0146000695906423         0.021978140007576
+
+hold on
+predprey(320,155,5)
+153 successful steps
+0 failed attempts
+460 function evaluations
+
+ans =
+
+          -12.332778270252          -21.582057495584
+
+predprey(300,150,5)
+[Warning: P-file /home/phil/Dropbox/Università/AA201718/Fisica
+computazionale/codice/lezioni/150318/predprey.p is older than MATLAB file
+/home/phil/Dropbox/Università/AA201718/Fisica
+computazionale/codice/lezioni/150318/predprey.m.
+/home/phil/Dropbox/Università/AA201718/Fisica
+computazionale/codice/lezioni/150318/predprey.p may be obsolete and may need to be
+regenerated.
+Type "help pcode" for information about generating P-files.] 
+148 successful steps
+0 failed attempts
+445 function evaluations
+
+ans =
+
+        0.0146000695906423         0.021978140007576
+
+hold on
+predprey(300,150,5)
+148 successful steps
+0 failed attempts
+445 function evaluations
+
+ans =
+
+        0.0146000695906423         0.021978140007576
+
+predprey(300,150,5)
+148 successful steps
+0 failed attempts
+445 function evaluations
+
+ans =
+
+        0.0146000695906423         0.021978140007576
+
+clear
+clc
+predprey(300,150,5)
+[Warning: P-file /home/phil/Dropbox/Università/AA201718/Fisica
+computazionale/codice/lezioni/150318/predprey.p is older than MATLAB file
+/home/phil/Dropbox/Università/AA201718/Fisica
+computazionale/codice/lezioni/150318/predprey.m.
+/home/phil/Dropbox/Università/AA201718/Fisica computazionale/codice/lezioni/150318/predprey.p
+may be obsolete and may need to be regenerated.
+Type "help pcode" for information about generating P-files.] 
+148 successful steps
+0 failed attempts
+445 function evaluations
+
+ans =
+
+        0.0146000695906423         0.021978140007576
+
+predprey(300,150,5)
+148 successful steps
+0 failed attempts
+445 function evaluations
+
+ans =
+
+        0.0146000695906423         0.021978140007576
+
+predprey(300,150,5)
+148 successful steps
+0 failed attempts
+445 function evaluations
+
+ans =
+
+        0.0146000695906423         0.021978140007576
+
+hold in
+{Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('hold', '/usr/local/MATLAB/R2017b/toolbox/matlab/graphics/hold.m', 83)" style="font-weight:bold">hold</a> (<a href="matlab: opentoline('/usr/local/MATLAB/R2017b/toolbox/matlab/graphics/hold.m',83,0)">line 83</a>)
+Unknown command option.
+} 
+hold on
+predprey(330,156,5)
+156 successful steps
+0 failed attempts
+469 function evaluations
+
+ans =
+
+         -21.3993993173252         -33.2612747160817
+
+predprey(33,16,5)
+251 successful steps
+1 failed attempts
+757 function evaluations
+
+ans =
+
+         -30.6854575346053          50.8040949083993
+
+predprey(330,100,5)
+167 successful steps
+0 failed attempts
+502 function evaluations
+
+ans =
+
+         -103.930563393201          -41.657541719288
+
+predprey(330,190,5)
+154 successful steps
+0 failed attempts
+463 function evaluations
+
+ans =
+
+         -6.48720148228676         -30.5354909457419
+
+hold on
+predprey(300,190,5)
+144 successful steps
+0 failed attempts
+433 function evaluations
+
+ans =
+
+         0.217970639323596          16.8658198445252
+
+predprey(300,200,5)
+144 successful steps
+0 failed attempts
+433 function evaluations
+
+ans =
+
+         -1.18823386286772          18.3452945030698
+
+predprey(300,270,5)
+149 successful steps
+0 failed attempts
+448 function evaluations
+
+ans =
+
+          2.83243018379761         -7.60187300665285
+
+predprey(300,160,5)
+146 successful steps
+0 failed attempts
+439 function evaluations
+
+ans =
+
+          1.91100687679983          5.56882592443426
+
+predprey(300,1300,5)
+242 successful steps
+0 failed attempts
+727 function evaluations
+
+ans =
+
+         -299.504890648195         -1288.60907090582
+
+alpha = .01
+
+alpha =
+
+                      0.01
+
+predprey(1/alpha,1/alpha,5)
+107 successful steps
+1 failed attempts
+325 function evaluations
+
+ans =
+
+          39.4986296916399          6.63377316851273
+
+diary off

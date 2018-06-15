@@ -1,0 +1,1362 @@
+f = @(x) = 1/(sin(sqrt(x))
+ f = @(x) = 1/(sin(sqrt(x))
+          ↑
+{Error: The expression to the left of the equals sign is not a valid target for an assignment.
+} 
+f = @(x) = 1/(sen(sqrt(x))
+ f = @(x) = 1/(sen(sqrt(x))
+          ↑
+{Error: The expression to the left of the equals sign is not a valid target for an assignment.
+} 
+f = @(x) 1/(sin(sqrt(x))
+ f = @(x) 1/(sin(sqrt(x))
+                         ↑
+{Error: Expression or statement is incorrect--possibly unbalanced (, {, or [.
+} 
+f = @(x) 1/(sin(sqrt(x)))
+
+f =
+
+  <a href="matlab:helpPopup function_handle" style="font-weight:bold">function_handle</a> with value:
+
+    @(x)1/(sin(sqrt(x)))
+
+f = @(x) 1./(sin(sqrt(x)))
+
+f =
+
+  <a href="matlab:helpPopup function_handle" style="font-weight:bold">function_handle</a> with value:
+
+    @(x)1./(sin(sqrt(x)))
+
+a = 0;
+b = pi^2
+
+b =
+
+    9.8696
+
+quad(f,a,b)
+[Warning: Minimum step size reached; singularity possible.] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('quad', '/usr/local/MATLAB/R2017b/toolbox/matlab/funfun/quad.m', 96)" style="font-weight:bold">quad</a> (<a href="matlab: opentoline('/usr/local/MATLAB/R2017b/toolbox/matlab/funfun/quad.m',96,0)">line 96</a>)] 
+
+ans =
+
+  241.9213
+
+quadgui(f,a,b)
+[Warning: MATLAB has disabled some advanced graphics rendering features by switching to software
+OpenGL. For more information, click <a href="matlab:opengl('problems')">here</a>.] 
+{Index exceeds matrix dimensions.
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('quadgui>quadguistep', '/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m', 131)" style="font-weight:bold">quadgui>quadguistep</a> (<a href="matlab: opentoline('/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m',131,0)">line 131</a>)
+x = [get(p(3),'xdata') d e];
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('quadgui>quadguistep', '/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m', 151)" style="font-weight:bold">quadgui>quadguistep</a> (<a href="matlab: opentoline('/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m',151,0)">line 151</a>)
+   [Qb,kb] = quadguistep(F, c, b, tol, fc, fe, fb, varargin{:});
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('quadgui>quadguistep', '/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m', 150)" style="font-weight:bold">quadgui>quadguistep</a> (<a href="matlab: opentoline('/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m',150,0)">line 150</a>)
+   [Qa,ka] = quadguistep(F, a, c, tol, fa, fd, fc, varargin{:});
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('quadgui>quadguistep', '/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m', 150)" style="font-weight:bold">quadgui>quadguistep</a> (<a href="matlab: opentoline('/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m',150,0)">line 150</a>)
+   [Qa,ka] = quadguistep(F, a, c, tol, fa, fd, fc, varargin{:});
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('quadgui>quadguistep', '/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m', 150)" style="font-weight:bold">quadgui>quadguistep</a> (<a href="matlab: opentoline('/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m',150,0)">line 150</a>)
+   [Qa,ka] = quadguistep(F, a, c, tol, fa, fd, fc, varargin{:});
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('quadgui>quadguistep', '/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m', 150)" style="font-weight:bold">quadgui>quadguistep</a> (<a href="matlab: opentoline('/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m',150,0)">line 150</a>)
+   [Qa,ka] = quadguistep(F, a, c, tol, fa, fd, fc, varargin{:});
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('quadgui>quadguistep', '/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m', 150)" style="font-weight:bold">quadgui>quadguistep</a> (<a href="matlab: opentoline('/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m',150,0)">line 150</a>)
+   [Qa,ka] = quadguistep(F, a, c, tol, fa, fd, fc, varargin{:});
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('quadgui>quadguistep', '/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m', 150)" style="font-weight:bold">quadgui>quadguistep</a> (<a href="matlab: opentoline('/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m',150,0)">line 150</a>)
+   [Qa,ka] = quadguistep(F, a, c, tol, fa, fd, fc, varargin{:});
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('quadgui>quadguistep', '/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m', 150)" style="font-weight:bold">quadgui>quadguistep</a> (<a href="matlab: opentoline('/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m',150,0)">line 150</a>)
+   [Qa,ka] = quadguistep(F, a, c, tol, fa, fd, fc, varargin{:});
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('quadgui>quadguistep', '/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m', 150)" style="font-weight:bold">quadgui>quadguistep</a> (<a href="matlab: opentoline('/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m',150,0)">line 150</a>)
+   [Qa,ka] = quadguistep(F, a, c, tol, fa, fd, fc, varargin{:});
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('quadgui>quadguistep', '/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m', 150)" style="font-weight:bold">quadgui>quadguistep</a> (<a href="matlab: opentoline('/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m',150,0)">line 150</a>)
+   [Qa,ka] = quadguistep(F, a, c, tol, fa, fd, fc, varargin{:});
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('quadgui>quadguistep', '/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m', 150)" style="font-weight:bold">quadgui>quadguistep</a> (<a href="matlab: opentoline('/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m',150,0)">line 150</a>)
+   [Qa,ka] = quadguistep(F, a, c, tol, fa, fd, fc, varargin{:});
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('quadgui>quadguistep', '/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m', 150)" style="font-weight:bold">quadgui>quadguistep</a> (<a href="matlab: opentoline('/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m',150,0)">line 150</a>)
+   [Qa,ka] = quadguistep(F, a, c, tol, fa, fd, fc, varargin{:});
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('quadgui>quadguistep', '/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m', 150)" style="font-weight:bold">quadgui>quadguistep</a> (<a href="matlab: opentoline('/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m',150,0)">line 150</a>)
+   [Qa,ka] = quadguistep(F, a, c, tol, fa, fd, fc, varargin{:});
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('quadgui>quadguistep', '/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m', 150)" style="font-weight:bold">quadgui>quadguistep</a> (<a href="matlab: opentoline('/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m',150,0)">line 150</a>)
+   [Qa,ka] = quadguistep(F, a, c, tol, fa, fd, fc, varargin{:});
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('quadgui>quadguistep', '/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m', 150)" style="font-weight:bold">quadgui>quadguistep</a> (<a href="matlab: opentoline('/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m',150,0)">line 150</a>)
+   [Qa,ka] = quadguistep(F, a, c, tol, fa, fd, fc, varargin{:});
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('quadgui>quadguistep', '/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m', 150)" style="font-weight:bold">quadgui>quadguistep</a> (<a href="matlab: opentoline('/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m',150,0)">line 150</a>)
+   [Qa,ka] = quadguistep(F, a, c, tol, fa, fd, fc, varargin{:});
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('quadgui>quadguistep', '/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m', 150)" style="font-weight:bold">quadgui>quadguistep</a> (<a href="matlab: opentoline('/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m',150,0)">line 150</a>)
+   [Qa,ka] = quadguistep(F, a, c, tol, fa, fd, fc, varargin{:});
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('quadgui>quadguistep', '/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m', 150)" style="font-weight:bold">quadgui>quadguistep</a> (<a href="matlab: opentoline('/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m',150,0)">line 150</a>)
+   [Qa,ka] = quadguistep(F, a, c, tol, fa, fd, fc, varargin{:});
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('quadgui>quadguistep', '/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m', 150)" style="font-weight:bold">quadgui>quadguistep</a> (<a href="matlab: opentoline('/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m',150,0)">line 150</a>)
+   [Qa,ka] = quadguistep(F, a, c, tol, fa, fd, fc, varargin{:});
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('quadgui>quadguistep', '/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m', 150)" style="font-weight:bold">quadgui>quadguistep</a> (<a href="matlab: opentoline('/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m',150,0)">line 150</a>)
+   [Qa,ka] = quadguistep(F, a, c, tol, fa, fd, fc, varargin{:});
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('quadgui>quadguistep', '/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m', 150)" style="font-weight:bold">quadgui>quadguistep</a> (<a href="matlab: opentoline('/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m',150,0)">line 150</a>)
+   [Qa,ka] = quadguistep(F, a, c, tol, fa, fd, fc, varargin{:});
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('quadgui>quadguistep', '/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m', 150)" style="font-weight:bold">quadgui>quadguistep</a> (<a href="matlab: opentoline('/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m',150,0)">line 150</a>)
+   [Qa,ka] = quadguistep(F, a, c, tol, fa, fd, fc, varargin{:});
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('quadgui>quadguistep', '/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m', 150)" style="font-weight:bold">quadgui>quadguistep</a> (<a href="matlab: opentoline('/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m',150,0)">line 150</a>)
+   [Qa,ka] = quadguistep(F, a, c, tol, fa, fd, fc, varargin{:});
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('quadgui>quadguistep', '/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m', 150)" style="font-weight:bold">quadgui>quadguistep</a> (<a href="matlab: opentoline('/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m',150,0)">line 150</a>)
+   [Qa,ka] = quadguistep(F, a, c, tol, fa, fd, fc, varargin{:});
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('quadgui>quadguistep', '/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m', 150)" style="font-weight:bold">quadgui>quadguistep</a> (<a href="matlab: opentoline('/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m',150,0)">line 150</a>)
+   [Qa,ka] = quadguistep(F, a, c, tol, fa, fd, fc, varargin{:});
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('quadgui>quadguistep', '/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m', 150)" style="font-weight:bold">quadgui>quadguistep</a> (<a href="matlab: opentoline('/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m',150,0)">line 150</a>)
+   [Qa,ka] = quadguistep(F, a, c, tol, fa, fd, fc, varargin{:});
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('quadgui>quadguistep', '/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m', 150)" style="font-weight:bold">quadgui>quadguistep</a> (<a href="matlab: opentoline('/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m',150,0)">line 150</a>)
+   [Qa,ka] = quadguistep(F, a, c, tol, fa, fd, fc, varargin{:});
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('quadgui>quadguistep', '/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m', 150)" style="font-weight:bold">quadgui>quadguistep</a> (<a href="matlab: opentoline('/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m',150,0)">line 150</a>)
+   [Qa,ka] = quadguistep(F, a, c, tol, fa, fd, fc, varargin{:});
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('quadgui>quadguistep', '/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m', 150)" style="font-weight:bold">quadgui>quadguistep</a> (<a href="matlab: opentoline('/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m',150,0)">line 150</a>)
+   [Qa,ka] = quadguistep(F, a, c, tol, fa, fd, fc, varargin{:});
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('quadgui>quadguistep', '/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m', 150)" style="font-weight:bold">quadgui>quadguistep</a> (<a href="matlab: opentoline('/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m',150,0)">line 150</a>)
+   [Qa,ka] = quadguistep(F, a, c, tol, fa, fd, fc, varargin{:});
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('quadgui>quadguistep', '/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m', 150)" style="font-weight:bold">quadgui>quadguistep</a> (<a href="matlab: opentoline('/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m',150,0)">line 150</a>)
+   [Qa,ka] = quadguistep(F, a, c, tol, fa, fd, fc, varargin{:});
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('quadgui>quadguistep', '/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m', 150)" style="font-weight:bold">quadgui>quadguistep</a> (<a href="matlab: opentoline('/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m',150,0)">line 150</a>)
+   [Qa,ka] = quadguistep(F, a, c, tol, fa, fd, fc, varargin{:});
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('quadgui>quadguistep', '/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m', 150)" style="font-weight:bold">quadgui>quadguistep</a> (<a href="matlab: opentoline('/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m',150,0)">line 150</a>)
+   [Qa,ka] = quadguistep(F, a, c, tol, fa, fd, fc, varargin{:});
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('quadgui>quadguistep', '/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m', 150)" style="font-weight:bold">quadgui>quadguistep</a> (<a href="matlab: opentoline('/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m',150,0)">line 150</a>)
+   [Qa,ka] = quadguistep(F, a, c, tol, fa, fd, fc, varargin{:});
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('quadgui>quadguistep', '/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m', 150)" style="font-weight:bold">quadgui>quadguistep</a> (<a href="matlab: opentoline('/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m',150,0)">line 150</a>)
+   [Qa,ka] = quadguistep(F, a, c, tol, fa, fd, fc, varargin{:});
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('quadgui>quadguistep', '/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m', 150)" style="font-weight:bold">quadgui>quadguistep</a> (<a href="matlab: opentoline('/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m',150,0)">line 150</a>)
+   [Qa,ka] = quadguistep(F, a, c, tol, fa, fd, fc, varargin{:});
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('quadgui>quadguistep', '/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m', 150)" style="font-weight:bold">quadgui>quadguistep</a> (<a href="matlab: opentoline('/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m',150,0)">line 150</a>)
+   [Qa,ka] = quadguistep(F, a, c, tol, fa, fd, fc, varargin{:});
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('quadgui>quadguistep', '/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m', 150)" style="font-weight:bold">quadgui>quadguistep</a> (<a href="matlab: opentoline('/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m',150,0)">line 150</a>)
+   [Qa,ka] = quadguistep(F, a, c, tol, fa, fd, fc, varargin{:});
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('quadgui>quadguistep', '/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m', 150)" style="font-weight:bold">quadgui>quadguistep</a> (<a href="matlab: opentoline('/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m',150,0)">line 150</a>)
+   [Qa,ka] = quadguistep(F, a, c, tol, fa, fd, fc, varargin{:});
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('quadgui>quadguistep', '/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m', 150)" style="font-weight:bold">quadgui>quadguistep</a> (<a href="matlab: opentoline('/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m',150,0)">line 150</a>)
+   [Qa,ka] = quadguistep(F, a, c, tol, fa, fd, fc, varargin{:});
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('quadgui>quadguistep', '/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m', 150)" style="font-weight:bold">quadgui>quadguistep</a> (<a href="matlab: opentoline('/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m',150,0)">line 150</a>)
+   [Qa,ka] = quadguistep(F, a, c, tol, fa, fd, fc, varargin{:});
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('quadgui>quadguistep', '/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m', 150)" style="font-weight:bold">quadgui>quadguistep</a> (<a href="matlab: opentoline('/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m',150,0)">line 150</a>)
+   [Qa,ka] = quadguistep(F, a, c, tol, fa, fd, fc, varargin{:});
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('quadgui>quadguistep', '/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m', 150)" style="font-weight:bold">quadgui>quadguistep</a> (<a href="matlab: opentoline('/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m',150,0)">line 150</a>)
+   [Qa,ka] = quadguistep(F, a, c, tol, fa, fd, fc, varargin{:});
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('quadgui>quadguistep', '/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m', 150)" style="font-weight:bold">quadgui>quadguistep</a> (<a href="matlab: opentoline('/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m',150,0)">line 150</a>)
+   [Qa,ka] = quadguistep(F, a, c, tol, fa, fd, fc, varargin{:});
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('quadgui>quadguistep', '/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m', 150)" style="font-weight:bold">quadgui>quadguistep</a> (<a href="matlab: opentoline('/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m',150,0)">line 150</a>)
+   [Qa,ka] = quadguistep(F, a, c, tol, fa, fd, fc, varargin{:});
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('quadgui>quadguistep', '/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m', 150)" style="font-weight:bold">quadgui>quadguistep</a> (<a href="matlab: opentoline('/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m',150,0)">line 150</a>)
+   [Qa,ka] = quadguistep(F, a, c, tol, fa, fd, fc, varargin{:});
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('quadgui>quadguistep', '/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m', 150)" style="font-weight:bold">quadgui>quadguistep</a> (<a href="matlab: opentoline('/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m',150,0)">line 150</a>)
+   [Qa,ka] = quadguistep(F, a, c, tol, fa, fd, fc, varargin{:});
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('quadgui>quadguistep', '/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m', 150)" style="font-weight:bold">quadgui>quadguistep</a> (<a href="matlab: opentoline('/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m',150,0)">line 150</a>)
+   [Qa,ka] = quadguistep(F, a, c, tol, fa, fd, fc, varargin{:});
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('quadgui>quadguistep', '/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m', 150)" style="font-weight:bold">quadgui>quadguistep</a> (<a href="matlab: opentoline('/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m',150,0)">line 150</a>)
+   [Qa,ka] = quadguistep(F, a, c, tol, fa, fd, fc, varargin{:});
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('quadgui>quadguistep', '/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m', 150)" style="font-weight:bold">quadgui>quadguistep</a> (<a href="matlab: opentoline('/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m',150,0)">line 150</a>)
+   [Qa,ka] = quadguistep(F, a, c, tol, fa, fd, fc, varargin{:});
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('quadgui>quadguistep', '/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m', 150)" style="font-weight:bold">quadgui>quadguistep</a> (<a href="matlab: opentoline('/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m',150,0)">line 150</a>)
+   [Qa,ka] = quadguistep(F, a, c, tol, fa, fd, fc, varargin{:});
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('quadgui>quadguistep', '/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m', 150)" style="font-weight:bold">quadgui>quadguistep</a> (<a href="matlab: opentoline('/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m',150,0)">line 150</a>)
+   [Qa,ka] = quadguistep(F, a, c, tol, fa, fd, fc, varargin{:});
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('quadgui>quadguistep', '/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m', 150)" style="font-weight:bold">quadgui>quadguistep</a> (<a href="matlab: opentoline('/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m',150,0)">line 150</a>)
+   [Qa,ka] = quadguistep(F, a, c, tol, fa, fd, fc, varargin{:});
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('quadgui>quadguistep', '/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m', 150)" style="font-weight:bold">quadgui>quadguistep</a> (<a href="matlab: opentoline('/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m',150,0)">line 150</a>)
+   [Qa,ka] = quadguistep(F, a, c, tol, fa, fd, fc, varargin{:});
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('quadgui>quadguistep', '/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m', 150)" style="font-weight:bold">quadgui>quadguistep</a> (<a href="matlab: opentoline('/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m',150,0)">line 150</a>)
+   [Qa,ka] = quadguistep(F, a, c, tol, fa, fd, fc, varargin{:});
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('quadgui>quadguistep', '/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m', 150)" style="font-weight:bold">quadgui>quadguistep</a> (<a href="matlab: opentoline('/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m',150,0)">line 150</a>)
+   [Qa,ka] = quadguistep(F, a, c, tol, fa, fd, fc, varargin{:});
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('quadgui>quadguistep', '/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m', 150)" style="font-weight:bold">quadgui>quadguistep</a> (<a href="matlab: opentoline('/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m',150,0)">line 150</a>)
+   [Qa,ka] = quadguistep(F, a, c, tol, fa, fd, fc, varargin{:});
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('quadgui>quadguistep', '/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m', 150)" style="font-weight:bold">quadgui>quadguistep</a> (<a href="matlab: opentoline('/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m',150,0)">line 150</a>)
+   [Qa,ka] = quadguistep(F, a, c, tol, fa, fd, fc, varargin{:});
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('quadgui>quadguistep', '/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m', 150)" style="font-weight:bold">quadgui>quadguistep</a> (<a href="matlab: opentoline('/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m',150,0)">line 150</a>)
+   [Qa,ka] = quadguistep(F, a, c, tol, fa, fd, fc, varargin{:});
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('quadgui>quadguistep', '/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m', 150)" style="font-weight:bold">quadgui>quadguistep</a> (<a href="matlab: opentoline('/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m',150,0)">line 150</a>)
+   [Qa,ka] = quadguistep(F, a, c, tol, fa, fd, fc, varargin{:});
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('quadgui>quadguistep', '/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m', 150)" style="font-weight:bold">quadgui>quadguistep</a> (<a href="matlab: opentoline('/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m',150,0)">line 150</a>)
+   [Qa,ka] = quadguistep(F, a, c, tol, fa, fd, fc, varargin{:});
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('quadgui>quadguistep', '/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m', 150)" style="font-weight:bold">quadgui>quadguistep</a> (<a href="matlab: opentoline('/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m',150,0)">line 150</a>)
+   [Qa,ka] = quadguistep(F, a, c, tol, fa, fd, fc, varargin{:});
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('quadgui>quadguistep', '/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m', 150)" style="font-weight:bold">quadgui>quadguistep</a> (<a href="matlab: opentoline('/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m',150,0)">line 150</a>)
+   [Qa,ka] = quadguistep(F, a, c, tol, fa, fd, fc, varargin{:});
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('quadgui>quadguistep', '/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m', 150)" style="font-weight:bold">quadgui>quadguistep</a> (<a href="matlab: opentoline('/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m',150,0)">line 150</a>)
+   [Qa,ka] = quadguistep(F, a, c, tol, fa, fd, fc, varargin{:});
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('quadgui>quadguistep', '/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m', 150)" style="font-weight:bold">quadgui>quadguistep</a> (<a href="matlab: opentoline('/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m',150,0)">line 150</a>)
+   [Qa,ka] = quadguistep(F, a, c, tol, fa, fd, fc, varargin{:});
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('quadgui>quadguistep', '/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m', 150)" style="font-weight:bold">quadgui>quadguistep</a> (<a href="matlab: opentoline('/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m',150,0)">line 150</a>)
+   [Qa,ka] = quadguistep(F, a, c, tol, fa, fd, fc, varargin{:});
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('quadgui>quadguistep', '/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m', 150)" style="font-weight:bold">quadgui>quadguistep</a> (<a href="matlab: opentoline('/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m',150,0)">line 150</a>)
+   [Qa,ka] = quadguistep(F, a, c, tol, fa, fd, fc, varargin{:});
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('quadgui>quadguistep', '/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m', 150)" style="font-weight:bold">quadgui>quadguistep</a> (<a href="matlab: opentoline('/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m',150,0)">line 150</a>)
+   [Qa,ka] = quadguistep(F, a, c, tol, fa, fd, fc, varargin{:});
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('quadgui>quadguistep', '/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m', 150)" style="font-weight:bold">quadgui>quadguistep</a> (<a href="matlab: opentoline('/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m',150,0)">line 150</a>)
+   [Qa,ka] = quadguistep(F, a, c, tol, fa, fd, fc, varargin{:});
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('quadgui>quadguistep', '/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m', 150)" style="font-weight:bold">quadgui>quadguistep</a> (<a href="matlab: opentoline('/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m',150,0)">line 150</a>)
+   [Qa,ka] = quadguistep(F, a, c, tol, fa, fd, fc, varargin{:});
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('quadgui>quadguistep', '/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m', 150)" style="font-weight:bold">quadgui>quadguistep</a> (<a href="matlab: opentoline('/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m',150,0)">line 150</a>)
+   [Qa,ka] = quadguistep(F, a, c, tol, fa, fd, fc, varargin{:});
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('quadgui>quadguistep', '/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m', 150)" style="font-weight:bold">quadgui>quadguistep</a> (<a href="matlab: opentoline('/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m',150,0)">line 150</a>)
+   [Qa,ka] = quadguistep(F, a, c, tol, fa, fd, fc, varargin{:});
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('quadgui>quadguistep', '/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m', 150)" style="font-weight:bold">quadgui>quadguistep</a> (<a href="matlab: opentoline('/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m',150,0)">line 150</a>)
+   [Qa,ka] = quadguistep(F, a, c, tol, fa, fd, fc, varargin{:});
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('quadgui>quadguistep', '/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m', 150)" style="font-weight:bold">quadgui>quadguistep</a> (<a href="matlab: opentoline('/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m',150,0)">line 150</a>)
+   [Qa,ka] = quadguistep(F, a, c, tol, fa, fd, fc, varargin{:});
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('quadgui>quadguistep', '/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m', 150)" style="font-weight:bold">quadgui>quadguistep</a> (<a href="matlab: opentoline('/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m',150,0)">line 150</a>)
+   [Qa,ka] = quadguistep(F, a, c, tol, fa, fd, fc, varargin{:});
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('quadgui>quadguistep', '/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m', 150)" style="font-weight:bold">quadgui>quadguistep</a> (<a href="matlab: opentoline('/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m',150,0)">line 150</a>)
+   [Qa,ka] = quadguistep(F, a, c, tol, fa, fd, fc, varargin{:});
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('quadgui>quadguistep', '/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m', 150)" style="font-weight:bold">quadgui>quadguistep</a> (<a href="matlab: opentoline('/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m',150,0)">line 150</a>)
+   [Qa,ka] = quadguistep(F, a, c, tol, fa, fd, fc, varargin{:});
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('quadgui>quadguistep', '/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m', 150)" style="font-weight:bold">quadgui>quadguistep</a> (<a href="matlab: opentoline('/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m',150,0)">line 150</a>)
+   [Qa,ka] = quadguistep(F, a, c, tol, fa, fd, fc, varargin{:});
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('quadgui>quadguistep', '/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m', 150)" style="font-weight:bold">quadgui>quadguistep</a> (<a href="matlab: opentoline('/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m',150,0)">line 150</a>)
+   [Qa,ka] = quadguistep(F, a, c, tol, fa, fd, fc, varargin{:});
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('quadgui>quadguistep', '/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m', 150)" style="font-weight:bold">quadgui>quadguistep</a> (<a href="matlab: opentoline('/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m',150,0)">line 150</a>)
+   [Qa,ka] = quadguistep(F, a, c, tol, fa, fd, fc, varargin{:});
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('quadgui>quadguistep', '/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m', 150)" style="font-weight:bold">quadgui>quadguistep</a> (<a href="matlab: opentoline('/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m',150,0)">line 150</a>)
+   [Qa,ka] = quadguistep(F, a, c, tol, fa, fd, fc, varargin{:});
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('quadgui>quadguistep', '/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m', 150)" style="font-weight:bold">quadgui>quadguistep</a> (<a href="matlab: opentoline('/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m',150,0)">line 150</a>)
+   [Qa,ka] = quadguistep(F, a, c, tol, fa, fd, fc, varargin{:});
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('quadgui>quadguistep', '/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m', 150)" style="font-weight:bold">quadgui>quadguistep</a> (<a href="matlab: opentoline('/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m',150,0)">line 150</a>)
+   [Qa,ka] = quadguistep(F, a, c, tol, fa, fd, fc, varargin{:});
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('quadgui>quadguistep', '/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m', 150)" style="font-weight:bold">quadgui>quadguistep</a> (<a href="matlab: opentoline('/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m',150,0)">line 150</a>)
+   [Qa,ka] = quadguistep(F, a, c, tol, fa, fd, fc, varargin{:});
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('quadgui>quadguistep', '/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m', 150)" style="font-weight:bold">quadgui>quadguistep</a> (<a href="matlab: opentoline('/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m',150,0)">line 150</a>)
+   [Qa,ka] = quadguistep(F, a, c, tol, fa, fd, fc, varargin{:});
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('quadgui>quadguistep', '/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m', 150)" style="font-weight:bold">quadgui>quadguistep</a> (<a href="matlab: opentoline('/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m',150,0)">line 150</a>)
+   [Qa,ka] = quadguistep(F, a, c, tol, fa, fd, fc, varargin{:});
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('quadgui>quadguistep', '/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m', 150)" style="font-weight:bold">quadgui>quadguistep</a> (<a href="matlab: opentoline('/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m',150,0)">line 150</a>)
+   [Qa,ka] = quadguistep(F, a, c, tol, fa, fd, fc, varargin{:});
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('quadgui>quadguistep', '/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m', 150)" style="font-weight:bold">quadgui>quadguistep</a> (<a href="matlab: opentoline('/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m',150,0)">line 150</a>)
+   [Qa,ka] = quadguistep(F, a, c, tol, fa, fd, fc, varargin{:});
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('quadgui>quadguistep', '/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m', 150)" style="font-weight:bold">quadgui>quadguistep</a> (<a href="matlab: opentoline('/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m',150,0)">line 150</a>)
+   [Qa,ka] = quadguistep(F, a, c, tol, fa, fd, fc, varargin{:});
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('quadgui>quadguistep', '/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m', 150)" style="font-weight:bold">quadgui>quadguistep</a> (<a href="matlab: opentoline('/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m',150,0)">line 150</a>)
+   [Qa,ka] = quadguistep(F, a, c, tol, fa, fd, fc, varargin{:});
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('quadgui>quadguistep', '/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m', 150)" style="font-weight:bold">quadgui>quadguistep</a> (<a href="matlab: opentoline('/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m',150,0)">line 150</a>)
+   [Qa,ka] = quadguistep(F, a, c, tol, fa, fd, fc, varargin{:});
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('quadgui>quadguistep', '/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m', 150)" style="font-weight:bold">quadgui>quadguistep</a> (<a href="matlab: opentoline('/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m',150,0)">line 150</a>)
+   [Qa,ka] = quadguistep(F, a, c, tol, fa, fd, fc, varargin{:});
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('quadgui>quadguistep', '/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m', 150)" style="font-weight:bold">quadgui>quadguistep</a> (<a href="matlab: opentoline('/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m',150,0)">line 150</a>)
+   [Qa,ka] = quadguistep(F, a, c, tol, fa, fd, fc, varargin{:});
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('quadgui>quadguistep', '/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m', 150)" style="font-weight:bold">quadgui>quadguistep</a> (<a href="matlab: opentoline('/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m',150,0)">line 150</a>)
+   [Qa,ka] = quadguistep(F, a, c, tol, fa, fd, fc, varargin{:});
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('quadgui>quadguistep', '/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m', 150)" style="font-weight:bold">quadgui>quadguistep</a> (<a href="matlab: opentoline('/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m',150,0)">line 150</a>)
+   [Qa,ka] = quadguistep(F, a, c, tol, fa, fd, fc, varargin{:});
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('quadgui>quadguistep', '/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m', 150)" style="font-weight:bold">quadgui>quadguistep</a> (<a href="matlab: opentoline('/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m',150,0)">line 150</a>)
+   [Qa,ka] = quadguistep(F, a, c, tol, fa, fd, fc, varargin{:});
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('quadgui>quadguistep', '/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m', 150)" style="font-weight:bold">quadgui>quadguistep</a> (<a href="matlab: opentoline('/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m',150,0)">line 150</a>)
+   [Qa,ka] = quadguistep(F, a, c, tol, fa, fd, fc, varargin{:});
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('quadgui>quadguistep', '/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m', 150)" style="font-weight:bold">quadgui>quadguistep</a> (<a href="matlab: opentoline('/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m',150,0)">line 150</a>)
+   [Qa,ka] = quadguistep(F, a, c, tol, fa, fd, fc, varargin{:});
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('quadgui>quadguistep', '/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m', 150)" style="font-weight:bold">quadgui>quadguistep</a> (<a href="matlab: opentoline('/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m',150,0)">line 150</a>)
+   [Qa,ka] = quadguistep(F, a, c, tol, fa, fd, fc, varargin{:});
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('quadgui>quadguistep', '/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m', 150)" style="font-weight:bold">quadgui>quadguistep</a> (<a href="matlab: opentoline('/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m',150,0)">line 150</a>)
+   [Qa,ka] = quadguistep(F, a, c, tol, fa, fd, fc, varargin{:});
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('quadgui>quadguistep', '/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m', 150)" style="font-weight:bold">quadgui>quadguistep</a> (<a href="matlab: opentoline('/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m',150,0)">line 150</a>)
+   [Qa,ka] = quadguistep(F, a, c, tol, fa, fd, fc, varargin{:});
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('quadgui>quadguistep', '/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m', 150)" style="font-weight:bold">quadgui>quadguistep</a> (<a href="matlab: opentoline('/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m',150,0)">line 150</a>)
+   [Qa,ka] = quadguistep(F, a, c, tol, fa, fd, fc, varargin{:});
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('quadgui>quadguistep', '/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m', 150)" style="font-weight:bold">quadgui>quadguistep</a> (<a href="matlab: opentoline('/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m',150,0)">line 150</a>)
+   [Qa,ka] = quadguistep(F, a, c, tol, fa, fd, fc, varargin{:});
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('quadgui>quadguistep', '/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m', 150)" style="font-weight:bold">quadgui>quadguistep</a> (<a href="matlab: opentoline('/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m',150,0)">line 150</a>)
+   [Qa,ka] = quadguistep(F, a, c, tol, fa, fd, fc, varargin{:});
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('quadgui>quadguistep', '/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m', 150)" style="font-weight:bold">quadgui>quadguistep</a> (<a href="matlab: opentoline('/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m',150,0)">line 150</a>)
+   [Qa,ka] = quadguistep(F, a, c, tol, fa, fd, fc, varargin{:});
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('quadgui>quadguistep', '/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m', 150)" style="font-weight:bold">quadgui>quadguistep</a> (<a href="matlab: opentoline('/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m',150,0)">line 150</a>)
+   [Qa,ka] = quadguistep(F, a, c, tol, fa, fd, fc, varargin{:});
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('quadgui>quadguistep', '/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m', 150)" style="font-weight:bold">quadgui>quadguistep</a> (<a href="matlab: opentoline('/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m',150,0)">line 150</a>)
+   [Qa,ka] = quadguistep(F, a, c, tol, fa, fd, fc, varargin{:});
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('quadgui>quadguistep', '/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m', 150)" style="font-weight:bold">quadgui>quadguistep</a> (<a href="matlab: opentoline('/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m',150,0)">line 150</a>)
+   [Qa,ka] = quadguistep(F, a, c, tol, fa, fd, fc, varargin{:});
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('quadgui>quadguistep', '/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m', 150)" style="font-weight:bold">quadgui>quadguistep</a> (<a href="matlab: opentoline('/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m',150,0)">line 150</a>)
+   [Qa,ka] = quadguistep(F, a, c, tol, fa, fd, fc, varargin{:});
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('quadgui>quadguistep', '/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m', 150)" style="font-weight:bold">quadgui>quadguistep</a> (<a href="matlab: opentoline('/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m',150,0)">line 150</a>)
+   [Qa,ka] = quadguistep(F, a, c, tol, fa, fd, fc, varargin{:});
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('quadgui>quadguistep', '/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m', 150)" style="font-weight:bold">quadgui>quadguistep</a> (<a href="matlab: opentoline('/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m',150,0)">line 150</a>)
+   [Qa,ka] = quadguistep(F, a, c, tol, fa, fd, fc, varargin{:});
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('quadgui>quadguistep', '/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m', 150)" style="font-weight:bold">quadgui>quadguistep</a> (<a href="matlab: opentoline('/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m',150,0)">line 150</a>)
+   [Qa,ka] = quadguistep(F, a, c, tol, fa, fd, fc, varargin{:});
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('quadgui>quadguistep', '/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m', 150)" style="font-weight:bold">quadgui>quadguistep</a> (<a href="matlab: opentoline('/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m',150,0)">line 150</a>)
+   [Qa,ka] = quadguistep(F, a, c, tol, fa, fd, fc, varargin{:});
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('quadgui>quadguistep', '/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m', 150)" style="font-weight:bold">quadgui>quadguistep</a> (<a href="matlab: opentoline('/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m',150,0)">line 150</a>)
+   [Qa,ka] = quadguistep(F, a, c, tol, fa, fd, fc, varargin{:});
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('quadgui>quadguistep', '/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m', 150)" style="font-weight:bold">quadgui>quadguistep</a> (<a href="matlab: opentoline('/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m',150,0)">line 150</a>)
+   [Qa,ka] = quadguistep(F, a, c, tol, fa, fd, fc, varargin{:});
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('quadgui>quadguistep', '/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m', 150)" style="font-weight:bold">quadgui>quadguistep</a> (<a href="matlab: opentoline('/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m',150,0)">line 150</a>)
+   [Qa,ka] = quadguistep(F, a, c, tol, fa, fd, fc, varargin{:});
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('quadgui>quadguistep', '/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m', 150)" style="font-weight:bold">quadgui>quadguistep</a> (<a href="matlab: opentoline('/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m',150,0)">line 150</a>)
+   [Qa,ka] = quadguistep(F, a, c, tol, fa, fd, fc, varargin{:});
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('quadgui>quadguistep', '/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m', 150)" style="font-weight:bold">quadgui>quadguistep</a> (<a href="matlab: opentoline('/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m',150,0)">line 150</a>)
+   [Qa,ka] = quadguistep(F, a, c, tol, fa, fd, fc, varargin{:});
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('quadgui>quadguistep', '/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m', 150)" style="font-weight:bold">quadgui>quadguistep</a> (<a href="matlab: opentoline('/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m',150,0)">line 150</a>)
+   [Qa,ka] = quadguistep(F, a, c, tol, fa, fd, fc, varargin{:});
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('quadgui>quadguistep', '/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m', 150)" style="font-weight:bold">quadgui>quadguistep</a> (<a href="matlab: opentoline('/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m',150,0)">line 150</a>)
+   [Qa,ka] = quadguistep(F, a, c, tol, fa, fd, fc, varargin{:});
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('quadgui>quadguistep', '/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m', 150)" style="font-weight:bold">quadgui>quadguistep</a> (<a href="matlab: opentoline('/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m',150,0)">line 150</a>)
+   [Qa,ka] = quadguistep(F, a, c, tol, fa, fd, fc, varargin{:});
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('quadgui>quadguistep', '/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m', 150)" style="font-weight:bold">quadgui>quadguistep</a> (<a href="matlab: opentoline('/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m',150,0)">line 150</a>)
+   [Qa,ka] = quadguistep(F, a, c, tol, fa, fd, fc, varargin{:});
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('quadgui>quadguistep', '/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m', 150)" style="font-weight:bold">quadgui>quadguistep</a> (<a href="matlab: opentoline('/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m',150,0)">line 150</a>)
+   [Qa,ka] = quadguistep(F, a, c, tol, fa, fd, fc, varargin{:});
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('quadgui>quadguistep', '/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m', 150)" style="font-weight:bold">quadgui>quadguistep</a> (<a href="matlab: opentoline('/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m',150,0)">line 150</a>)
+   [Qa,ka] = quadguistep(F, a, c, tol, fa, fd, fc, varargin{:});
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('quadgui>quadguistep', '/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m', 150)" style="font-weight:bold">quadgui>quadguistep</a> (<a href="matlab: opentoline('/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m',150,0)">line 150</a>)
+   [Qa,ka] = quadguistep(F, a, c, tol, fa, fd, fc, varargin{:});
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('quadgui>quadguistep', '/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m', 150)" style="font-weight:bold">quadgui>quadguistep</a> (<a href="matlab: opentoline('/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m',150,0)">line 150</a>)
+   [Qa,ka] = quadguistep(F, a, c, tol, fa, fd, fc, varargin{:});
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('quadgui>quadguistep', '/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m', 150)" style="font-weight:bold">quadgui>quadguistep</a> (<a href="matlab: opentoline('/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m',150,0)">line 150</a>)
+   [Qa,ka] = quadguistep(F, a, c, tol, fa, fd, fc, varargin{:});
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('quadgui>quadguistep', '/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m', 150)" style="font-weight:bold">quadgui>quadguistep</a> (<a href="matlab: opentoline('/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m',150,0)">line 150</a>)
+   [Qa,ka] = quadguistep(F, a, c, tol, fa, fd, fc, varargin{:});
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('quadgui>quadguistep', '/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m', 150)" style="font-weight:bold">quadgui>quadguistep</a> (<a href="matlab: opentoline('/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m',150,0)">line 150</a>)
+   [Qa,ka] = quadguistep(F, a, c, tol, fa, fd, fc, varargin{:});
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('quadgui>quadguistep', '/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m', 150)" style="font-weight:bold">quadgui>quadguistep</a> (<a href="matlab: opentoline('/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m',150,0)">line 150</a>)
+   [Qa,ka] = quadguistep(F, a, c, tol, fa, fd, fc, varargin{:});
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('quadgui>quadguistep', '/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m', 150)" style="font-weight:bold">quadgui>quadguistep</a> (<a href="matlab: opentoline('/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m',150,0)">line 150</a>)
+   [Qa,ka] = quadguistep(F, a, c, tol, fa, fd, fc, varargin{:});
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('quadgui>quadguistep', '/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m', 150)" style="font-weight:bold">quadgui>quadguistep</a> (<a href="matlab: opentoline('/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m',150,0)">line 150</a>)
+   [Qa,ka] = quadguistep(F, a, c, tol, fa, fd, fc, varargin{:});
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('quadgui>quadguistep', '/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m', 150)" style="font-weight:bold">quadgui>quadguistep</a> (<a href="matlab: opentoline('/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m',150,0)">line 150</a>)
+   [Qa,ka] = quadguistep(F, a, c, tol, fa, fd, fc, varargin{:});
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('quadgui>quadguistep', '/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m', 150)" style="font-weight:bold">quadgui>quadguistep</a> (<a href="matlab: opentoline('/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m',150,0)">line 150</a>)
+   [Qa,ka] = quadguistep(F, a, c, tol, fa, fd, fc, varargin{:});
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('quadgui>quadguistep', '/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m', 150)" style="font-weight:bold">quadgui>quadguistep</a> (<a href="matlab: opentoline('/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m',150,0)">line 150</a>)
+   [Qa,ka] = quadguistep(F, a, c, tol, fa, fd, fc, varargin{:});
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('quadgui>quadguistep', '/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m', 150)" style="font-weight:bold">quadgui>quadguistep</a> (<a href="matlab: opentoline('/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m',150,0)">line 150</a>)
+   [Qa,ka] = quadguistep(F, a, c, tol, fa, fd, fc, varargin{:});
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('quadgui>quadguistep', '/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m', 150)" style="font-weight:bold">quadgui>quadguistep</a> (<a href="matlab: opentoline('/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m',150,0)">line 150</a>)
+   [Qa,ka] = quadguistep(F, a, c, tol, fa, fd, fc, varargin{:});
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('quadgui>quadguistep', '/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m', 150)" style="font-weight:bold">quadgui>quadguistep</a> (<a href="matlab: opentoline('/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m',150,0)">line 150</a>)
+   [Qa,ka] = quadguistep(F, a, c, tol, fa, fd, fc, varargin{:});
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('quadgui>quadguistep', '/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m', 150)" style="font-weight:bold">quadgui>quadguistep</a> (<a href="matlab: opentoline('/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m',150,0)">line 150</a>)
+   [Qa,ka] = quadguistep(F, a, c, tol, fa, fd, fc, varargin{:});
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('quadgui>quadguistep', '/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m', 150)" style="font-weight:bold">quadgui>quadguistep</a> (<a href="matlab: opentoline('/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m',150,0)">line 150</a>)
+   [Qa,ka] = quadguistep(F, a, c, tol, fa, fd, fc, varargin{:});
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('quadgui>quadguistep', '/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m', 150)" style="font-weight:bold">quadgui>quadguistep</a> (<a href="matlab: opentoline('/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m',150,0)">line 150</a>)
+   [Qa,ka] = quadguistep(F, a, c, tol, fa, fd, fc, varargin{:});
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('quadgui>quadguistep', '/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m', 150)" style="font-weight:bold">quadgui>quadguistep</a> (<a href="matlab: opentoline('/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m',150,0)">line 150</a>)
+   [Qa,ka] = quadguistep(F, a, c, tol, fa, fd, fc, varargin{:});
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('quadgui>quadguistep', '/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m', 150)" style="font-weight:bold">quadgui>quadguistep</a> (<a href="matlab: opentoline('/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m',150,0)">line 150</a>)
+   [Qa,ka] = quadguistep(F, a, c, tol, fa, fd, fc, varargin{:});
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('quadgui>quadguistep', '/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m', 150)" style="font-weight:bold">quadgui>quadguistep</a> (<a href="matlab: opentoline('/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m',150,0)">line 150</a>)
+   [Qa,ka] = quadguistep(F, a, c, tol, fa, fd, fc, varargin{:});
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('quadgui>quadguistep', '/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m', 150)" style="font-weight:bold">quadgui>quadguistep</a> (<a href="matlab: opentoline('/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m',150,0)">line 150</a>)
+   [Qa,ka] = quadguistep(F, a, c, tol, fa, fd, fc, varargin{:});
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('quadgui>quadguistep', '/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m', 150)" style="font-weight:bold">quadgui>quadguistep</a> (<a href="matlab: opentoline('/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m',150,0)">line 150</a>)
+   [Qa,ka] = quadguistep(F, a, c, tol, fa, fd, fc, varargin{:});
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('quadgui>quadguistep', '/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m', 150)" style="font-weight:bold">quadgui>quadguistep</a> (<a href="matlab: opentoline('/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m',150,0)">line 150</a>)
+   [Qa,ka] = quadguistep(F, a, c, tol, fa, fd, fc, varargin{:});
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('quadgui>quadguistep', '/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m', 150)" style="font-weight:bold">quadgui>quadguistep</a> (<a href="matlab: opentoline('/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m',150,0)">line 150</a>)
+   [Qa,ka] = quadguistep(F, a, c, tol, fa, fd, fc, varargin{:});
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('quadgui>quadguistep', '/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m', 150)" style="font-weight:bold">quadgui>quadguistep</a> (<a href="matlab: opentoline('/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m',150,0)">line 150</a>)
+   [Qa,ka] = quadguistep(F, a, c, tol, fa, fd, fc, varargin{:});
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('quadgui>quadguistep', '/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m', 150)" style="font-weight:bold">quadgui>quadguistep</a> (<a href="matlab: opentoline('/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m',150,0)">line 150</a>)
+   [Qa,ka] = quadguistep(F, a, c, tol, fa, fd, fc, varargin{:});
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('quadgui>quadguistep', '/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m', 150)" style="font-weight:bold">quadgui>quadguistep</a> (<a href="matlab: opentoline('/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m',150,0)">line 150</a>)
+   [Qa,ka] = quadguistep(F, a, c, tol, fa, fd, fc, varargin{:});
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('quadgui>quadguistep', '/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m', 150)" style="font-weight:bold">quadgui>quadguistep</a> (<a href="matlab: opentoline('/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m',150,0)">line 150</a>)
+   [Qa,ka] = quadguistep(F, a, c, tol, fa, fd, fc, varargin{:});
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('quadgui>quadguistep', '/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m', 150)" style="font-weight:bold">quadgui>quadguistep</a> (<a href="matlab: opentoline('/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m',150,0)">line 150</a>)
+   [Qa,ka] = quadguistep(F, a, c, tol, fa, fd, fc, varargin{:});
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('quadgui>quadguistep', '/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m', 150)" style="font-weight:bold">quadgui>quadguistep</a> (<a href="matlab: opentoline('/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m',150,0)">line 150</a>)
+   [Qa,ka] = quadguistep(F, a, c, tol, fa, fd, fc, varargin{:});
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('quadgui>quadguistep', '/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m', 150)" style="font-weight:bold">quadgui>quadguistep</a> (<a href="matlab: opentoline('/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m',150,0)">line 150</a>)
+   [Qa,ka] = quadguistep(F, a, c, tol, fa, fd, fc, varargin{:});
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('quadgui>quadguistep', '/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m', 150)" style="font-weight:bold">quadgui>quadguistep</a> (<a href="matlab: opentoline('/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m',150,0)">line 150</a>)
+   [Qa,ka] = quadguistep(F, a, c, tol, fa, fd, fc, varargin{:});
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('quadgui>quadguistep', '/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m', 150)" style="font-weight:bold">quadgui>quadguistep</a> (<a href="matlab: opentoline('/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m',150,0)">line 150</a>)
+   [Qa,ka] = quadguistep(F, a, c, tol, fa, fd, fc, varargin{:});
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('quadgui>quadguistep', '/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m', 150)" style="font-weight:bold">quadgui>quadguistep</a> (<a href="matlab: opentoline('/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m',150,0)">line 150</a>)
+   [Qa,ka] = quadguistep(F, a, c, tol, fa, fd, fc, varargin{:});
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('quadgui>quadguistep', '/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m', 150)" style="font-weight:bold">quadgui>quadguistep</a> (<a href="matlab: opentoline('/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m',150,0)">line 150</a>)
+   [Qa,ka] = quadguistep(F, a, c, tol, fa, fd, fc, varargin{:});
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('quadgui>quadguistep', '/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m', 150)" style="font-weight:bold">quadgui>quadguistep</a> (<a href="matlab: opentoline('/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m',150,0)">line 150</a>)
+   [Qa,ka] = quadguistep(F, a, c, tol, fa, fd, fc, varargin{:});
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('quadgui>quadguistep', '/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m', 150)" style="font-weight:bold">quadgui>quadguistep</a> (<a href="matlab: opentoline('/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m',150,0)">line 150</a>)
+   [Qa,ka] = quadguistep(F, a, c, tol, fa, fd, fc, varargin{:});
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('quadgui>quadguistep', '/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m', 150)" style="font-weight:bold">quadgui>quadguistep</a> (<a href="matlab: opentoline('/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m',150,0)">line 150</a>)
+   [Qa,ka] = quadguistep(F, a, c, tol, fa, fd, fc, varargin{:});
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('quadgui>quadguistep', '/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m', 150)" style="font-weight:bold">quadgui>quadguistep</a> (<a href="matlab: opentoline('/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m',150,0)">line 150</a>)
+   [Qa,ka] = quadguistep(F, a, c, tol, fa, fd, fc, varargin{:});
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('quadgui>quadguistep', '/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m', 150)" style="font-weight:bold">quadgui>quadguistep</a> (<a href="matlab: opentoline('/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m',150,0)">line 150</a>)
+   [Qa,ka] = quadguistep(F, a, c, tol, fa, fd, fc, varargin{:});
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('quadgui>quadguistep', '/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m', 150)" style="font-weight:bold">quadgui>quadguistep</a> (<a href="matlab: opentoline('/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m',150,0)">line 150</a>)
+   [Qa,ka] = quadguistep(F, a, c, tol, fa, fd, fc, varargin{:});
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('quadgui>quadguistep', '/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m', 150)" style="font-weight:bold">quadgui>quadguistep</a> (<a href="matlab: opentoline('/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m',150,0)">line 150</a>)
+   [Qa,ka] = quadguistep(F, a, c, tol, fa, fd, fc, varargin{:});
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('quadgui>quadguistep', '/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m', 150)" style="font-weight:bold">quadgui>quadguistep</a> (<a href="matlab: opentoline('/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m',150,0)">line 150</a>)
+   [Qa,ka] = quadguistep(F, a, c, tol, fa, fd, fc, varargin{:});
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('quadgui>quadguistep', '/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m', 150)" style="font-weight:bold">quadgui>quadguistep</a> (<a href="matlab: opentoline('/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m',150,0)">line 150</a>)
+   [Qa,ka] = quadguistep(F, a, c, tol, fa, fd, fc, varargin{:});
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('quadgui>quadguistep', '/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m', 150)" style="font-weight:bold">quadgui>quadguistep</a> (<a href="matlab: opentoline('/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m',150,0)">line 150</a>)
+   [Qa,ka] = quadguistep(F, a, c, tol, fa, fd, fc, varargin{:});
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('quadgui>quadguistep', '/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m', 150)" style="font-weight:bold">quadgui>quadguistep</a> (<a href="matlab: opentoline('/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m',150,0)">line 150</a>)
+   [Qa,ka] = quadguistep(F, a, c, tol, fa, fd, fc, varargin{:});
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('quadgui>quadguistep', '/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m', 150)" style="font-weight:bold">quadgui>quadguistep</a> (<a href="matlab: opentoline('/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m',150,0)">line 150</a>)
+   [Qa,ka] = quadguistep(F, a, c, tol, fa, fd, fc, varargin{:});
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('quadgui>quadguistep', '/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m', 150)" style="font-weight:bold">quadgui>quadguistep</a> (<a href="matlab: opentoline('/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m',150,0)">line 150</a>)
+   [Qa,ka] = quadguistep(F, a, c, tol, fa, fd, fc, varargin{:});
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('quadgui>quadguistep', '/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m', 150)" style="font-weight:bold">quadgui>quadguistep</a> (<a href="matlab: opentoline('/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m',150,0)">line 150</a>)
+   [Qa,ka] = quadguistep(F, a, c, tol, fa, fd, fc, varargin{:});
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('quadgui>quadguistep', '/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m', 150)" style="font-weight:bold">quadgui>quadguistep</a> (<a href="matlab: opentoline('/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m',150,0)">line 150</a>)
+   [Qa,ka] = quadguistep(F, a, c, tol, fa, fd, fc, varargin{:});
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('quadgui>quadguistep', '/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m', 150)" style="font-weight:bold">quadgui>quadguistep</a> (<a href="matlab: opentoline('/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m',150,0)">line 150</a>)
+   [Qa,ka] = quadguistep(F, a, c, tol, fa, fd, fc, varargin{:});
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('quadgui>quadguistep', '/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m', 150)" style="font-weight:bold">quadgui>quadguistep</a> (<a href="matlab: opentoline('/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m',150,0)">line 150</a>)
+   [Qa,ka] = quadguistep(F, a, c, tol, fa, fd, fc, varargin{:});
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('quadgui>quadguistep', '/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m', 150)" style="font-weight:bold">quadgui>quadguistep</a> (<a href="matlab: opentoline('/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m',150,0)">line 150</a>)
+   [Qa,ka] = quadguistep(F, a, c, tol, fa, fd, fc, varargin{:});
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('quadgui>quadguistep', '/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m', 150)" style="font-weight:bold">quadgui>quadguistep</a> (<a href="matlab: opentoline('/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m',150,0)">line 150</a>)
+   [Qa,ka] = quadguistep(F, a, c, tol, fa, fd, fc, varargin{:});
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('quadgui>quadguistep', '/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m', 150)" style="font-weight:bold">quadgui>quadguistep</a> (<a href="matlab: opentoline('/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m',150,0)">line 150</a>)
+   [Qa,ka] = quadguistep(F, a, c, tol, fa, fd, fc, varargin{:});
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('quadgui>quadguistep', '/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m', 150)" style="font-weight:bold">quadgui>quadguistep</a> (<a href="matlab: opentoline('/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m',150,0)">line 150</a>)
+   [Qa,ka] = quadguistep(F, a, c, tol, fa, fd, fc, varargin{:});
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('quadgui>quadguistep', '/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m', 150)" style="font-weight:bold">quadgui>quadguistep</a> (<a href="matlab: opentoline('/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m',150,0)">line 150</a>)
+   [Qa,ka] = quadguistep(F, a, c, tol, fa, fd, fc, varargin{:});
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('quadgui>quadguistep', '/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m', 150)" style="font-weight:bold">quadgui>quadguistep</a> (<a href="matlab: opentoline('/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m',150,0)">line 150</a>)
+   [Qa,ka] = quadguistep(F, a, c, tol, fa, fd, fc, varargin{:});
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('quadgui>quadguistep', '/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m', 150)" style="font-weight:bold">quadgui>quadguistep</a> (<a href="matlab: opentoline('/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m',150,0)">line 150</a>)
+   [Qa,ka] = quadguistep(F, a, c, tol, fa, fd, fc, varargin{:});
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('quadgui>quadguistep', '/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m', 150)" style="font-weight:bold">quadgui>quadguistep</a> (<a href="matlab: opentoline('/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m',150,0)">line 150</a>)
+   [Qa,ka] = quadguistep(F, a, c, tol, fa, fd, fc, varargin{:});
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('quadgui>quadguistep', '/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m', 150)" style="font-weight:bold">quadgui>quadguistep</a> (<a href="matlab: opentoline('/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m',150,0)">line 150</a>)
+   [Qa,ka] = quadguistep(F, a, c, tol, fa, fd, fc, varargin{:});
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('quadgui>quadguistep', '/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m', 150)" style="font-weight:bold">quadgui>quadguistep</a> (<a href="matlab: opentoline('/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m',150,0)">line 150</a>)
+   [Qa,ka] = quadguistep(F, a, c, tol, fa, fd, fc, varargin{:});
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('quadgui>quadguistep', '/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m', 150)" style="font-weight:bold">quadgui>quadguistep</a> (<a href="matlab: opentoline('/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m',150,0)">line 150</a>)
+   [Qa,ka] = quadguistep(F, a, c, tol, fa, fd, fc, varargin{:});
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('quadgui>quadguistep', '/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m', 150)" style="font-weight:bold">quadgui>quadguistep</a> (<a href="matlab: opentoline('/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m',150,0)">line 150</a>)
+   [Qa,ka] = quadguistep(F, a, c, tol, fa, fd, fc, varargin{:});
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('quadgui>quadguistep', '/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m', 150)" style="font-weight:bold">quadgui>quadguistep</a> (<a href="matlab: opentoline('/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m',150,0)">line 150</a>)
+   [Qa,ka] = quadguistep(F, a, c, tol, fa, fd, fc, varargin{:});
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('quadgui>quadguistep', '/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m', 150)" style="font-weight:bold">quadgui>quadguistep</a> (<a href="matlab: opentoline('/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m',150,0)">line 150</a>)
+   [Qa,ka] = quadguistep(F, a, c, tol, fa, fd, fc, varargin{:});
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('quadgui>quadguistep', '/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m', 150)" style="font-weight:bold">quadgui>quadguistep</a> (<a href="matlab: opentoline('/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m',150,0)">line 150</a>)
+   [Qa,ka] = quadguistep(F, a, c, tol, fa, fd, fc, varargin{:});
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('quadgui>quadguistep', '/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m', 150)" style="font-weight:bold">quadgui>quadguistep</a> (<a href="matlab: opentoline('/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m',150,0)">line 150</a>)
+   [Qa,ka] = quadguistep(F, a, c, tol, fa, fd, fc, varargin{:});
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('quadgui>quadguistep', '/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m', 150)" style="font-weight:bold">quadgui>quadguistep</a> (<a href="matlab: opentoline('/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m',150,0)">line 150</a>)
+   [Qa,ka] = quadguistep(F, a, c, tol, fa, fd, fc, varargin{:});
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('quadgui>quadguistep', '/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m', 150)" style="font-weight:bold">quadgui>quadguistep</a> (<a href="matlab: opentoline('/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m',150,0)">line 150</a>)
+   [Qa,ka] = quadguistep(F, a, c, tol, fa, fd, fc, varargin{:});
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('quadgui>quadguistep', '/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m', 150)" style="font-weight:bold">quadgui>quadguistep</a> (<a href="matlab: opentoline('/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m',150,0)">line 150</a>)
+   [Qa,ka] = quadguistep(F, a, c, tol, fa, fd, fc, varargin{:});
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('quadgui>quadguistep', '/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m', 150)" style="font-weight:bold">quadgui>quadguistep</a> (<a href="matlab: opentoline('/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m',150,0)">line 150</a>)
+   [Qa,ka] = quadguistep(F, a, c, tol, fa, fd, fc, varargin{:});
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('quadgui>quadguistep', '/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m', 150)" style="font-weight:bold">quadgui>quadguistep</a> (<a href="matlab: opentoline('/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m',150,0)">line 150</a>)
+   [Qa,ka] = quadguistep(F, a, c, tol, fa, fd, fc, varargin{:});
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('quadgui>quadguistep', '/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m', 150)" style="font-weight:bold">quadgui>quadguistep</a> (<a href="matlab: opentoline('/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m',150,0)">line 150</a>)
+   [Qa,ka] = quadguistep(F, a, c, tol, fa, fd, fc, varargin{:});
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('quadgui>quadguistep', '/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m', 150)" style="font-weight:bold">quadgui>quadguistep</a> (<a href="matlab: opentoline('/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m',150,0)">line 150</a>)
+   [Qa,ka] = quadguistep(F, a, c, tol, fa, fd, fc, varargin{:});
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('quadgui>quadguistep', '/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m', 150)" style="font-weight:bold">quadgui>quadguistep</a> (<a href="matlab: opentoline('/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m',150,0)">line 150</a>)
+   [Qa,ka] = quadguistep(F, a, c, tol, fa, fd, fc, varargin{:});
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('quadgui>quadguistep', '/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m', 150)" style="font-weight:bold">quadgui>quadguistep</a> (<a href="matlab: opentoline('/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m',150,0)">line 150</a>)
+   [Qa,ka] = quadguistep(F, a, c, tol, fa, fd, fc, varargin{:});
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('quadgui>quadguistep', '/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m', 150)" style="font-weight:bold">quadgui>quadguistep</a> (<a href="matlab: opentoline('/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m',150,0)">line 150</a>)
+   [Qa,ka] = quadguistep(F, a, c, tol, fa, fd, fc, varargin{:});
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('quadgui>quadguistep', '/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m', 150)" style="font-weight:bold">quadgui>quadguistep</a> (<a href="matlab: opentoline('/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m',150,0)">line 150</a>)
+   [Qa,ka] = quadguistep(F, a, c, tol, fa, fd, fc, varargin{:});
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('quadgui>quadguistep', '/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m', 150)" style="font-weight:bold">quadgui>quadguistep</a> (<a href="matlab: opentoline('/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m',150,0)">line 150</a>)
+   [Qa,ka] = quadguistep(F, a, c, tol, fa, fd, fc, varargin{:});
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('quadgui>quadguistep', '/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m', 150)" style="font-weight:bold">quadgui>quadguistep</a> (<a href="matlab: opentoline('/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m',150,0)">line 150</a>)
+   [Qa,ka] = quadguistep(F, a, c, tol, fa, fd, fc, varargin{:});
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('quadgui>quadguistep', '/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m', 150)" style="font-weight:bold">quadgui>quadguistep</a> (<a href="matlab: opentoline('/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m',150,0)">line 150</a>)
+   [Qa,ka] = quadguistep(F, a, c, tol, fa, fd, fc, varargin{:});
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('quadgui>quadguistep', '/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m', 150)" style="font-weight:bold">quadgui>quadguistep</a> (<a href="matlab: opentoline('/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m',150,0)">line 150</a>)
+   [Qa,ka] = quadguistep(F, a, c, tol, fa, fd, fc, varargin{:});
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('quadgui>quadguistep', '/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m', 150)" style="font-weight:bold">quadgui>quadguistep</a> (<a href="matlab: opentoline('/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m',150,0)">line 150</a>)
+   [Qa,ka] = quadguistep(F, a, c, tol, fa, fd, fc, varargin{:});
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('quadgui>quadguistep', '/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m', 150)" style="font-weight:bold">quadgui>quadguistep</a> (<a href="matlab: opentoline('/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m',150,0)">line 150</a>)
+   [Qa,ka] = quadguistep(F, a, c, tol, fa, fd, fc, varargin{:});
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('quadgui>quadguistep', '/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m', 150)" style="font-weight:bold">quadgui>quadguistep</a> (<a href="matlab: opentoline('/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m',150,0)">line 150</a>)
+   [Qa,ka] = quadguistep(F, a, c, tol, fa, fd, fc, varargin{:});
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('quadgui>quadguistep', '/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m', 150)" style="font-weight:bold">quadgui>quadguistep</a> (<a href="matlab: opentoline('/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m',150,0)">line 150</a>)
+   [Qa,ka] = quadguistep(F, a, c, tol, fa, fd, fc, varargin{:});
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('quadgui>quadguistep', '/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m', 150)" style="font-weight:bold">quadgui>quadguistep</a> (<a href="matlab: opentoline('/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m',150,0)">line 150</a>)
+   [Qa,ka] = quadguistep(F, a, c, tol, fa, fd, fc, varargin{:});
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('quadgui>quadguistep', '/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m', 150)" style="font-weight:bold">quadgui>quadguistep</a> (<a href="matlab: opentoline('/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m',150,0)">line 150</a>)
+   [Qa,ka] = quadguistep(F, a, c, tol, fa, fd, fc, varargin{:});
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('quadgui>quadguistep', '/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m', 150)" style="font-weight:bold">quadgui>quadguistep</a> (<a href="matlab: opentoline('/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m',150,0)">line 150</a>)
+   [Qa,ka] = quadguistep(F, a, c, tol, fa, fd, fc, varargin{:});
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('quadgui>quadguistep', '/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m', 150)" style="font-weight:bold">quadgui>quadguistep</a> (<a href="matlab: opentoline('/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m',150,0)">line 150</a>)
+   [Qa,ka] = quadguistep(F, a, c, tol, fa, fd, fc, varargin{:});
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('quadgui>quadguistep', '/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m', 150)" style="font-weight:bold">quadgui>quadguistep</a> (<a href="matlab: opentoline('/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m',150,0)">line 150</a>)
+   [Qa,ka] = quadguistep(F, a, c, tol, fa, fd, fc, varargin{:});
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('quadgui>quadguistep', '/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m', 150)" style="font-weight:bold">quadgui>quadguistep</a> (<a href="matlab: opentoline('/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m',150,0)">line 150</a>)
+   [Qa,ka] = quadguistep(F, a, c, tol, fa, fd, fc, varargin{:});
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('quadgui>quadguistep', '/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m', 150)" style="font-weight:bold">quadgui>quadguistep</a> (<a href="matlab: opentoline('/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m',150,0)">line 150</a>)
+   [Qa,ka] = quadguistep(F, a, c, tol, fa, fd, fc, varargin{:});
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('quadgui>quadguistep', '/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m', 150)" style="font-weight:bold">quadgui>quadguistep</a> (<a href="matlab: opentoline('/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m',150,0)">line 150</a>)
+   [Qa,ka] = quadguistep(F, a, c, tol, fa, fd, fc, varargin{:});
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('quadgui>quadguistep', '/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m', 150)" style="font-weight:bold">quadgui>quadguistep</a> (<a href="matlab: opentoline('/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m',150,0)">line 150</a>)
+   [Qa,ka] = quadguistep(F, a, c, tol, fa, fd, fc, varargin{:});
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('quadgui>quadguistep', '/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m', 150)" style="font-weight:bold">quadgui>quadguistep</a> (<a href="matlab: opentoline('/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m',150,0)">line 150</a>)
+   [Qa,ka] = quadguistep(F, a, c, tol, fa, fd, fc, varargin{:});
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('quadgui>quadguistep', '/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m', 150)" style="font-weight:bold">quadgui>quadguistep</a> (<a href="matlab: opentoline('/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m',150,0)">line 150</a>)
+   [Qa,ka] = quadguistep(F, a, c, tol, fa, fd, fc, varargin{:});
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('quadgui>quadguistep', '/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m', 150)" style="font-weight:bold">quadgui>quadguistep</a> (<a href="matlab: opentoline('/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m',150,0)">line 150</a>)
+   [Qa,ka] = quadguistep(F, a, c, tol, fa, fd, fc, varargin{:});
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('quadgui>quadguistep', '/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m', 150)" style="font-weight:bold">quadgui>quadguistep</a> (<a href="matlab: opentoline('/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m',150,0)">line 150</a>)
+   [Qa,ka] = quadguistep(F, a, c, tol, fa, fd, fc, varargin{:});
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('quadgui>quadguistep', '/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m', 150)" style="font-weight:bold">quadgui>quadguistep</a> (<a href="matlab: opentoline('/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m',150,0)">line 150</a>)
+   [Qa,ka] = quadguistep(F, a, c, tol, fa, fd, fc, varargin{:});
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('quadgui>quadguistep', '/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m', 150)" style="font-weight:bold">quadgui>quadguistep</a> (<a href="matlab: opentoline('/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m',150,0)">line 150</a>)
+   [Qa,ka] = quadguistep(F, a, c, tol, fa, fd, fc, varargin{:});
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('quadgui>quadguistep', '/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m', 150)" style="font-weight:bold">quadgui>quadguistep</a> (<a href="matlab: opentoline('/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m',150,0)">line 150</a>)
+   [Qa,ka] = quadguistep(F, a, c, tol, fa, fd, fc, varargin{:});
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('quadgui>quadguistep', '/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m', 150)" style="font-weight:bold">quadgui>quadguistep</a> (<a href="matlab: opentoline('/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m',150,0)">line 150</a>)
+   [Qa,ka] = quadguistep(F, a, c, tol, fa, fd, fc, varargin{:});
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('quadgui>quadguistep', '/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m', 150)" style="font-weight:bold">quadgui>quadguistep</a> (<a href="matlab: opentoline('/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m',150,0)">line 150</a>)
+   [Qa,ka] = quadguistep(F, a, c, tol, fa, fd, fc, varargin{:});
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('quadgui>quadguistep', '/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m', 150)" style="font-weight:bold">quadgui>quadguistep</a> (<a href="matlab: opentoline('/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m',150,0)">line 150</a>)
+   [Qa,ka] = quadguistep(F, a, c, tol, fa, fd, fc, varargin{:});
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('quadgui>quadguistep', '/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m', 150)" style="font-weight:bold">quadgui>quadguistep</a> (<a href="matlab: opentoline('/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m',150,0)">line 150</a>)
+   [Qa,ka] = quadguistep(F, a, c, tol, fa, fd, fc, varargin{:});
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('quadgui>quadguistep', '/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m', 150)" style="font-weight:bold">quadgui>quadguistep</a> (<a href="matlab: opentoline('/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m',150,0)">line 150</a>)
+   [Qa,ka] = quadguistep(F, a, c, tol, fa, fd, fc, varargin{:});
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('quadgui>quadguistep', '/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m', 150)" style="font-weight:bold">quadgui>quadguistep</a> (<a href="matlab: opentoline('/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m',150,0)">line 150</a>)
+   [Qa,ka] = quadguistep(F, a, c, tol, fa, fd, fc, varargin{:});
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('quadgui>quadguistep', '/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m', 150)" style="font-weight:bold">quadgui>quadguistep</a> (<a href="matlab: opentoline('/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m',150,0)">line 150</a>)
+   [Qa,ka] = quadguistep(F, a, c, tol, fa, fd, fc, varargin{:});
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('quadgui>quadguistep', '/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m', 150)" style="font-weight:bold">quadgui>quadguistep</a> (<a href="matlab: opentoline('/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m',150,0)">line 150</a>)
+   [Qa,ka] = quadguistep(F, a, c, tol, fa, fd, fc, varargin{:});
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('quadgui>quadguistep', '/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m', 150)" style="font-weight:bold">quadgui>quadguistep</a> (<a href="matlab: opentoline('/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m',150,0)">line 150</a>)
+   [Qa,ka] = quadguistep(F, a, c, tol, fa, fd, fc, varargin{:});
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('quadgui>quadguistep', '/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m', 150)" style="font-weight:bold">quadgui>quadguistep</a> (<a href="matlab: opentoline('/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m',150,0)">line 150</a>)
+   [Qa,ka] = quadguistep(F, a, c, tol, fa, fd, fc, varargin{:});
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('quadgui>quadguistep', '/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m', 150)" style="font-weight:bold">quadgui>quadguistep</a> (<a href="matlab: opentoline('/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m',150,0)">line 150</a>)
+   [Qa,ka] = quadguistep(F, a, c, tol, fa, fd, fc, varargin{:});
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('quadgui>quadguistep', '/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m', 150)" style="font-weight:bold">quadgui>quadguistep</a> (<a href="matlab: opentoline('/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m',150,0)">line 150</a>)
+   [Qa,ka] = quadguistep(F, a, c, tol, fa, fd, fc, varargin{:});
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('quadgui>quadguistep', '/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m', 150)" style="font-weight:bold">quadgui>quadguistep</a> (<a href="matlab: opentoline('/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m',150,0)">line 150</a>)
+   [Qa,ka] = quadguistep(F, a, c, tol, fa, fd, fc, varargin{:});
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('quadgui>quadguistep', '/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m', 150)" style="font-weight:bold">quadgui>quadguistep</a> (<a href="matlab: opentoline('/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m',150,0)">line 150</a>)
+   [Qa,ka] = quadguistep(F, a, c, tol, fa, fd, fc, varargin{:});
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('quadgui>quadguistep', '/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m', 150)" style="font-weight:bold">quadgui>quadguistep</a> (<a href="matlab: opentoline('/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m',150,0)">line 150</a>)
+   [Qa,ka] = quadguistep(F, a, c, tol, fa, fd, fc, varargin{:});
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('quadgui>quadguistep', '/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m', 150)" style="font-weight:bold">quadgui>quadguistep</a> (<a href="matlab: opentoline('/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m',150,0)">line 150</a>)
+   [Qa,ka] = quadguistep(F, a, c, tol, fa, fd, fc, varargin{:});
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('quadgui>quadguistep', '/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m', 150)" style="font-weight:bold">quadgui>quadguistep</a> (<a href="matlab: opentoline('/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m',150,0)">line 150</a>)
+   [Qa,ka] = quadguistep(F, a, c, tol, fa, fd, fc, varargin{:});
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('quadgui>quadguistep', '/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m', 150)" style="font-weight:bold">quadgui>quadguistep</a> (<a href="matlab: opentoline('/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m',150,0)">line 150</a>)
+   [Qa,ka] = quadguistep(F, a, c, tol, fa, fd, fc, varargin{:});
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('quadgui>quadguistep', '/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m', 150)" style="font-weight:bold">quadgui>quadguistep</a> (<a href="matlab: opentoline('/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m',150,0)">line 150</a>)
+   [Qa,ka] = quadguistep(F, a, c, tol, fa, fd, fc, varargin{:});
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('quadgui>quadguistep', '/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m', 150)" style="font-weight:bold">quadgui>quadguistep</a> (<a href="matlab: opentoline('/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m',150,0)">line 150</a>)
+   [Qa,ka] = quadguistep(F, a, c, tol, fa, fd, fc, varargin{:});
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('quadgui>quadguistep', '/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m', 150)" style="font-weight:bold">quadgui>quadguistep</a> (<a href="matlab: opentoline('/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m',150,0)">line 150</a>)
+   [Qa,ka] = quadguistep(F, a, c, tol, fa, fd, fc, varargin{:});
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('quadgui>quadguistep', '/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m', 150)" style="font-weight:bold">quadgui>quadguistep</a> (<a href="matlab: opentoline('/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m',150,0)">line 150</a>)
+   [Qa,ka] = quadguistep(F, a, c, tol, fa, fd, fc, varargin{:});
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('quadgui>quadguistep', '/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m', 150)" style="font-weight:bold">quadgui>quadguistep</a> (<a href="matlab: opentoline('/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m',150,0)">line 150</a>)
+   [Qa,ka] = quadguistep(F, a, c, tol, fa, fd, fc, varargin{:});
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('quadgui>quadguistep', '/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m', 150)" style="font-weight:bold">quadgui>quadguistep</a> (<a href="matlab: opentoline('/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m',150,0)">line 150</a>)
+   [Qa,ka] = quadguistep(F, a, c, tol, fa, fd, fc, varargin{:});
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('quadgui>quadguistep', '/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m', 150)" style="font-weight:bold">quadgui>quadguistep</a> (<a href="matlab: opentoline('/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m',150,0)">line 150</a>)
+   [Qa,ka] = quadguistep(F, a, c, tol, fa, fd, fc, varargin{:});
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('quadgui>quadguistep', '/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m', 150)" style="font-weight:bold">quadgui>quadguistep</a> (<a href="matlab: opentoline('/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m',150,0)">line 150</a>)
+   [Qa,ka] = quadguistep(F, a, c, tol, fa, fd, fc, varargin{:});
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('quadgui>quadguistep', '/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m', 150)" style="font-weight:bold">quadgui>quadguistep</a> (<a href="matlab: opentoline('/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m',150,0)">line 150</a>)
+   [Qa,ka] = quadguistep(F, a, c, tol, fa, fd, fc, varargin{:});
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('quadgui>quadguistep', '/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m', 150)" style="font-weight:bold">quadgui>quadguistep</a> (<a href="matlab: opentoline('/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m',150,0)">line 150</a>)
+   [Qa,ka] = quadguistep(F, a, c, tol, fa, fd, fc, varargin{:});
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('quadgui>quadguistep', '/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m', 150)" style="font-weight:bold">quadgui>quadguistep</a> (<a href="matlab: opentoline('/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m',150,0)">line 150</a>)
+   [Qa,ka] = quadguistep(F, a, c, tol, fa, fd, fc, varargin{:});
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('quadgui>quadguistep', '/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m', 150)" style="font-weight:bold">quadgui>quadguistep</a> (<a href="matlab: opentoline('/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m',150,0)">line 150</a>)
+   [Qa,ka] = quadguistep(F, a, c, tol, fa, fd, fc, varargin{:});
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('quadgui>quadguistep', '/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m', 150)" style="font-weight:bold">quadgui>quadguistep</a> (<a href="matlab: opentoline('/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m',150,0)">line 150</a>)
+   [Qa,ka] = quadguistep(F, a, c, tol, fa, fd, fc, varargin{:});
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('quadgui>quadguistep', '/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m', 150)" style="font-weight:bold">quadgui>quadguistep</a> (<a href="matlab: opentoline('/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m',150,0)">line 150</a>)
+   [Qa,ka] = quadguistep(F, a, c, tol, fa, fd, fc, varargin{:});
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('quadgui>quadguistep', '/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m', 150)" style="font-weight:bold">quadgui>quadguistep</a> (<a href="matlab: opentoline('/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m',150,0)">line 150</a>)
+   [Qa,ka] = quadguistep(F, a, c, tol, fa, fd, fc, varargin{:});
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('quadgui>quadguistep', '/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m', 150)" style="font-weight:bold">quadgui>quadguistep</a> (<a href="matlab: opentoline('/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m',150,0)">line 150</a>)
+   [Qa,ka] = quadguistep(F, a, c, tol, fa, fd, fc, varargin{:});
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('quadgui>quadguistep', '/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m', 150)" style="font-weight:bold">quadgui>quadguistep</a> (<a href="matlab: opentoline('/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m',150,0)">line 150</a>)
+   [Qa,ka] = quadguistep(F, a, c, tol, fa, fd, fc, varargin{:});
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('quadgui>quadguistep', '/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m', 150)" style="font-weight:bold">quadgui>quadguistep</a> (<a href="matlab: opentoline('/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m',150,0)">line 150</a>)
+   [Qa,ka] = quadguistep(F, a, c, tol, fa, fd, fc, varargin{:});
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('quadgui>quadguistep', '/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m', 150)" style="font-weight:bold">quadgui>quadguistep</a> (<a href="matlab: opentoline('/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m',150,0)">line 150</a>)
+   [Qa,ka] = quadguistep(F, a, c, tol, fa, fd, fc, varargin{:});
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('quadgui>quadguistep', '/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m', 150)" style="font-weight:bold">quadgui>quadguistep</a> (<a href="matlab: opentoline('/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m',150,0)">line 150</a>)
+   [Qa,ka] = quadguistep(F, a, c, tol, fa, fd, fc, varargin{:});
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('quadgui>quadguistep', '/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m', 150)" style="font-weight:bold">quadgui>quadguistep</a> (<a href="matlab: opentoline('/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m',150,0)">line 150</a>)
+   [Qa,ka] = quadguistep(F, a, c, tol, fa, fd, fc, varargin{:});
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('quadgui>quadguistep', '/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m', 150)" style="font-weight:bold">quadgui>quadguistep</a> (<a href="matlab: opentoline('/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m',150,0)">line 150</a>)
+   [Qa,ka] = quadguistep(F, a, c, tol, fa, fd, fc, varargin{:});
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('quadgui>quadguistep', '/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m', 150)" style="font-weight:bold">quadgui>quadguistep</a> (<a href="matlab: opentoline('/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m',150,0)">line 150</a>)
+   [Qa,ka] = quadguistep(F, a, c, tol, fa, fd, fc, varargin{:});
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('quadgui>quadguistep', '/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m', 150)" style="font-weight:bold">quadgui>quadguistep</a> (<a href="matlab: opentoline('/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m',150,0)">line 150</a>)
+   [Qa,ka] = quadguistep(F, a, c, tol, fa, fd, fc, varargin{:});
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('quadgui>quadguistep', '/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m', 150)" style="font-weight:bold">quadgui>quadguistep</a> (<a href="matlab: opentoline('/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m',150,0)">line 150</a>)
+   [Qa,ka] = quadguistep(F, a, c, tol, fa, fd, fc, varargin{:});
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('quadgui>quadguistep', '/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m', 150)" style="font-weight:bold">quadgui>quadguistep</a> (<a href="matlab: opentoline('/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m',150,0)">line 150</a>)
+   [Qa,ka] = quadguistep(F, a, c, tol, fa, fd, fc, varargin{:});
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('quadgui>quadguistep', '/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m', 150)" style="font-weight:bold">quadgui>quadguistep</a> (<a href="matlab: opentoline('/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m',150,0)">line 150</a>)
+   [Qa,ka] = quadguistep(F, a, c, tol, fa, fd, fc, varargin{:});
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('quadgui', '/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m', 91)" style="font-weight:bold">quadgui</a> (<a href="matlab: opentoline('/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m',91,0)">line 91</a>)
+[Q,k] = quadguistep(F, a, b, tol, fa, fc, fb, varargin{:});
+} 
+quadgui(f,eps,pi-eps)
+{Index exceeds matrix dimensions.
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('quadgui>quadguistep', '/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m', 131)" style="font-weight:bold">quadgui>quadguistep</a> (<a href="matlab: opentoline('/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m',131,0)">line 131</a>)
+x = [get(p(3),'xdata') d e];
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('quadgui>quadguistep', '/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m', 151)" style="font-weight:bold">quadgui>quadguistep</a> (<a href="matlab: opentoline('/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m',151,0)">line 151</a>)
+   [Qb,kb] = quadguistep(F, c, b, tol, fc, fe, fb, varargin{:});
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('quadgui>quadguistep', '/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m', 150)" style="font-weight:bold">quadgui>quadguistep</a> (<a href="matlab: opentoline('/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m',150,0)">line 150</a>)
+   [Qa,ka] = quadguistep(F, a, c, tol, fa, fd, fc, varargin{:});
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('quadgui>quadguistep', '/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m', 150)" style="font-weight:bold">quadgui>quadguistep</a> (<a href="matlab: opentoline('/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m',150,0)">line 150</a>)
+   [Qa,ka] = quadguistep(F, a, c, tol, fa, fd, fc, varargin{:});
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('quadgui>quadguistep', '/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m', 150)" style="font-weight:bold">quadgui>quadguistep</a> (<a href="matlab: opentoline('/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m',150,0)">line 150</a>)
+   [Qa,ka] = quadguistep(F, a, c, tol, fa, fd, fc, varargin{:});
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('quadgui>quadguistep', '/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m', 150)" style="font-weight:bold">quadgui>quadguistep</a> (<a href="matlab: opentoline('/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m',150,0)">line 150</a>)
+   [Qa,ka] = quadguistep(F, a, c, tol, fa, fd, fc, varargin{:});
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('quadgui>quadguistep', '/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m', 150)" style="font-weight:bold">quadgui>quadguistep</a> (<a href="matlab: opentoline('/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m',150,0)">line 150</a>)
+   [Qa,ka] = quadguistep(F, a, c, tol, fa, fd, fc, varargin{:});
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('quadgui>quadguistep', '/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m', 150)" style="font-weight:bold">quadgui>quadguistep</a> (<a href="matlab: opentoline('/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m',150,0)">line 150</a>)
+   [Qa,ka] = quadguistep(F, a, c, tol, fa, fd, fc, varargin{:});
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('quadgui>quadguistep', '/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m', 150)" style="font-weight:bold">quadgui>quadguistep</a> (<a href="matlab: opentoline('/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m',150,0)">line 150</a>)
+   [Qa,ka] = quadguistep(F, a, c, tol, fa, fd, fc, varargin{:});
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('quadgui>quadguistep', '/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m', 150)" style="font-weight:bold">quadgui>quadguistep</a> (<a href="matlab: opentoline('/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m',150,0)">line 150</a>)
+   [Qa,ka] = quadguistep(F, a, c, tol, fa, fd, fc, varargin{:});
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('quadgui>quadguistep', '/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m', 150)" style="font-weight:bold">quadgui>quadguistep</a> (<a href="matlab: opentoline('/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m',150,0)">line 150</a>)
+   [Qa,ka] = quadguistep(F, a, c, tol, fa, fd, fc, varargin{:});
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('quadgui>quadguistep', '/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m', 150)" style="font-weight:bold">quadgui>quadguistep</a> (<a href="matlab: opentoline('/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m',150,0)">line 150</a>)
+   [Qa,ka] = quadguistep(F, a, c, tol, fa, fd, fc, varargin{:});
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('quadgui', '/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m', 91)" style="font-weight:bold">quadgui</a> (<a href="matlab: opentoline('/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m',91,0)">line 91</a>)
+[Q,k] = quadguistep(F, a, b, tol, fa, fc, fb, varargin{:});
+} 
+quadgui(f,a,b)
+{Index exceeds matrix dimensions.
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('quadgui>quadguistep', '/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m', 131)" style="font-weight:bold">quadgui>quadguistep</a> (<a href="matlab: opentoline('/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m',131,0)">line 131</a>)
+x = [get(p(3),'xdata') d e];
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('quadgui>quadguistep', '/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m', 150)" style="font-weight:bold">quadgui>quadguistep</a> (<a href="matlab: opentoline('/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m',150,0)">line 150</a>)
+   [Qa,ka] = quadguistep(F, a, c, tol, fa, fd, fc, varargin{:});
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('quadgui', '/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m', 91)" style="font-weight:bold">quadgui</a> (<a href="matlab: opentoline('/home/phil/Dropbox/Università/AA201718/Fisica computazionale/ncm/quadgui.m',91,0)">line 91</a>)
+[Q,k] = quadguistep(F, a, b, tol, fa, fc, fb, varargin{:});
+} 
+quad(f,a,b)
+[Warning: Minimum step size reached; singularity possible.] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('quad', '/usr/local/MATLAB/R2017b/toolbox/matlab/funfun/quad.m', 96)" style="font-weight:bold">quad</a> (<a href="matlab: opentoline('/usr/local/MATLAB/R2017b/toolbox/matlab/funfun/quad.m',96,0)">line 96</a>)] 
+
+ans =
+
+  241.9213
+
+syms x
+int(f(x),a,b)
+ 
+ans =
+ 
+- (2778046668940015^(1/2)*atanh(exp((2778046668940015^(1/2)*1i)/16777216)))/4194304 + polylog(2, -exp((2778046668940015^(1/2)*1i)/16777216))*2i + (pi^2*1i)/2 - polylog(2, exp((2778046668940015^(1/2)*1i)/16777216))*2i
+ 
+Q=int(f(x),a,b)
+ 
+Q =
+ 
+- (2778046668940015^(1/2)*atanh(exp((2778046668940015^(1/2)*1i)/16777216)))/4194304 + polylog(2, -exp((2778046668940015^(1/2)*1i)/16777216))*2i + (pi^2*1i)/2 - polylog(2, exp((2778046668940015^(1/2)*1i)/16777216))*2i
+ 
+Q=double(Q)
+
+Q =
+
+   2.3585e+02 - 3.3144e-56i
+
+I=quad(f,a,b,1e-6)
+[Warning: Minimum step size reached; singularity possible.] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('quad', '/usr/local/MATLAB/R2017b/toolbox/matlab/funfun/quad.m', 96)" style="font-weight:bold">quad</a> (<a href="matlab: opentoline('/usr/local/MATLAB/R2017b/toolbox/matlab/funfun/quad.m',96,0)">line 96</a>)] 
+
+I =
+
+  241.9213
+
+tic;[Iquad,cnt]=quad(@(x)1./sin(sqrt(x)),9,pi^2,1e.6);T=toc
+ tic;[Iquad,cnt]=quad(@(x)1./sin(sqrt(x)),9,pi^2,1e.6);T=toc
+                                                 ↑
+{Error: Unexpected MATLAB operator.
+} 
+tic;[Iquad,cnt]=quad(@(x)1./sin(sqrt(x)),9,pi^2,1e-6);T=toc
+[Warning: Minimum step size reached; singularity possible.] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('quad', '/usr/local/MATLAB/R2017b/toolbox/matlab/funfun/quad.m', 96)" style="font-weight:bold">quad</a> (<a href="matlab: opentoline('/usr/local/MATLAB/R2017b/toolbox/matlab/funfun/quad.m',96,0)">line 96</a>)] 
+
+T =
+
+    0.0146
+
+Q
+
+Q =
+
+   2.3585e+02 - 3.3144e-56i
+
+tic;Q;toc
+Elapsed time is 0.000095 seconds.
+tic;Q;T=toc
+
+T =
+
+   2.2600e-04
+
+cnt
+
+cnt =
+
+        3197
+
+Error: <a href="matlab: opentoline('/home/phil/Dropbox/Università/AA201718/Fisica computazionale/codice/lezioni/220218/cicloint.m',1,1)">File: cicloint.m Line: 1 Column: 1
+</a>At least one END is missing: the statement may begin here.
+
+[Warning: Minimum step size reached; singularity possible.] 
+Undefined function or variable 'Iexact'.
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('cicloint', '/home/phil/Dropbox/Università/AA201718/Fisica computazionale/codice/lezioni/220218/cicloint.m', 5)" style="font-weight:bold">cicloint</a> (<a href="matlab: opentoline('/home/phil/Dropbox/Università/AA201718/Fisica computazionale/codice/lezioni/220218/cicloint.m',5,0)">line 5</a>)
+Delta(j) = Iquad/Iexact-1;
+
+[Warning: Minimum step size reached; singularity possible.] 
+Undefined function or variable 'Iexact'.
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('cicloint', '/home/phil/Dropbox/Università/AA201718/Fisica computazionale/codice/lezioni/220218/cicloint.m', 5)" style="font-weight:bold">cicloint</a> (<a href="matlab: opentoline('/home/phil/Dropbox/Università/AA201718/Fisica computazionale/codice/lezioni/220218/cicloint.m',5,0)">line 5</a>)
+Delta(j) = Iquad/Iexact-1;
+
+[Warning: Minimum step size reached; singularity possible.] 
+Undefined function or variable 'Iexact'.
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('cicloint', '/home/phil/Dropbox/Università/AA201718/Fisica computazionale/codice/lezioni/220218/cicloint.m', 5)" style="font-weight:bold">cicloint</a> (<a href="matlab: opentoline('/home/phil/Dropbox/Università/AA201718/Fisica computazionale/codice/lezioni/220218/cicloint.m',5,0)">line 5</a>)
+Delta(j) = Iquad/Iexact-1;
+
+[Warning: Minimum step size reached; singularity possible.] 
+Undefined function or variable 'Iexact'.
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('cicloint', '/home/phil/Dropbox/Università/AA201718/Fisica computazionale/codice/lezioni/220218/cicloint.m', 6)" style="font-weight:bold">cicloint</a> (<a href="matlab: opentoline('/home/phil/Dropbox/Università/AA201718/Fisica computazionale/codice/lezioni/220218/cicloint.m',6,0)">line 6</a>)
+    Delta(j) = Iquad/Iexact-1;
+
+Error: <a href="matlab: opentoline('/home/phil/Dropbox/Università/AA201718/Fisica computazionale/codice/lezioni/220218/cicloint.m',2,48)">File: cicloint.m Line: 2 Column: 48
+</a>Unbalanced or unexpected parenthesis or bracket.
+
+Error: <a href="matlab: opentoline('/home/phil/Dropbox/Università/AA201718/Fisica computazionale/codice/lezioni/220218/cicloint.m',2,48)">File: cicloint.m Line: 2 Column: 48
+</a>Unbalanced or unexpected parenthesis or bracket.
+
+Error: <a href="matlab: opentoline('/home/phil/Dropbox/Università/AA201718/Fisica computazionale/codice/lezioni/220218/cicloint.m',2,49)">File: cicloint.m Line: 2 Column: 49
+</a>Unbalanced or unexpected parenthesis or bracket.
+
+Error: <a href="matlab: opentoline('/home/phil/Dropbox/Università/AA201718/Fisica computazionale/codice/lezioni/220218/cicloint.m',2,49)">File: cicloint.m Line: 2 Column: 49
+</a>Unbalanced or unexpected parenthesis or bracket.
+
+[Warning: Minimum step size reached; singularity possible.] 
+[Warning: Minimum step size reached; singularity possible.] 
+[Warning: Minimum step size reached; singularity possible.] 
+[Warning: Minimum step size reached; singularity possible.] 
+[Warning: Minimum step size reached; singularity possible.] 
+[Warning: Minimum step size reached; singularity possible.] 
+[Warning: Minimum step size reached; singularity possible.] 
+[Warning: Minimum step size reached; singularity possible.] 
+[Warning: Minimum step size reached; singularity possible.] 
+cnt
+
+cnt =
+
+  Columns 1 through 8
+
+        3197           0           0           0           0        3197        3197        3197
+
+  Columns 9 through 14
+
+        3197        3197        3197        3197        3197        3197
+
+Delta
+
+Delta =
+
+  Columns 1 through 10
+
+         0         0         0         0         0   -0.0460   -0.0460   -0.0460   -0.0460   -0.0460
+
+  Columns 11 through 14
+
+   -0.0460   -0.0460   -0.0460   -0.0460
+
+[Warning: Minimum step size reached; singularity possible.] 
+[Warning: Minimum step size reached; singularity possible.] 
+[Warning: Minimum step size reached; singularity possible.] 
+[Warning: Minimum step size reached; singularity possible.] 
+[Warning: Minimum step size reached; singularity possible.] 
+[Warning: Minimum step size reached; singularity possible.] 
+[Warning: Minimum step size reached; singularity possible.] 
+[Warning: Minimum step size reached; singularity possible.] 
+[Warning: Minimum step size reached; singularity possible.] 
+T
+
+T =
+
+  Columns 1 through 10
+
+    0.0002         0         0         0         0    0.0133    0.0125    0.0120    0.0109    0.0123
+
+  Columns 11 through 14
+
+    0.0115    0.0106    0.0114    0.0106
+
+[Warning: Minimum step size reached; singularity possible.] 
+[Warning: Minimum step size reached; singularity possible.] 
+[Warning: Minimum step size reached; singularity possible.] 
+[Warning: Minimum step size reached; singularity possible.] 
+[Warning: Minimum step size reached; singularity possible.] 
+[Warning: Minimum step size reached; singularity possible.] 
+[Warning: Minimum step size reached; singularity possible.] 
+[Warning: Minimum step size reached; singularity possible.] 
+[Warning: Minimum step size reached; singularity possible.] 
+Delta
+
+Delta =
+
+  Columns 1 through 10
+
+   -0.0460   -0.0460   -0.0460   -0.0460   -0.0460   -0.0460   -0.0460   -0.0460   -0.0460   -0.0460
+
+  Columns 11 through 14
+
+   -0.0460   -0.0460   -0.0460   -0.0460
+
+[Warning: Minimum step size reached; singularity possible.] 
+[Warning: Minimum step size reached; singularity possible.] 
+[Warning: Minimum step size reached; singularity possible.] 
+[Warning: Minimum step size reached; singularity possible.] 
+[Warning: Minimum step size reached; singularity possible.] 
+[Warning: Minimum step size reached; singularity possible.] 
+[Warning: Minimum step size reached; singularity possible.] 
+[Warning: Minimum step size reached; singularity possible.] 
+[Warning: Minimum step size reached; singularity possible.] 
+Delta
+
+Delta =
+
+  Columns 1 through 10
+
+   -0.0460   -0.0460   -0.0460   -0.0460   -0.0460   -0.0460   -0.0460   -0.0460   -0.0460   -0.0460
+
+  Columns 11 through 14
+
+   -0.0460   -0.0460   -0.0460   -0.0460
+
+[Warning: Minimum step size reached; singularity possible.] 
+[Warning: Minimum step size reached; singularity possible.] 
+[Warning: Minimum step size reached; singularity possible.] 
+[Warning: Minimum step size reached; singularity possible.] 
+[Warning: Minimum step size reached; singularity possible.] 
+[Warning: Minimum step size reached; singularity possible.] 
+[Warning: Minimum step size reached; singularity possible.] 
+[Warning: Minimum step size reached; singularity possible.] 
+[Warning: Minimum step size reached; singularity possible.] 
+[Warning: Minimum step size reached; singularity possible.] 
+[Warning: Minimum step size reached; singularity possible.] 
+[Warning: Minimum step size reached; singularity possible.] 
+[Warning: Minimum step size reached; singularity possible.] 
+[Warning: Minimum step size reached; singularity possible.] 
+[Warning: Minimum step size reached; singularity possible.] 
+[Warning: Minimum step size reached; singularity possible.] 
+[Warning: Minimum step size reached; singularity possible.] 
+[Warning: Minimum step size reached; singularity possible.] 
+[Warning: Minimum step size reached; singularity possible.] 
+[Warning: Minimum step size reached; singularity possible.] 
+[Warning: Maximum function count exceeded; singularity likely.] 
+[Warning: Maximum function count exceeded; singularity likely.] 
+[Warning: Maximum function count exceeded; singularity likely.] 
+[Warning: Maximum function count exceeded; singularity likely.] 
+[Warning: Maximum function count exceeded; singularity likely.] 
+[Warning: Maximum function count exceeded; singularity likely.] 
+[Warning: Maximum function count exceeded; singularity likely.] 
+[tol', cnt', Delta']
+{Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('horzcat')" style="font-weight:bold">horzcat</a>
+Dimensions of matrices being concatenated are not consistent.
+} 
+[tol', cnt', T', Delta']
+{Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('horzcat')" style="font-weight:bold">horzcat</a>
+Dimensions of matrices being concatenated are not consistent.
+} 
+format shortg
+[tol', cnt', T', Delta']
+{Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('horzcat')" style="font-weight:bold">horzcat</a>
+Dimensions of matrices being concatenated are not consistent.
+} 
+Error: <a href="matlab: opentoline('/home/phil/Dropbox/Università/AA201718/Fisica computazionale/codice/lezioni/220218/cicloint.m',8,28)">File: cicloint.m Line: 8 Column: 28
+</a>Unexpected MATLAB expression.
+
+[Warning: Minimum step size reached near x = 9.8696. There may be a singularity, or the tolerances may
+be too tight for this problem.] 
+[Warning: Minimum step size reached near x = 9.8696. There may be a singularity, or the tolerances may
+be too tight for this problem.] 
+[Warning: Minimum step size reached near x = 9.8696. There may be a singularity, or the tolerances may
+be too tight for this problem.] 
+[Warning: Minimum step size reached near x = 9.8696. There may be a singularity, or the tolerances may
+be too tight for this problem.] 
+[Warning: Minimum step size reached near x = 9.8696. There may be a singularity, or the tolerances may
+be too tight for this problem.] 
+[Warning: Minimum step size reached near x = 9.8696. There may be a singularity, or the tolerances may
+be too tight for this problem.] 
+[Warning: Minimum step size reached near x = 9.8696. There may be a singularity, or the tolerances may
+be too tight for this problem.] 
+[Warning: Minimum step size reached near x = 9.8696. There may be a singularity, or the tolerances may
+be too tight for this problem.] 
+[Warning: Reached the limit on the maximum number of intervals in use. Approximate bound on error is
+2.3e+01. The integral may not exist, or it may be difficult to approximate numerically to the
+requested accuracy.] 
+[tol', T', Delta']
+{Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('horzcat')" style="font-weight:bold">horzcat</a>
+Dimensions of matrices being concatenated are not consistent.
+} 
+[Warning: Minimum step size reached near x = 9.8696. There may be a singularity, or the tolerances may
+be too tight for this problem.] 
+[Warning: Minimum step size reached near x = 9.8696. There may be a singularity, or the tolerances may
+be too tight for this problem.] 
+[Warning: Minimum step size reached near x = 9.8696. There may be a singularity, or the tolerances may
+be too tight for this problem.] 
+[Warning: Minimum step size reached near x = 9.8696. There may be a singularity, or the tolerances may
+be too tight for this problem.] 
+[Warning: Minimum step size reached near x = 9.8696. There may be a singularity, or the tolerances may
+be too tight for this problem.] 
+[Warning: Minimum step size reached near x = 9.8696. There may be a singularity, or the tolerances may
+be too tight for this problem.] 
+[Warning: Minimum step size reached near x = 9.8696. There may be a singularity, or the tolerances may
+be too tight for this problem.] 
+[Warning: Minimum step size reached near x = 9.8696. There may be a singularity, or the tolerances may
+be too tight for this problem.] 
+[Warning: Reached the limit on the maximum number of intervals in use. Approximate bound on error is
+2.3e+01. The integral may not exist, or it may be difficult to approximate numerically to the
+requested accuracy.] 
+[tol', T', Delta']
+{Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('horzcat')" style="font-weight:bold">horzcat</a>
+Dimensions of matrices being concatenated are not consistent.
+} 
+[Warning: Minimum step size reached near x = 9.8696. There may be a singularity, or the tolerances may
+be too tight for this problem.] 
+[Warning: Minimum step size reached near x = 9.8696. There may be a singularity, or the tolerances may
+be too tight for this problem.] 
+[Warning: Minimum step size reached near x = 9.8696. There may be a singularity, or the tolerances may
+be too tight for this problem.] 
+[Warning: Minimum step size reached near x = 9.8696. There may be a singularity, or the tolerances may
+be too tight for this problem.] 
+[Warning: Minimum step size reached near x = 9.8696. There may be a singularity, or the tolerances may
+be too tight for this problem.] 
+[Warning: Minimum step size reached near x = 9.8696. There may be a singularity, or the tolerances may
+be too tight for this problem.] 
+[Warning: Minimum step size reached near x = 9.8696. There may be a singularity, or the tolerances may
+be too tight for this problem.] 
+[Warning: Minimum step size reached near x = 9.8696. There may be a singularity, or the tolerances may
+be too tight for this problem.] 
+[Warning: Reached the limit on the maximum number of intervals in use. Approximate bound on error is
+2.3e+01. The integral may not exist, or it may be difficult to approximate numerically to the
+requested accuracy.] 
+Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('horzcat')" style="font-weight:bold">horzcat</a>
+Dimensions of matrices being concatenated are not consistent.
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('cicloint', '/home/phil/Dropbox/Università/AA201718/Fisica computazionale/codice/lezioni/220218/cicloint.m', 12)" style="font-weight:bold">cicloint</a> (<a href="matlab: opentoline('/home/phil/Dropbox/Università/AA201718/Fisica computazionale/codice/lezioni/220218/cicloint.m',12,0)">line 12</a>)
+[tol', T', Delta']
+
+[Warning: Minimum step size reached near x = 9.8696. There may be a singularity, or the tolerances may
+be too tight for this problem.] 
+[Warning: Minimum step size reached near x = 9.8696. There may be a singularity, or the tolerances may
+be too tight for this problem.] 
+[Warning: Minimum step size reached near x = 9.8696. There may be a singularity, or the tolerances may
+be too tight for this problem.] 
+[Warning: Minimum step size reached near x = 9.8696. There may be a singularity, or the tolerances may
+be too tight for this problem.] 
+[Warning: Minimum step size reached near x = 9.8696. There may be a singularity, or the tolerances may
+be too tight for this problem.] 
+[Warning: Minimum step size reached near x = 9.8696. There may be a singularity, or the tolerances may
+be too tight for this problem.] 
+[Warning: Minimum step size reached near x = 9.8696. There may be a singularity, or the tolerances may
+be too tight for this problem.] 
+[Warning: Minimum step size reached near x = 9.8696. There may be a singularity, or the tolerances may
+be too tight for this problem.] 
+[Warning: Reached the limit on the maximum number of intervals in use. Approximate bound on error is
+2.3e+01. The integral may not exist, or it may be difficult to approximate numerically to the
+requested accuracy.] 
+[tol', T', Delta']
+{Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('horzcat')" style="font-weight:bold">horzcat</a>
+Dimensions of matrices being concatenated are not consistent.
+} 
+[tol' T' Delta']
+{Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('horzcat')" style="font-weight:bold">horzcat</a>
+Dimensions of matrices being concatenated are not consistent.
+} 
+clear
+[Warning: Minimum step size reached near x = 9.8696. There may be a singularity, or the tolerances may
+be too tight for this problem.] 
+[Warning: Minimum step size reached near x = 9.8696. There may be a singularity, or the tolerances may
+be too tight for this problem.] 
+[Warning: Minimum step size reached near x = 9.8696. There may be a singularity, or the tolerances may
+be too tight for this problem.] 
+[Warning: Minimum step size reached near x = 9.8696. There may be a singularity, or the tolerances may
+be too tight for this problem.] 
+[Warning: Minimum step size reached near x = 9.8696. There may be a singularity, or the tolerances may
+be too tight for this problem.] 
+[Warning: Minimum step size reached near x = 9.8696. There may be a singularity, or the tolerances may
+be too tight for this problem.] 
+[Warning: Minimum step size reached near x = 9.8696. There may be a singularity, or the tolerances may
+be too tight for this problem.] 
+[Warning: Minimum step size reached near x = 9.8696. There may be a singularity, or the tolerances may
+be too tight for this problem.] 
+[Warning: Reached the limit on the maximum number of intervals in use. Approximate bound on error is
+2.3e+01. The integral may not exist, or it may be difficult to approximate numerically to the
+requested accuracy.] 
+[tol' T' Delta']
+
+ans =
+
+        1e-06     0.004684   -0.0097178
+        1e-07     0.002331   -0.0097178
+        1e-08     0.002766   -0.0097178
+        1e-09     0.003332   -0.0097178
+        1e-10     0.005807   -0.0097178
+        1e-11     0.006357   -0.0097178
+        1e-12     0.011007   -0.0097178
+        1e-13     0.022723   -0.0097178
+        1e-14     0.016708    -0.047445
+
+[tol' T' double(Delta',1)]
+{Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('double')" style="font-weight:bold">double</a>
+Too many input arguments.
+} 
+[tol' T' Delta']
+
+ans =
+
+        1e-06     0.004684   -0.0097178
+        1e-07     0.002331   -0.0097178
+        1e-08     0.002766   -0.0097178
+        1e-09     0.003332   -0.0097178
+        1e-10     0.005807   -0.0097178
+        1e-11     0.006357   -0.0097178
+        1e-12     0.011007   -0.0097178
+        1e-13     0.022723   -0.0097178
+        1e-14     0.016708    -0.047445
+
+es_5_11
+{'es_5_11' is not found in the current folder or on the MATLAB path, but exists in:
+    /home/phil/Scrivania
+
+<a href = "matlab:cd '/home/phil/Scrivania'">Change the MATLAB current folder</a> or <a href = "matlab:addpath '/home/phil/Scrivania'">add its folder to the MATLAB path</a>.
+} 
+es_5_11
+
+ Data loaded.
+
+ Added 1-column.
+
+ Matrix of labels generated.
+
+ Estimated LSQ betas: 
+beta =
+
+  -3.4823e+06
+       15.062
+    -0.035819
+      -2.0202
+      -1.0332
+    -0.051104
+       1829.2
+
+
+ The 1-norm difference is: 
+norm1 =
+
+       258.79
+
+
+
+
+highlyCorrelated =
+
+    ' GNP+GNPdefl  Population+GNPdefl  Year+GNPdefl  Population+GNP  Year+GNP  Year+Population '
+
+

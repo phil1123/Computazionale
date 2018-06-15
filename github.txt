@@ -1,0 +1,7 @@
+% Creo .git da https
+
+cd <Cartella>
+git init
+git remote add origin https://github.com/<user>/<directoryname>.git
+git fetch
+git pull origin master

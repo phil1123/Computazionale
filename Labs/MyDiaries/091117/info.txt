@@ -1,0 +1,6 @@
+https://it.wikipedia.org/wiki/IEEE_754
+https://en.wikipedia.org/wiki/Floating-point_arithmetic
+https://it.wikipedia.org/wiki/Numero_in_virgola_mobile
+	
+function handle, puntatori a funzioni (stack, etc.)
+preallocating for speed (line 10 mygoldfract)->vedi differenza tra c matlab python...

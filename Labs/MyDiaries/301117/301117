@@ -1,0 +1,1427 @@
+1/7
+
+ans =
+
+    0.1429
+
+ans*21
+
+ans =
+
+     3
+
+sym(1/7)
+ 
+ans =
+ 
+1/7
+ 
+ans*21
+ 
+ans =
+ 
+3
+ 
+vpa(ans)
+ 
+ans =
+ 
+3.0
+ 
+c=1/7
+
+c =
+
+    0.1429
+
+vpa(c)
+ 
+ans =
+ 
+0.14285714285714285714285714285714
+ 
+ans*21
+ 
+ans =
+ 
+3.0
+ 
+sym(21/7)
+ 
+ans =
+ 
+3
+ 
+clear
+vpa(sym(1/7))
+ 
+ans =
+ 
+0.14285714285714285714285714285714
+ 
+vpa(sym(1/7),6)
+ 
+ans =
+ 
+0.142857
+ 
+ans*21
+ 
+ans =
+ 
+2.9999999999999893418589635984972
+ 
+% ^ sono più cifre di quello che dice Moler
+% sul moler c'è scritto:
+0.142857*21
+
+ans =
+
+    3.0000
+
+format long
+0.142857*21
+
+ans =
+
+   2.999997000000000
+
+% left and right division
+A=[10 -7 0; -3 2 6; 5 -1 5]
+
+A =
+
+    10    -7     0
+    -3     2     6
+     5    -1     5
+
+X = [x y z]
+{Undefined function or variable 'x'.
+} 
+%gauss reduction
+%pivot, multiplier
+B=[0 -1 1]
+
+B =
+
+     0    -1     1
+
+
+A*B
+{Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('mtimes')" style="font-weight:bold"> * </a>
+Inner matrix dimensions must agree.
+} 
+B=[0; -1; 1]
+
+B =
+
+     0
+    -1
+     1
+
+A*B
+
+ans =
+
+     7
+     4
+     6
+
+%--------------
+
+%randn: estrae numeri casuali secondo gaussiana di larghezza 1 (check)
+A=randn(5)
+
+A =
+
+  Columns 1 through 4
+
+   0.537667139546100  -1.307688296305273  -1.349886940156521  -0.204966058299775
+   1.833885014595086  -0.433592022305684   3.034923466331855  -0.124144348216312
+  -2.258846861003648   0.342624466538650   0.725404224946106   1.489697607785465
+   0.862173320368121   3.578396939725760  -0.063054873189656   1.409034489800479
+   0.318765239858981   2.769437029884877   0.714742903826096   1.417192413429614
+
+  Column 5
+
+   0.671497133608080
+  -1.207486922685038
+   0.717238651328838
+   1.630235289164729
+   0.488893770311789
+
+%se gli do un solo argomento è il numero di colonne = righe
+B=randn(10,1)
+
+B =
+
+   1.034693009917860
+   0.726885133383238
+  -0.303440924786016
+   0.293871467096658
+  -0.787282803758638
+   0.888395631757642
+  -1.147070106969150
+  -1.068870458168032
+  -0.809498694424876
+  -2.944284161994896
+
+A\B
+{Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('mldivide')" style="font-weight:bold"> \ </a>
+Matrix dimensions must agree.
+} 
+B=randn(5,1)
+
+B =
+
+   1.438380292815098
+   0.325190539456198
+  -0.754928319169703
+   1.370298540095228
+  -1.711516418853698
+
+A\B
+
+ans =
+
+   0.048690793388564
+  -0.173097101700165
+   1.427233973163789
+  -2.894385713524889
+   3.751613138955593
+
+lugui
+{'lugui' is not found in the current folder or on the MATLAB path, but exists in:
+    /home/filippo/Dropbox/Università/AA201718/Fisica computazionale/ncm
+
+<a href = "matlab:cd '/home/filippo/Dropbox/Università/AA201718/Fisica computazionale/ncm'">Change the MATLAB current folder</a> or <a href = "matlab:addpath '/home/filippo/Dropbox/Università/AA201718/Fisica computazionale/ncm'">add its folder to the MATLAB path</a>.
+} 
+lugui
+[Warning: MATLAB has disabled some advanced graphics rendering features by switching to
+software OpenGL. For more information, click <a href="matlab:opengl('problems')">here</a>.] 
+lugui
+{Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('matlab.ui.control.UIControl/get')" style="font-weight:bold">matlab.ui.control.UIControl/get</a>
+Invalid or deleted object.
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('lugui', '/home/filippo/Dropbox/Università/AA201718/Fisica computazionale/ncm/lugui.m', 152)" style="font-weight:bold">lugui</a> (<a href="matlab: opentoline('/home/filippo/Dropbox/Università/AA201718/Fisica computazionale/ncm/lugui.m',152,0)">line 152</a>)
+         if get(quit,'value') == 1, break, end
+} 
+lugui
+{Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('matlab.ui.control.UIControl/get')" style="font-weight:bold">matlab.ui.control.UIControl/get</a>
+Invalid or deleted object.
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('lugui', '/home/filippo/Dropbox/Università/AA201718/Fisica computazionale/ncm/lugui.m', 152)" style="font-weight:bold">lugui</a> (<a href="matlab: opentoline('/home/filippo/Dropbox/Università/AA201718/Fisica computazionale/ncm/lugui.m',152,0)">line 152</a>)
+         if get(quit,'value') == 1, break, end
+} 
+m = magic(5)
+
+m =
+
+    17    24     1     8    15
+    23     5     7    14    16
+     4     6    13    20    22
+    10    12    19    21     3
+    11    18    25     2     9
+
+p = randperm(5)
+
+p =
+
+     4     3     2     5     1
+
+m(p,:)
+
+ans =
+
+    10    12    19    21     3
+     4     6    13    20    22
+    23     5     7    14    16
+    11    18    25     2     9
+    17    24     1     8    15
+
+id=eye(5)
+
+id =
+
+     1     0     0     0     0
+     0     1     0     0     0
+     0     0     1     0     0
+     0     0     0     1     0
+     0     0     0     0     1
+
+id(p,:)
+
+ans =
+
+     0     0     0     1     0
+     0     0     1     0     0
+     0     1     0     0     0
+     0     0     0     0     1
+     1     0     0     0     0
+
+id(p,:)*m-m(p,:)
+
+ans =
+
+     0     0     0     0     0
+     0     0     0     0     0
+     0     0     0     0     0
+     0     0     0     0     0
+     0     0     0     0     0
+
+U=magic(7);
+b=(1:7)
+
+b =
+
+     1     2     3     4     5     6     7
+
+Undefined function or variable 'n'.
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('untitled', 'untitled', 1)" style="font-weight:bold">untitled</a> (<a href="matlab: opentoline('untitled',1,0)">line 1</a>)
+x = zeros(n,1);
+
+n=7
+
+n =
+
+     7
+
+In an assignment  A(:) = B, the number of elements in A and B must be the same.
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('untitled', 'untitled', 5)" style="font-weight:bold">untitled</a> (<a href="matlab: opentoline('untitled',5,0)">line 5</a>)
+    b(i) = b(i) - x(k)*U(i,k);
+
+b=[1:7]
+
+b =
+
+     1     2     3     4     5     6     7
+
+b[1;2;3;4;5;6;7]
+ b[1;2;3;4;5;6;7]
+  ↑
+{Error: Unbalanced or unexpected parenthesis or bracket.
+} 
+b=[1;2;3;4;5;6;7]
+
+b =
+
+     1
+     2
+     3
+     4
+     5
+     6
+     7
+
+open lu
+help lu
+ <strong>lu</strong>     <strong>lu</strong> factorization.
+    [L,U] = <strong>lu</strong>(A) stores an upper triangular matrix in U and a
+    "psychologically lower triangular matrix" (i.e. a product of lower
+    triangular and permutation matrices) in L, so that A = L*U. A can be
+    rectangular.
+ 
+    [L,U,P] = <strong>lu</strong>(A) returns unit lower triangular matrix L, upper
+    triangular matrix U, and permutation matrix P so that P*A = L*U.
+ 
+    [L,U,p] = <strong>lu</strong>(A,'vector') returns the permutation information as a
+    vector instead of a matrix.  That is, p is a row vector such that
+    A(p,:) = L*U.  Similarly, [L,U,P] = <strong>lu</strong>(A,'matrix') returns a
+    permutation matrix P.  This is the default behavior.
+ 
+    Y = <strong>lu</strong>(A) returns the output from LAPACK'S DGETRF or ZGETRF routine if
+    A is full. If A is sparse, Y contains the strict lower triangle of L
+    embedded in the same matrix as the upper triangle of U. In both full
+    and sparse cases, the permutation information is lost.
+ 
+    [L,U,P,Q] = <strong>lu</strong>(A) returns unit lower triangular matrix L, upper
+    triangular matrix U, a permutation matrix P and a column reordering
+    matrix Q so that P*A*Q = L*U for sparse non-empty A. This uses UMFPACK
+    and is significantly more time and memory efficient than the other
+    syntaxes, even when used with COLAMD.
+ 
+    [L,U,p,q] = <strong>lu</strong>(A,'vector') returns two row vectors p and q so that
+    A(p,q) = L*U.  Using 'matrix' in place of 'vector' returns permutation
+    matrices.
+ 
+    [L,U,P,Q,R] = <strong>lu</strong>(A) returns unit lower triangular matrix L, upper
+    triangular matrix U, permutation matrices P and Q, and a diagonal
+    scaling matrix R so that P*(R\A)*Q = L*U for sparse non-empty A.
+    This uses UMFPACK as well.  Typically, but not always, the row-scaling
+    leads to a sparser and more stable factorization.  Note that this
+    factorization is the same as that used by sparse MLDIVIDE when
+    UMFPACK is used.
+ 
+    [L,U,p,q,R] = <strong>lu</strong>(A,'vector') returns the permutation information in two
+    row vectors p and q such that R(:,p)\A(:,q) = L*U.  Using 'matrix'
+    in place of 'vector' returns permutation matrices.
+ 
+    [L,U,P] = <strong>lu</strong>(A,THRESH) controls pivoting in sparse matrices, where
+    THRESH is a pivot threshold in [0,1].  Pivoting occurs when the
+    diagonal entry in a column has magnitude less than THRESH times the
+    magnitude of any sub-diagonal entry in that column.  THRESH = 0 forces
+    diagonal pivoting.  THRESH = 1 is the default.
+ 
+    [L,U,P,Q,R] = <strong>lu</strong>(A,THRESH) controls pivoting in UMFPACK.  THRESH is a
+    one or two element vector which defaults to [0.1 0.001].  If UMFPACK
+    selects its unsymmetric pivoting strategy, THRESH(2) is not used. It
+    uses its symmetric pivoting strategy if A is square with a mostly
+    symmetric nonzero structure and a mostly nonzero diagonal.  For its
+    unsymmetric strategy, the sparsest row i which satisfies the criterion
+    A(i,j) >= THRESH(1) * max(abs(A(j:m,j))) is selected.  A value of 1.0
+    results in conventional partial pivoting. Entries in L have absolute
+    value of 1/THRESH(1) or less.  For its symmetric strategy, the diagonal
+    is selected using the same test but with THRESH(2) instead.  If the
+    diagonal entry fails this test, a pivot entry below the diagonal is
+    selected, using THRESH(1). In this case, L has entries with absolute
+    value 1/min(THRESH) or less. Smaller values of THRESH(1) and THRESH(2)
+    tend to lead to sparser <strong>lu</strong> factors, but the solution can become
+    inaccurate.  Larger values can lead to a more accurate solution (but
+    not always), and usually an increase in the total work and memory
+    usage.
+ 
+    [L,U,p] = <strong>lu</strong>(A,THRESH,'vector') and [L,U,p,q,R] = <strong>lu</strong>(A,THRESH,'vector')
+    are also valid for sparse matrices and return permutation vectors.
+    Using 'matrix' in place of 'vector' returns permutation matrices.
+ 
+    See also <a href="matlab:help chol">chol</a>, <a href="matlab:help ilu">ilu</a>, <a href="matlab:help qr">qr</a>.
+
+    <a href="matlab:doc lu">Reference page for lu</a>
+    <a href="matlab:matlab.internal.language.introspective.overloads.displayOverloads('lu')">Other functions named lu</a>
+
+u=lu(m)
+
+u =
+
+  Columns 1 through 4
+
+  23.000000000000000   5.000000000000000   7.000000000000000  14.000000000000000
+   0.739130434782609  20.304347826086957  -4.173913043478261  -2.347826086956522
+   0.478260869565217   0.768736616702355  24.860813704496785  -2.890792291220557
+   0.173913043478261   0.252676659528908   0.516365202411714  19.651162790697672
+   0.434782608695652   0.483940042826552   0.723083548664944   0.923076923076923
+
+  Column 5
+
+  16.000000000000000
+   3.173913043478262
+  -1.092077087794433
+  18.979328165374678
+ -22.222222222222225
+
+format short
+[L,U]=lu(m)
+
+L =
+
+    0.7391    1.0000         0         0         0
+    1.0000         0         0         0         0
+    0.1739    0.2527    0.5164    1.0000         0
+    0.4348    0.4839    0.7231    0.9231    1.0000
+    0.4783    0.7687    1.0000         0         0
+
+
+U =
+
+   23.0000    5.0000    7.0000   14.0000   16.0000
+         0   20.3043   -4.1739   -2.3478    3.1739
+         0         0   24.8608   -2.8908   -1.0921
+         0         0         0   19.6512   18.9793
+         0         0         0         0  -22.2222
+
+[L,u]=lu(m)
+
+L =
+
+    0.7391    1.0000         0         0         0
+    1.0000         0         0         0         0
+    0.1739    0.2527    0.5164    1.0000         0
+    0.4348    0.4839    0.7231    0.9231    1.0000
+    0.4783    0.7687    1.0000         0         0
+
+
+u =
+
+   23.0000    5.0000    7.0000   14.0000   16.0000
+         0   20.3043   -4.1739   -2.3478    3.1739
+         0         0   24.8608   -2.8908   -1.0921
+         0         0         0   19.6512   18.9793
+         0         0         0         0  -22.2222
+
+%L non è proprio quella che ci aspettavamo ma c'è di mezzo una permutazione
+%[L,U,P] = LU(A)
+[L,U,P] = lu(m)
+
+L =
+
+    1.0000         0         0         0         0
+    0.7391    1.0000         0         0         0
+    0.4783    0.7687    1.0000         0         0
+    0.1739    0.2527    0.5164    1.0000         0
+    0.4348    0.4839    0.7231    0.9231    1.0000
+
+
+U =
+
+   23.0000    5.0000    7.0000   14.0000   16.0000
+         0   20.3043   -4.1739   -2.3478    3.1739
+         0         0   24.8608   -2.8908   -1.0921
+         0         0         0   19.6512   18.9793
+         0         0         0         0  -22.2222
+
+
+P =
+
+     0     1     0     0     0
+     1     0     0     0     0
+     0     0     0     0     1
+     0     0     1     0     0
+     0     0     0     1     0
+
+[L,U,P] = lu(m, 'vector')
+
+L =
+
+    1.0000         0         0         0         0
+    0.7391    1.0000         0         0         0
+    0.4783    0.7687    1.0000         0         0
+    0.1739    0.2527    0.5164    1.0000         0
+    0.4348    0.4839    0.7231    0.9231    1.0000
+
+
+U =
+
+   23.0000    5.0000    7.0000   14.0000   16.0000
+         0   20.3043   -4.1739   -2.3478    3.1739
+         0         0   24.8608   -2.8908   -1.0921
+         0         0         0   19.6512   18.9793
+         0         0         0         0  -22.2222
+
+
+P =
+
+     2     1     5     3     4
+
+%se scrivo 'vector' mi dà il vettore di permutazione delle righe
+%ora ci dà L triangolare (applicando la permutazione)
+l*U-m*P
+{Undefined function or variable 'l'.
+} 
+L*U-m*P
+{Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('mtimes')" style="font-weight:bold"> * </a>
+Inner matrix dimensions must agree.
+} 
+L*U-P*m
+
+ans =
+
+  -128  -186  -224  -187  -185
+  -134  -167  -230  -193  -186
+  -140  -173  -206  -199  -192
+  -147  -185  -218  -181  -179
+  -141  -179  -212  -180  -198
+
+%Errore (verifica tu che la differenza deve essere matrice di numeri molto piccoli)
+x
+
+x =
+
+         0
+         0
+         0
+         0
+         0
+         0
+    0.3500
+
+n=5
+
+n =
+
+     5
+
+%sbagliato x, riprova a casa
+4:1
+
+ans =
+
+  1×0 empty <a href="matlab:helpPopup double" style="font-weight:bold">double</a> row vector
+
+1:3:22
+
+ans =
+
+     1     4     7    10    13    16    19    22
+
+%parto da 1, l'incremento è 3 fino a 22
+%possa fare anche il decremento
+7:-1:1
+
+ans =
+
+     7     6     5     4     3     2     1
+
+%é utile che il vettore del loop (magari creato dinamicamente) sia nullo 
+
+%scriptlu_2 (moler)
+m=randi(3,3)
+
+m =
+
+     1     1     3
+     1     3     1
+     2     3     2
+
+%primo argomento l'int più grande, secondo la dimensione della matrice (se metto il terzo: secondo colonne, terzo righe)
+m=randi(3,3,1)
+
+m =
+
+     2
+     3
+     2
+
+m=randi(3,3)
+
+m =
+
+     3     3     1
+     2     1     2
+     2     1     3
+
+m=randi(7,3)
+
+m =
+
+     6     4     5
+     1     3     3
+     3     5     4
+
+m=m-tril(m)
+
+m =
+
+     0     4     5
+     0     0     3
+     0     0     0
+
+m=randi(7,3)
+
+m =
+
+     1     1     4
+     7     3     3
+     2     2     7
+
+m=m-tril(m,-1)
+
+m =
+
+     1     1     4
+     0     3     3
+     0     0     7
+
+%tril: lower triangular matrix. Senza argomento taglia anche la diagonale principale, -1 taglia tutto sotto di 1 alla diagonale principale
+b=sym('b',[3,1])
+ 
+b =
+ 
+ b1
+ b2
+ b3
+ 
+b=sym('ciao',[3,1])
+ 
+b =
+ 
+ ciao1
+ ciao2
+ ciao3
+ 
+b=sym('b',[3,1])
+ 
+b =
+ 
+ b1
+ b2
+ b3
+ 
+b1
+{Undefined function or variable 'b1'.
+} 
+b(1)
+ 
+ans =
+ 
+b1
+ 
+%b1 è una variabile simbolica non nota, b è un array di variabili simboliche.
+x=sym('x',[3,1])
+ 
+x =
+ 
+ x1
+ x2
+ x3
+ 
+x=m\b
+ 
+x =
+ 
+ b1 - b2/3 - (3*b3)/7
+          b2/3 - b3/7
+                 b3/7
+ 
+%bksub = scriptlu_1
+bksub(m,b)
+{Undefined function or variable 'n'.
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('bksub', '/home/filippo/Dropbox/Università/AA201718/Fisica computazionale/diaries/301117/bksub.m', 3)" style="font-weight:bold">bksub</a> (<a href="matlab: opentoline('/home/filippo/Dropbox/Università/AA201718/Fisica computazionale/diaries/301117/bksub.m',3,0)">line 3</a>)
+for k = n:-1:1
+} 
+bksub(m,b)
+ 
+ans =
+ 
+[ b1 - b2/3 - (3*b3)/7, b2/3 - b3/7, b3/7]
+ 
+bksub(m,b)
+{The following error occurred converting from sym to double:
+Unable to convert expression into double array.
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('bksub', '/home/filippo/Dropbox/Università/AA201718/Fisica computazionale/diaries/301117/bksub.m', 5)" style="font-weight:bold">bksub</a> (<a href="matlab: opentoline('/home/filippo/Dropbox/Università/AA201718/Fisica computazionale/diaries/301117/bksub.m',5,0)">line 5</a>)
+    x(k) = b(k)/U(k,k);
+} 
+bksub(m,b)
+{Error: <a href="matlab: opentoline('/home/filippo/Dropbox/Università/AA201718/Fisica computazionale/diaries/301117/bksub.m',4,1)">File: bksub.m Line: 4 Column: 1
+</a>At least one END is missing: the statement may begin here.
+} 
+bksub(m,b)
+ 
+ans =
+ 
+ b1 - b2/3 - (3*b3)/7
+          b2/3 - b3/7
+                 b3/7
+ 
+%prova secondo script moler da solo
+
+com.mathworks.mde.desk.MLMainFrame[MainDesktopFrame,-1,31,1368x741,invalid,layout=java.awt.BorderLayout,title=MATLAB R2017b - academic use,resizable,maximized,defaultCloseOperation=DO_NOTHING_ON_CLOSE,rootPane=com.mathworks.widgets.desk.DTRootPane[,1,22,1366x715,layout=com.mathworks.widgets.desk.DTRootPane$DTRootLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=449,maximumSize=,minimumSize=,preferredSize=],rootPaneCheckingEnabled=true]
+ com.mathworks.widgets.desk.DTRootPane[,1,22,1366x715,layout=com.mathworks.widgets.desk.DTRootPane$DTRootLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=449,maximumSize=,minimumSize=,preferredSize=]
+  javax.swing.JPanel[null.glassPane,0,0,1366x715,hidden,layout=java.awt.FlowLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777217,maximumSize=,minimumSize=,preferredSize=]
+  javax.swing.JLayeredPane[null.layeredPane,0,0,1366x715,alignmentX=0.0,alignmentY=0.0,border=,flags=64,maximumSize=,minimumSize=,preferredSize=,optimizedDrawingPossible=true]
+   javax.swing.JPanel[null.contentPane,0,0,1366x715,layout=java.awt.BorderLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=73,maximumSize=,minimumSize=,preferredSize=]
+    javax.swing.Box[,0,0,1366x56,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=0,maximumSize=,minimumSize=,preferredSize=]
+     com.mathworks.toolstrip.DefaultToolstrip$TopLevelPanel[toolstrip,0,0,1366x30,layout=java.awt.BorderLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+      com.mathworks.toolstrip.impl.ToolstripHeaderPanel[toolstrip.header,0,0,1366x30,layout=com.mathworks.toolstrip.plaf.ToolstripHeaderUI$HeaderLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=329,maximumSize=,minimumSize=,preferredSize=]
+       com.mathworks.toolstrip.plaf.ToolstripHeaderUI$HeaderTab[homeTab,0,0,97x30,layout=java.awt.FlowLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777217,maximumSize=,minimumSize=,preferredSize=]
+       com.mathworks.toolstrip.plaf.ToolstripHeaderUI$HeaderTab[plotTab,97,0,101x30,layout=java.awt.FlowLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777217,maximumSize=,minimumSize=,preferredSize=]
+       com.mathworks.toolstrip.plaf.ToolstripHeaderUI$HeaderTab[appsTab,198,0,93x30,layout=java.awt.FlowLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777217,maximumSize=,minimumSize=,preferredSize=]
+       com.mathworks.toolstrip.plaf.ToolstripHeaderUI$HeaderTab[shortcutsTab,291,0,134x30,layout=java.awt.FlowLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777217,maximumSize=,minimumSize=,preferredSize=]
+       com.mathworks.toolstrip.plaf.ToolstripHeaderUI$HeaderTab[editorTab,425,0,105x30,layout=java.awt.FlowLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777217,maximumSize=,minimumSize=,preferredSize=]
+       com.mathworks.toolstrip.plaf.ToolstripHeaderUI$HeaderTab[codepadTab,530,0,112x30,layout=java.awt.FlowLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777217,maximumSize=,minimumSize=,preferredSize=]
+       com.mathworks.toolstrip.plaf.ToolstripHeaderUI$HeaderTab[viewTab,642,0,90x30,layout=java.awt.FlowLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777217,maximumSize=,minimumSize=,preferredSize=]
+       com.mathworks.toolstrip.accessories.QuickAccessWrapper[,889,4,224x22,layout=java.awt.BorderLayout,alignmentX=0.0,alignmentY=0.0,border=javax.swing.border.EmptyBorder@4440aaff,flags=16777217,maximumSize=,minimumSize=,preferredSize=]
+        com.mathworks.toolstrip.accessories.QuickAccessToolBar$5[QuickAccessToolBar,8,0,216x22,layout=javax.swing.JToolBar$DefaultToolBarLayout,alignmentX=0.0,alignmentY=0.0,border=javax.swing.border.EmptyBorder@5385786f,flags=16777536,maximumSize=,minimumSize=,preferredSize=,floatable=false,margin=,orientation=HORIZONTAL,paintBorder=true]
+         com.mathworks.toolstrip.factory.TSFactory$3[QuickAccess:matlab_shortcut_toolset:new_shortcut,,layout<HORIZONTAL>,NORMAL]
+         com.mathworks.toolstrip.factory.TSFactory$3[QuickAccess:common_tools:save,,layout<HORIZONTAL>,NORMAL]
+         com.mathworks.toolstrip.factory.TSFactory$3[QuickAccess:common_tools:cut,,layout<HORIZONTAL>,NORMAL]
+         com.mathworks.toolstrip.factory.TSFactory$3[QuickAccess:common_tools:copy,,layout<HORIZONTAL>,NORMAL]
+         com.mathworks.toolstrip.factory.TSFactory$3[QuickAccess:common_tools:paste,,layout<HORIZONTAL>,NORMAL]
+         com.mathworks.toolstrip.factory.TSFactory$3[QuickAccess:common_tools:undo,,layout<HORIZONTAL>,NORMAL]
+         com.mathworks.toolstrip.factory.TSFactory$3[QuickAccess:common_tools:redo,,layout<HORIZONTAL>,NORMAL]
+         com.mathworks.toolstrip.components.TSDropDownButton[QuickAccess:common_tools:switch_windows,,layout<HORIZONTAL>,NORMAL]
+         com.mathworks.toolstrip.factory.TSFactory$3[QuickAccess:common_tools:help,,layout<HORIZONTAL>,NORMAL]
+         com.mathworks.mwswing.MJButton[MoreButton,216,11,0x0,hidden,alignmentX=0.0,alignmentY=0.5,border=javax.swing.border.CompoundBorder@6068438e,flags=20971808,maximumSize=,minimumSize=,preferredSize=,defaultIcon=jar:file:/usr/local/MATLAB/R2017b/java/jar/mwswing.jar!/com/mathworks/mwswing/resources/more.gif,disabledIcon=,disabledSelectedIcon=,margin=java.awt.Insets[top=3,left=0,bottom=3,right=0],paintBorder=false,paintFocus=true,pressedIcon=,rolloverEnabled=false,rolloverIcon=,rolloverSelectedIcon=,selectedIcon=,text=null,defaultCapable=false]
+       com.mathworks.mde.help.DocCenterBrowserSearchBox$SearchPanel[SearchComponent,1113,2,198x26,layout=java.awt.BorderLayout,alignmentX=0.0,alignmentY=0.0,border=javax.swing.border.EmptyBorder@11b239cf,flags=16777537,maximumSize=,minimumSize=,preferredSize=]
+        com.mathworks.mwswing.MJPanel[SearchField,3,0,192x26,layout=com.jgoodies.forms.layout.FormLayout,alignmentX=0.0,alignmentY=0.0,border=javax.swing.border.CompoundBorder@50646e54,flags=41,maximumSize=,minimumSize=,preferredSize=]
+         com.mathworks.widgets.PromptingTextField[PromptingTextField,2,2,172x22,layout=javax.swing.plaf.basic.BasicTextUI$UpdateHandler,alignmentX=0.0,alignmentY=0.0,border=javax.swing.border.EmptyBorder@285a2237,flags=296,maximumSize=,minimumSize=,preferredSize=,caretColor=javax.swing.plaf.ColorUIResource[r=0,g=0,b=0],disabledTextColor=javax.swing.plaf.ColorUIResource[r=167,g=166,b=170],editable=true,margin=javax.swing.plaf.InsetsUIResource[top=1,left=1,bottom=2,right=1],selectedTextColor=javax.swing.plaf.ColorUIResource[r=255,g=255,b=255],selectionColor=javax.swing.plaf.ColorUIResource[r=51,g=94,b=168],columns=0,columnWidth=0,command=,horizontalAlignment=LEADING]
+         com.mathworks.widgets.WindowsWidgetFactory$SearchAndClearButton[WindowsWidget.SearchAndClearButton,174,2,16x22,disabled,alignmentX=0.0,alignmentY=0.5,border=javax.swing.border.MatteBorder@a0c6081,flags=16777504,maximumSize=,minimumSize=,preferredSize=,defaultIcon=,disabledIcon=,disabledSelectedIcon=,margin=javax.swing.plaf.InsetsUIResource[top=1,left=14,bottom=1,right=14],paintBorder=true,paintFocus=false,pressedIcon=jar:file:/usr/local/MATLAB/R2017b/java/jar/common.jar!/com/mathworks/common/icons/resources/cancel_hover_15.png,rolloverEnabled=true,rolloverIcon=jar:file:/usr/local/MATLAB/R2017b/java/jar/common.jar!/com/mathworks/common/icons/resources/cancel_hover_15.png,rolloverSelectedIcon=,selectedIcon=,text=,defaultCapable=true]
+       com.mathworks.mwswing.MJPanel[,1311,4,55x22,layout=java.awt.FlowLayout,alignmentX=0.0,alignmentY=0.0,border=javax.swing.border.EmptyBorder@a705c4e,flags=16777217,maximumSize=,minimumSize=,preferredSize=]
+        com.mathworks.toolstrip.components.TSButton[LoginStatusIndicator:LoginButton,"Log In",layout<HORIZONTAL>,NORMAL]
+     com.mathworks.widgets.desk.DTToolBarContainer[ToolBarContainer,0,30,1366x26,alignmentX=0.0,alignmentY=0.0,border=com.mathworks.widgets.desk.DTBorderFactory$ToolBarContainerBorder@7915859a,flags=0,maximumSize=,minimumSize=,preferredSize=,optimizedDrawingPossible=true]
+      com.mathworks.mwswing.MJToolBar[documents.cwd,0,1,1366x25,layout=javax.swing.JToolBar$DefaultToolBarLayout,alignmentX=0.0,alignmentY=0.0,border=com.mathworks.widgets.desk.DTBorderFactory$BasicToolBarBorder@a75b15,flags=328,maximumSize=,minimumSize=,preferredSize=,floatable=false,margin=,orientation=HORIZONTAL,paintBorder=true]
+       com.mathworks.mwswing.MJButton[context.back,0,0,24x25,alignmentX=0.0,alignmentY=0.5,border=javax.swing.border.CompoundBorder@6068438e,flags=20971808,maximumSize=,minimumSize=,preferredSize=,defaultIcon=jar:file:/usr/local/MATLAB/R2017b/java/jar/common.jar!/com/mathworks/common/icons/resources/documents_back.png,disabledIcon=sun.swing.ImageIconUIResource@69c62be8,disabledSelectedIcon=,margin=java.awt.Insets[top=1,left=1,bottom=2,right=1],paintBorder=false,paintFocus=true,pressedIcon=,rolloverEnabled=false,rolloverIcon=,rolloverSelectedIcon=,selectedIcon=,text=null,defaultCapable=false]
+       com.mathworks.mwswing.MJButton[context.forward,24,0,24x25,disabled,alignmentX=0.0,alignmentY=0.5,border=javax.swing.border.CompoundBorder@6068438e,flags=20971808,maximumSize=,minimumSize=,preferredSize=,defaultIcon=jar:file:/usr/local/MATLAB/R2017b/java/jar/common.jar!/com/mathworks/common/icons/resources/documents_forward.png,disabledIcon=sun.swing.ImageIconUIResource@61dc88b2,disabledSelectedIcon=,margin=java.awt.Insets[top=1,left=1,bottom=2,right=1],paintBorder=false,paintFocus=true,pressedIcon=,rolloverEnabled=false,rolloverIcon=,rolloverSelectedIcon=,selectedIcon=,text=null,defaultCapable=false]
+       com.mathworks.mwswing.MJButton[context.up,48,0,24x25,alignmentX=0.0,alignmentY=0.5,border=javax.swing.border.CompoundBorder@6068438e,flags=20971808,maximumSize=,minimumSize=,preferredSize=,defaultIcon=jar:file:/usr/local/MATLAB/R2017b/java/jar/common.jar!/com/mathworks/common/icons/resources/folder_dir_up.png,disabledIcon=,disabledSelectedIcon=,margin=java.awt.Insets[top=1,left=1,bottom=2,right=1],paintBorder=false,paintFocus=true,pressedIcon=,rolloverEnabled=false,rolloverIcon=,rolloverSelectedIcon=,selectedIcon=,text=null,defaultCapable=false]
+       com.mathworks.mwswing.MJButton[cwd.browse,72,0,24x25,alignmentX=0.0,alignmentY=0.5,border=javax.swing.border.CompoundBorder@6068438e,flags=20971808,maximumSize=,minimumSize=,preferredSize=,defaultIcon=jar:file:/usr/local/MATLAB/R2017b/java/jar/common.jar!/com/mathworks/common/icons/resources/browse.png,disabledIcon=,disabledSelectedIcon=,margin=java.awt.Insets[top=1,left=1,bottom=2,right=1],paintBorder=false,paintFocus=true,pressedIcon=,rolloverEnabled=false,rolloverIcon=,rolloverSelectedIcon=,selectedIcon=,text=null,defaultCapable=false]
+       com.mathworks.mlwidgets.explorer.widgets.address.AddressBar$1[AddressBar,96,1,1270x23,layout=com.jgoodies.forms.layout.FormLayout,alignmentX=0.0,alignmentY=0.0,border=com.mathworks.mlwidgets.explorer.widgets.address.AddressBar$4@3430e846,flags=9,maximumSize=,minimumSize=,preferredSize=]
+        com.mathworks.mwswing.MJPanel[,3,0,1243x23,layout=java.awt.BorderLayout,alignmentX=0.0,alignmentY=0.0,border=javax.swing.border.LineBorder@ef57226,flags=9,maximumSize=,minimumSize=,preferredSize=]
+         com.mathworks.mwswing.MJPanel[,1,1,1241x21,layout=com.jgoodies.forms.layout.FormLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+          com.mathworks.mlwidgets.explorer.widgets.address.IconLabel$1[CurrentLocationIcon,0,2,20x16,alignmentX=0.0,alignmentY=0.0,border=,flags=8388608,maximumSize=,minimumSize=,preferredSize=,defaultIcon=jar:file:/usr/local/MATLAB/R2017b/java/jar/common.jar!/com/mathworks/common/icons/resources/folder_closed.png,disabledIcon=,horizontalAlignment=CENTER,horizontalTextPosition=TRAILING,iconTextGap=4,labelFor=,text=,verticalAlignment=CENTER,verticalTextPosition=CENTER]
+          com.mathworks.mwswing.MJPanel[,20,0,1221x21,layout=com.jgoodies.forms.layout.FormLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+           com.mathworks.mlwidgets.explorer.widgets.address.AddressBarButton$1[PathComponentButton_/,0,0,26x21,layout=java.awt.BorderLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+            com.mathworks.mlwidgets.explorer.widgets.address.AddressBarButton$StateComponent[,0,0,26x21,layout=java.awt.BorderLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+             com.mathworks.mlwidgets.explorer.widgets.address.AddressBarButton$2[addressBarBreadCrumbText,0,0,10x21,alignmentX=0.0,alignmentY=0.0,border=,flags=8388608,maximumSize=,minimumSize=,preferredSize=,defaultIcon=,disabledIcon=,horizontalAlignment=CENTER,horizontalTextPosition=TRAILING,iconTextGap=4,labelFor=,text=/,verticalAlignment=CENTER,verticalTextPosition=CENTER]
+             com.mathworks.mwswing.MJLabel[addressBarBreadCrumbArrow,10,0,16x21,alignmentX=0.0,alignmentY=0.0,border=,flags=8388608,maximumSize=,minimumSize=,preferredSize=,defaultIcon=jar:file:/usr/local/MATLAB/R2017b/java/jar/common.jar!/com/mathworks/common/icons/resources/documents_black_right_arrow.png,disabledIcon=,horizontalAlignment=CENTER,horizontalTextPosition=TRAILING,iconTextGap=4,labelFor=,text=,verticalAlignment=CENTER,verticalTextPosition=CENTER]
+           com.mathworks.mlwidgets.explorer.widgets.address.AddressBarButton$1[PathComponentButton_home,26,0,57x21,layout=java.awt.BorderLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+            com.mathworks.mlwidgets.explorer.widgets.address.AddressBarButton$StateComponent[,0,0,57x21,layout=java.awt.BorderLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+             com.mathworks.mlwidgets.explorer.widgets.address.AddressBarButton$2[addressBarBreadCrumbText,0,0,41x21,alignmentX=0.0,alignmentY=0.0,border=,flags=8388608,maximumSize=,minimumSize=,preferredSize=,defaultIcon=,disabledIcon=,horizontalAlignment=CENTER,horizontalTextPosition=TRAILING,iconTextGap=4,labelFor=,text=home,verticalAlignment=CENTER,verticalTextPosition=CENTER]
+             com.mathworks.mwswing.MJLabel[addressBarBreadCrumbArrow,41,0,16x21,alignmentX=0.0,alignmentY=0.0,border=,flags=8388608,maximumSize=,minimumSize=,preferredSize=,defaultIcon=jar:file:/usr/local/MATLAB/R2017b/java/jar/common.jar!/com/mathworks/common/icons/resources/documents_black_right_arrow.png,disabledIcon=,horizontalAlignment=CENTER,horizontalTextPosition=TRAILING,iconTextGap=4,labelFor=,text=,verticalAlignment=CENTER,verticalTextPosition=CENTER]
+           com.mathworks.mlwidgets.explorer.widgets.address.AddressBarButton$1[PathComponentButton_filippo,83,0,59x21,layout=java.awt.BorderLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+            com.mathworks.mlwidgets.explorer.widgets.address.AddressBarButton$StateComponent[,0,0,59x21,layout=java.awt.BorderLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+             com.mathworks.mlwidgets.explorer.widgets.address.AddressBarButton$2[addressBarBreadCrumbText,0,0,43x21,alignmentX=0.0,alignmentY=0.0,border=,flags=8388608,maximumSize=,minimumSize=,preferredSize=,defaultIcon=,disabledIcon=,horizontalAlignment=CENTER,horizontalTextPosition=TRAILING,iconTextGap=4,labelFor=,text=filippo,verticalAlignment=CENTER,verticalTextPosition=CENTER]
+             com.mathworks.mwswing.MJLabel[addressBarBreadCrumbArrow,43,0,16x21,alignmentX=0.0,alignmentY=0.0,border=,flags=8388608,maximumSize=,minimumSize=,preferredSize=,defaultIcon=jar:file:/usr/local/MATLAB/R2017b/java/jar/common.jar!/com/mathworks/common/icons/resources/documents_black_right_arrow.png,disabledIcon=,horizontalAlignment=CENTER,horizontalTextPosition=TRAILING,iconTextGap=4,labelFor=,text=,verticalAlignment=CENTER,verticalTextPosition=CENTER]
+           com.mathworks.mlwidgets.explorer.widgets.address.AddressBarButton$1[PathComponentButton_Dropbox,142,0,74x21,layout=java.awt.BorderLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+            com.mathworks.mlwidgets.explorer.widgets.address.AddressBarButton$StateComponent[,0,0,74x21,layout=java.awt.BorderLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+             com.mathworks.mlwidgets.explorer.widgets.address.AddressBarButton$2[addressBarBreadCrumbText,0,0,58x21,alignmentX=0.0,alignmentY=0.0,border=,flags=8388608,maximumSize=,minimumSize=,preferredSize=,defaultIcon=,disabledIcon=,horizontalAlignment=CENTER,horizontalTextPosition=TRAILING,iconTextGap=4,labelFor=,text=Dropbox,verticalAlignment=CENTER,verticalTextPosition=CENTER]
+             com.mathworks.mwswing.MJLabel[addressBarBreadCrumbArrow,58,0,16x21,alignmentX=0.0,alignmentY=0.0,border=,flags=8388608,maximumSize=,minimumSize=,preferredSize=,defaultIcon=jar:file:/usr/local/MATLAB/R2017b/java/jar/common.jar!/com/mathworks/common/icons/resources/documents_black_right_arrow.png,disabledIcon=,horizontalAlignment=CENTER,horizontalTextPosition=TRAILING,iconTextGap=4,labelFor=,text=,verticalAlignment=CENTER,verticalTextPosition=CENTER]
+           com.mathworks.mlwidgets.explorer.widgets.address.AddressBarButton$1[PathComponentButton_Università,216,0,84x21,layout=java.awt.BorderLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+            com.mathworks.mlwidgets.explorer.widgets.address.AddressBarButton$StateComponent[,0,0,84x21,layout=java.awt.BorderLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+             com.mathworks.mlwidgets.explorer.widgets.address.AddressBarButton$2[addressBarBreadCrumbText,0,0,68x21,alignmentX=0.0,alignmentY=0.0,border=,flags=8388608,maximumSize=,minimumSize=,preferredSize=,defaultIcon=,disabledIcon=,horizontalAlignment=CENTER,horizontalTextPosition=TRAILING,iconTextGap=4,labelFor=,text=Università,verticalAlignment=CENTER,verticalTextPosition=CENTER]
+             com.mathworks.mwswing.MJLabel[addressBarBreadCrumbArrow,68,0,16x21,alignmentX=0.0,alignmentY=0.0,border=,flags=8388608,maximumSize=,minimumSize=,preferredSize=,defaultIcon=jar:file:/usr/local/MATLAB/R2017b/java/jar/common.jar!/com/mathworks/common/icons/resources/documents_black_right_arrow.png,disabledIcon=,horizontalAlignment=CENTER,horizontalTextPosition=TRAILING,iconTextGap=4,labelFor=,text=,verticalAlignment=CENTER,verticalTextPosition=CENTER]
+           com.mathworks.mlwidgets.explorer.widgets.address.AddressBarButton$1[PathComponentButton_AA201718,300,0,86x21,layout=java.awt.BorderLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+            com.mathworks.mlwidgets.explorer.widgets.address.AddressBarButton$StateComponent[,0,0,86x21,layout=java.awt.BorderLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+             com.mathworks.mlwidgets.explorer.widgets.address.AddressBarButton$2[addressBarBreadCrumbText,0,0,70x21,alignmentX=0.0,alignmentY=0.0,border=,flags=8388608,maximumSize=,minimumSize=,preferredSize=,defaultIcon=,disabledIcon=,horizontalAlignment=CENTER,horizontalTextPosition=TRAILING,iconTextGap=4,labelFor=,text=AA201718,verticalAlignment=CENTER,verticalTextPosition=CENTER]
+             com.mathworks.mwswing.MJLabel[addressBarBreadCrumbArrow,70,0,16x21,alignmentX=0.0,alignmentY=0.0,border=,flags=8388608,maximumSize=,minimumSize=,preferredSize=,defaultIcon=jar:file:/usr/local/MATLAB/R2017b/java/jar/common.jar!/com/mathworks/common/icons/resources/documents_black_right_arrow.png,disabledIcon=,horizontalAlignment=CENTER,horizontalTextPosition=TRAILING,iconTextGap=4,labelFor=,text=,verticalAlignment=CENTER,verticalTextPosition=CENTER]
+           com.mathworks.mlwidgets.explorer.widgets.address.AddressBarButton$1[PathComponentButton_Fisica computazionale,386,0,159x21,layout=java.awt.BorderLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+            com.mathworks.mlwidgets.explorer.widgets.address.AddressBarButton$StateComponent[,0,0,159x21,layout=java.awt.BorderLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+             com.mathworks.mlwidgets.explorer.widgets.address.AddressBarButton$2[addressBarBreadCrumbText,0,0,143x21,alignmentX=0.0,alignmentY=0.0,border=,flags=8388608,maximumSize=,minimumSize=,preferredSize=,defaultIcon=,disabledIcon=,horizontalAlignment=CENTER,horizontalTextPosition=TRAILING,iconTextGap=4,labelFor=,text=Fisica computazionale,verticalAlignment=CENTER,verticalTextPosition=CENTER]
+             com.mathworks.mwswing.MJLabel[addressBarBreadCrumbArrow,143,0,16x21,alignmentX=0.0,alignmentY=0.0,border=,flags=8388608,maximumSize=,minimumSize=,preferredSize=,defaultIcon=jar:file:/usr/local/MATLAB/R2017b/java/jar/common.jar!/com/mathworks/common/icons/resources/documents_black_right_arrow.png,disabledIcon=,horizontalAlignment=CENTER,horizontalTextPosition=TRAILING,iconTextGap=4,labelFor=,text=,verticalAlignment=CENTER,verticalTextPosition=CENTER]
+           com.mathworks.mlwidgets.explorer.widgets.address.AddressBarButton$1[PathComponentButton_diaries,545,0,64x21,layout=java.awt.BorderLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+            com.mathworks.mlwidgets.explorer.widgets.address.AddressBarButton$StateComponent[,0,0,64x21,layout=java.awt.BorderLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+             com.mathworks.mlwidgets.explorer.widgets.address.AddressBarButton$2[addressBarBreadCrumbText,0,0,48x21,alignmentX=0.0,alignmentY=0.0,border=,flags=8388608,maximumSize=,minimumSize=,preferredSize=,defaultIcon=,disabledIcon=,horizontalAlignment=CENTER,horizontalTextPosition=TRAILING,iconTextGap=4,labelFor=,text=diaries,verticalAlignment=CENTER,verticalTextPosition=CENTER]
+             com.mathworks.mwswing.MJLabel[addressBarBreadCrumbArrow,48,0,16x21,alignmentX=0.0,alignmentY=0.0,border=,flags=8388608,maximumSize=,minimumSize=,preferredSize=,defaultIcon=jar:file:/usr/local/MATLAB/R2017b/java/jar/common.jar!/com/mathworks/common/icons/resources/documents_black_right_arrow.png,disabledIcon=,horizontalAlignment=CENTER,horizontalTextPosition=TRAILING,iconTextGap=4,labelFor=,text=,verticalAlignment=CENTER,verticalTextPosition=CENTER]
+           com.mathworks.mlwidgets.explorer.widgets.address.AddressBarButton$1[PathComponentButton_301117,609,0,54x21,layout=java.awt.BorderLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+            com.mathworks.mlwidgets.explorer.widgets.address.AddressBarButton$StateComponent[,0,0,54x21,layout=java.awt.BorderLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+             com.mathworks.mlwidgets.explorer.widgets.address.AddressBarButton$2[addressBarBreadCrumbText,0,0,54x21,alignmentX=0.0,alignmentY=0.0,border=,flags=8388608,maximumSize=,minimumSize=,preferredSize=,defaultIcon=,disabledIcon=,horizontalAlignment=CENTER,horizontalTextPosition=TRAILING,iconTextGap=4,labelFor=,text=301117,verticalAlignment=CENTER,verticalTextPosition=CENTER]
+           com.mathworks.mlwidgets.explorer.widgets.address.AddressBarButton$1[HistoryButton,1205,0,16x21,layout=java.awt.BorderLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+            com.mathworks.mlwidgets.explorer.widgets.address.AddressBarButton$StateComponent[,0,0,16x21,layout=java.awt.BorderLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+             com.mathworks.mwswing.MJLabel[,0,0,16x21,alignmentX=0.0,alignmentY=0.0,border=,flags=8388608,maximumSize=,minimumSize=,preferredSize=,defaultIcon=jar:file:/usr/local/MATLAB/R2017b/java/jar/common.jar!/com/mathworks/common/icons/resources/documents_black_down_arrow.png,disabledIcon=,horizontalAlignment=CENTER,horizontalTextPosition=TRAILING,iconTextGap=4,labelFor=,text=,verticalAlignment=CENTER,verticalTextPosition=CENTER]
+        com.mathworks.mlwidgets.explorer.widgets.address.SearchButton$1[SearchButton,1246,0,21x23,alignmentX=0.0,alignmentY=0.5,border=,flags=296,maximumSize=,minimumSize=,preferredSize=,defaultIcon=jar:file:/usr/local/MATLAB/R2017b/java/jar/common.jar!/com/mathworks/common/icons/resources/magnifying_glass_blue.png,disabledIcon=,disabledSelectedIcon=,margin=javax.swing.plaf.InsetsUIResource[top=1,left=14,bottom=1,right=14],paintBorder=true,paintFocus=true,pressedIcon=,rolloverEnabled=false,rolloverIcon=,rolloverSelectedIcon=,selectedIcon=,text=,defaultCapable=true]
+       com.mathworks.mwswing.MJButton[MoreButton,1366,12,0x0,hidden,alignmentX=0.0,alignmentY=0.5,border=javax.swing.border.CompoundBorder@6068438e,flags=20971808,maximumSize=,minimumSize=,preferredSize=,defaultIcon=jar:file:/usr/local/MATLAB/R2017b/java/jar/mwswing.jar!/com/mathworks/mwswing/resources/more.gif,disabledIcon=,disabledSelectedIcon=,margin=java.awt.Insets[top=3,left=0,bottom=3,right=0],paintBorder=false,paintFocus=true,pressedIcon=,rolloverEnabled=false,rolloverIcon=,rolloverSelectedIcon=,selectedIcon=,text=null,defaultCapable=false]
+    com.mathworks.mwswing.MJPanel[,0,693,1366x22,layout=java.awt.BorderLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+     com.mathworks.mwswing.MJCornerGrip[,1366,0,0x22,hidden,alignmentX=0.0,alignmentY=0.0,border=,flags=0,maximumSize=,minimumSize=,preferredSize=]
+     com.mathworks.mwswing.MJStatusBar[SharedStatusBar,0,0,1366x22,layout=java.awt.BorderLayout,alignmentX=0.0,alignmentY=0.0,border=javax.swing.border.EmptyBorder@56b4817b,flags=9,maximumSize=,minimumSize=,preferredSize=]
+      com.mathworks.mwswing.MJStatusBar$1[,32,2,1332x18,alignmentX=0.0,alignmentY=0.0,border=javax.swing.border.EmptyBorder@53a81a07,flags=25165832,maximumSize=,minimumSize=,preferredSize=,defaultIcon=,disabledIcon=,horizontalAlignment=LEADING,horizontalTextPosition=TRAILING,iconTextGap=4,labelFor=,text= ,verticalAlignment=CENTER,verticalTextPosition=CENTER]
+      javax.swing.Box[,0,2,32x18,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=0,maximumSize=,minimumSize=,preferredSize=]
+       com.mathworks.toolbox.distcomp.ui.desk.ParallelStatusIndicator$ParallelStatusIndicatorUI[ParallelStatusIndicator.Panel,0,0,32x18,layout=java.awt.GridBagLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+        com.mathworks.mwswing.MJPanel[,5,0,27x18,layout=java.awt.GridBagLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+         javax.swing.JButton[PoolIndicator.PoolButton,0,0,22x18,alignmentX=0.0,alignmentY=0.5,border=javax.swing.plaf.BorderUIResource$CompoundBorderUIResource@45289095,flags=16777504,maximumSize=,minimumSize=,preferredSize=java.awt.Dimension[width=22,height=15],defaultIcon=com.mathworks.toolbox.distcomp.ui.desk.ParallelStatusIndicator$PoolIconDecorator@60e9baec,disabledIcon=,disabledSelectedIcon=,margin=javax.swing.plaf.InsetsUIResource[top=1,left=14,bottom=1,right=14],paintBorder=false,paintFocus=true,pressedIcon=,rolloverEnabled=false,rolloverIcon=,rolloverSelectedIcon=,selectedIcon=,text=,defaultCapable=true]
+         javax.swing.JSeparator[,25,0,2x18,alignmentX=0.0,alignmentY=0.0,border=,flags=0,maximumSize=,minimumSize=,preferredSize=,orientation=VERTICAL]
+    com.mathworks.widgets.desk.DTBorderContainer[DesktopBorderContainer,0,56,1366x637,layout=java.awt.BorderLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=73,maximumSize=,minimumSize=,preferredSize=]
+     com.mathworks.widgets.desk.DTBorderContainer$LightCenterContainer[,0,0,1366x637,alignmentX=0.0,alignmentY=0.0,border=,flags=64,maximumSize=,minimumSize=,preferredSize=,optimizedDrawingPossible=false]
+      com.mathworks.mwswing.MJPanel[,0,0,0x0,hidden,layout=java.awt.BorderLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+      com.mathworks.widgets.desk.DTNestingContainer[DesktopNestingContainer,0,0,1366x637,layout=java.awt.BorderLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=329,maximumSize=,minimumSize=,preferredSize=]
+       com.mathworks.widgets.desk.DTSplitPane[DesktopSplitPane,0,0,1366x637,layout=javax.swing.plaf.basic.BasicSplitPaneUI$BasicHorizontalLayoutManager,alignmentX=0.0,alignmentY=0.0,border=com.mathworks.mwswing.MJSplitPane$ConditionalBorder@37e56e12,flags=201326920,maximumSize=,minimumSize=,preferredSize=,continuousLayout=true,dividerSize=4,lastDividerLocation=1120,oneTouchExpandable=false,orientation=HORIZONTAL_SPLIT]
+        com.jgoodies.looks.plastic.PlasticSplitPaneDivider[,1122,0,4x637,layout=javax.swing.plaf.basic.BasicSplitPaneDivider$DividerLayout]
+        com.mathworks.widgets.desk.DTClientFrame[WorkspaceInternalFrame,1126,0,240x637,alignmentX=0.0,alignmentY=0.0,border=com.mathworks.widgets.desk.DTBorderFactory$DockedFrameBorder@248e22cb,flags=320,maximumSize=,minimumSize=,preferredSize=,optimizedDrawingPossible=true]
+         javax.swing.JPanel[,2,20,236x615,layout=java.awt.BorderLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+          com.mathworks.widgets.desk.DTToolBarContainer[ToolBarContainer,0,0,236x0,alignmentX=0.0,alignmentY=0.0,border=com.mathworks.widgets.desk.DTBorderFactory$ToolBarContainerBorder@7915859a,flags=0,maximumSize=,minimumSize=,preferredSize=,optimizedDrawingPossible=true]
+          com.mathworks.mde.workspace.WorkspaceBrowser[Workspace,0,0,236x615,layout=java.awt.BorderLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777217,maximumSize=,minimumSize=,preferredSize=]
+           com.mathworks.mwswing.MJScrollPane[WorkspaceScrollPane,0,0,236x615,layout=javax.swing.ScrollPaneLayout$UIResource,alignmentX=0.0,alignmentY=0.0,border=com.jgoodies.looks.plastic.PlasticBorders$ScrollPaneBorder@99dd26c,flags=328,maximumSize=,minimumSize=,preferredSize=,columnHeader=javax.swing.JViewport[,1,1,233x20,layout=javax.swing.ViewportLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=25165832,maximumSize=,minimumSize=,preferredSize=,isViewSizeSet=true,lastPaintPosition=java.awt.Point[x=0,y=0],scrollUnderway=false],horizontalScrollBar=javax.swing.JScrollPane$ScrollBar[,1,213,206x15,hidden,layout=com.jgoodies.looks.plastic.PlasticScrollBarUI,alignmentX=0.0,alignmentY=0.0,border=,flags=4194632,maximumSize=,minimumSize=,preferredSize=,blockIncrement=10,orientation=HORIZONTAL,unitIncrement=1],horizontalScrollBarPolicy=HORIZONTAL_SCROLLBAR_AS_NEEDED,lowerLeft=,lowerRight=,rowHeader=,upperLeft=,upperRight=,verticalScrollBar=javax.swing.JScrollPane$ScrollBar[,207,21,15x192,hidden,layout=com.jgoodies.looks.plastic.PlasticScrollBarUI,alignmentX=0.0,alignmentY=0.0,border=,flags=4194632,maximumSize=,minimumSize=,preferredSize=,blockIncrement=10,orientation=VERTICAL,unitIncrement=1],verticalScrollBarPolicy=VERTICAL_SCROLLBAR_AS_NEEDED,viewport=javax.swing.JViewport[,1,21,233x592,layout=javax.swing.ViewportLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=25165832,maximumSize=,minimumSize=,preferredSize=,isViewSizeSet=true,lastPaintPosition=java.awt.Point[x=0,y=0],scrollUnderway=true],viewportBorder=]
+            javax.swing.JViewport[,1,21,233x592,layout=javax.swing.ViewportLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=25165832,maximumSize=,minimumSize=,preferredSize=,isViewSizeSet=true,lastPaintPosition=java.awt.Point[x=0,y=0],scrollUnderway=true]
+             com.mathworks.mlwidgets.workspace.WorkspaceTable[WorkspaceTable,0,0,219x255,alignmentX=0.0,alignmentY=0.0,border=,flags=251658600,maximumSize=,minimumSize=,preferredSize=,autoCreateColumnsFromModel=true,autoResizeMode=AUTO_RESIZE_OFF,cellSelectionEnabled=true,editingColumn=-1,editingRow=-1,gridColor=javax.swing.plaf.ColorUIResource[r=235,g=233,b=237],preferredViewportSize=java.awt.Dimension[width=450,height=400],rowHeight=17,rowMargin=0,rowSelectionAllowed=true,selectionBackground=javax.swing.plaf.ColorUIResource[r=235,g=233,b=237],selectionForeground=javax.swing.plaf.ColorUIResource[r=0,g=0,b=0],showHorizontalLines=false,showVerticalLines=false]
+              javax.swing.CellRendererPane[,0,0,0x0,hidden]
+            javax.swing.JScrollPane$ScrollBar[,207,21,15x192,hidden,layout=com.jgoodies.looks.plastic.PlasticScrollBarUI,alignmentX=0.0,alignmentY=0.0,border=,flags=4194632,maximumSize=,minimumSize=,preferredSize=,blockIncrement=10,orientation=VERTICAL,unitIncrement=1]
+             com.jgoodies.looks.plastic.PlasticArrowButton[,0,177,15x15,alignmentX=0.0,alignmentY=0.5,border=javax.swing.plaf.BorderUIResource$CompoundBorderUIResource@45289095,flags=4194600,maximumSize=,minimumSize=,preferredSize=,defaultIcon=,disabledIcon=,disabledSelectedIcon=,margin=javax.swing.plaf.InsetsUIResource[top=1,left=14,bottom=1,right=14],paintBorder=true,paintFocus=true,pressedIcon=,rolloverEnabled=false,rolloverIcon=,rolloverSelectedIcon=,selectedIcon=,text=,defaultCapable=true]
+             com.jgoodies.looks.plastic.PlasticArrowButton[,0,0,15x15,alignmentX=0.0,alignmentY=0.5,border=javax.swing.plaf.BorderUIResource$CompoundBorderUIResource@45289095,flags=4194600,maximumSize=,minimumSize=,preferredSize=,defaultIcon=,disabledIcon=,disabledSelectedIcon=,margin=javax.swing.plaf.InsetsUIResource[top=1,left=14,bottom=1,right=14],paintBorder=true,paintFocus=true,pressedIcon=,rolloverEnabled=false,rolloverIcon=,rolloverSelectedIcon=,selectedIcon=,text=,defaultCapable=true]
+            javax.swing.JScrollPane$ScrollBar[,1,213,206x15,hidden,layout=com.jgoodies.looks.plastic.PlasticScrollBarUI,alignmentX=0.0,alignmentY=0.0,border=,flags=4194632,maximumSize=,minimumSize=,preferredSize=,blockIncrement=10,orientation=HORIZONTAL,unitIncrement=1]
+             com.jgoodies.looks.plastic.PlasticArrowButton[,191,0,15x15,alignmentX=0.0,alignmentY=0.5,border=javax.swing.plaf.BorderUIResource$CompoundBorderUIResource@45289095,flags=4194600,maximumSize=,minimumSize=,preferredSize=,defaultIcon=,disabledIcon=,disabledSelectedIcon=,margin=javax.swing.plaf.InsetsUIResource[top=1,left=14,bottom=1,right=14],paintBorder=true,paintFocus=true,pressedIcon=,rolloverEnabled=false,rolloverIcon=,rolloverSelectedIcon=,selectedIcon=,text=,defaultCapable=true]
+             com.jgoodies.looks.plastic.PlasticArrowButton[,0,0,15x15,alignmentX=0.0,alignmentY=0.5,border=javax.swing.plaf.BorderUIResource$CompoundBorderUIResource@45289095,flags=4194600,maximumSize=,minimumSize=,preferredSize=,defaultIcon=,disabledIcon=,disabledSelectedIcon=,margin=javax.swing.plaf.InsetsUIResource[top=1,left=14,bottom=1,right=14],paintBorder=true,paintFocus=true,pressedIcon=,rolloverEnabled=false,rolloverIcon=,rolloverSelectedIcon=,selectedIcon=,text=,defaultCapable=true]
+            javax.swing.JViewport[,1,1,233x20,layout=javax.swing.ViewportLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=25165832,maximumSize=,minimumSize=,preferredSize=,isViewSizeSet=true,lastPaintPosition=java.awt.Point[x=0,y=0],scrollUnderway=false]
+             javax.swing.JPanel[,0,0,233x20,layout=java.awt.BorderLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+              javax.swing.table.JTableHeader[,0,0,219x20,alignmentX=0.0,alignmentY=0.0,border=,flags=16777544,maximumSize=,minimumSize=,preferredSize=,draggedDistance=0,reorderingAllowed=true,resizingAllowed=true,updateTableInRealTime=true]
+               javax.swing.CellRendererPane[,0,0,0x0,hidden]
+              com.mathworks.mwswing.MJTable$FinalEmptyColumnHeader[,219,0,14x20,alignmentX=0.0,alignmentY=0.0,border=,flags=16777224,maximumSize=,minimumSize=,preferredSize=]
+               javax.swing.CellRendererPane[,0,0,0x0,hidden]
+               javax.swing.CellRendererPane[,0,0,0x0,hidden]
+               javax.swing.CellRendererPane[,0,0,0x0,hidden]
+               javax.swing.CellRendererPane[,0,0,0x0,hidden]
+               javax.swing.CellRendererPane[,0,0,0x0,hidden]
+               javax.swing.CellRendererPane[,0,0,0x0,hidden]
+               javax.swing.CellRendererPane[,0,0,0x0,hidden]
+               javax.swing.CellRendererPane[,0,0,0x0,hidden]
+               javax.swing.CellRendererPane[,0,0,0x0,hidden]
+               javax.swing.CellRendererPane[,0,0,0x0,hidden]
+               javax.swing.CellRendererPane[,0,0,0x0,hidden]
+               javax.swing.CellRendererPane[,0,0,0x0,hidden]
+               javax.swing.CellRendererPane[,0,0,0x0,hidden]
+               javax.swing.CellRendererPane[,0,0,0x0,hidden]
+               javax.swing.CellRendererPane[,0,0,0x0,hidden]
+               javax.swing.CellRendererPane[,0,0,0x0,hidden]
+               javax.swing.CellRendererPane[,0,0,0x0,hidden]
+               javax.swing.CellRendererPane[,0,0,0x0,hidden]
+               javax.swing.CellRendererPane[,0,0,0x0,hidden]
+               javax.swing.CellRendererPane[,0,0,0x0,hidden]
+               javax.swing.CellRendererPane[,0,0,0x0,hidden]
+               javax.swing.CellRendererPane[,0,0,0x0,hidden]
+               javax.swing.CellRendererPane[,0,0,0x0,hidden]
+               javax.swing.CellRendererPane[,0,0,0x0,hidden]
+               javax.swing.CellRendererPane[,0,0,0x0,hidden]
+               javax.swing.CellRendererPane[,0,0,0x0,hidden]
+               javax.swing.CellRendererPane[,0,0,0x0,hidden]
+               javax.swing.CellRendererPane[,0,0,0x0,hidden]
+               javax.swing.CellRendererPane[,0,0,0x0,hidden]
+               javax.swing.CellRendererPane[,0,0,0x0,hidden]
+               javax.swing.CellRendererPane[,0,0,0x0,hidden]
+               javax.swing.CellRendererPane[,0,0,0x0,hidden]
+               javax.swing.CellRendererPane[,0,0,0x0,hidden]
+               javax.swing.CellRendererPane[,0,0,0x0,hidden]
+               javax.swing.CellRendererPane[,0,0,0x0,hidden]
+               javax.swing.CellRendererPane[,0,0,0x0,hidden]
+               javax.swing.CellRendererPane[,0,0,0x0,hidden]
+               javax.swing.CellRendererPane[,0,0,0x0,hidden]
+               javax.swing.CellRendererPane[,0,0,0x0,hidden]
+               javax.swing.CellRendererPane[,0,0,0x0,hidden]
+               javax.swing.CellRendererPane[,0,0,0x0,hidden]
+               javax.swing.CellRendererPane[,0,0,0x0,hidden]
+               javax.swing.CellRendererPane[,0,0,0x0,hidden]
+               javax.swing.CellRendererPane[,0,0,0x0,hidden]
+               javax.swing.CellRendererPane[,0,0,0x0,hidden]
+               javax.swing.CellRendererPane[,0,0,0x0,hidden]
+               javax.swing.CellRendererPane[,0,0,0x0,hidden]
+               javax.swing.CellRendererPane[,0,0,0x0,hidden]
+               javax.swing.CellRendererPane[,0,0,0x0,hidden]
+               javax.swing.CellRendererPane[,0,0,0x0,hidden]
+               javax.swing.CellRendererPane[,0,0,0x0,hidden]
+               javax.swing.CellRendererPane[,0,0,0x0,hidden]
+               javax.swing.CellRendererPane[,0,0,0x0,hidden]
+               javax.swing.CellRendererPane[,0,0,0x0,hidden]
+               javax.swing.CellRendererPane[,0,0,0x0,hidden]
+               javax.swing.CellRendererPane[,0,0,0x0,hidden]
+               javax.swing.CellRendererPane[,0,0,0x0,hidden]
+               javax.swing.CellRendererPane[,0,0,0x0,hidden]
+               javax.swing.CellRendererPane[,0,0,0x0,hidden]
+               javax.swing.CellRendererPane[,0,0,0x0,hidden]
+               javax.swing.CellRendererPane[,0,0,0x0,hidden]
+               javax.swing.CellRendererPane[,0,0,0x0,hidden]
+               javax.swing.CellRendererPane[,0,0,0x0,hidden]
+               javax.swing.CellRendererPane[,0,0,0x0,hidden]
+               javax.swing.CellRendererPane[,0,0,0x0,hidden]
+               javax.swing.CellRendererPane[,0,0,0x0,hidden]
+               javax.swing.CellRendererPane[,0,0,0x0,hidden]
+               javax.swing.CellRendererPane[,0,0,0x0,hidden]
+               javax.swing.CellRendererPane[,0,0,0x0,hidden]
+               javax.swing.CellRendererPane[,0,0,0x0,hidden]
+               javax.swing.CellRendererPane[,0,0,0x0,hidden]
+               javax.swing.CellRendererPane[,0,0,0x0,hidden]
+               javax.swing.CellRendererPane[,0,0,0x0,hidden]
+               javax.swing.CellRendererPane[,0,0,0x0,hidden]
+               javax.swing.CellRendererPane[,0,0,0x0,hidden]
+               javax.swing.CellRendererPane[,0,0,0x0,hidden]
+               javax.swing.CellRendererPane[,0,0,0x0,hidden]
+               javax.swing.CellRendererPane[,0,0,0x0,hidden]
+               javax.swing.CellRendererPane[,0,0,0x0,hidden]
+               javax.swing.CellRendererPane[,0,0,0x0,hidden]
+               javax.swing.CellRendererPane[,0,0,0x0,hidden]
+               javax.swing.CellRendererPane[,0,0,0x0,hidden]
+               javax.swing.CellRendererPane[,0,0,0x0,hidden]
+               javax.swing.CellRendererPane[,0,0,0x0,hidden]
+               javax.swing.CellRendererPane[,0,0,0x0,hidden]
+               javax.swing.CellRendererPane[,0,0,0x0,hidden]
+               javax.swing.CellRendererPane[,0,0,0x0,hidden]
+               javax.swing.CellRendererPane[,0,0,0x0,hidden]
+               javax.swing.CellRendererPane[,0,0,0x0,hidden]
+               javax.swing.CellRendererPane[,0,0,0x0,hidden]
+               javax.swing.CellRendererPane[,0,0,0x0,hidden]
+               javax.swing.CellRendererPane[,0,0,0x0,hidden]
+               javax.swing.CellRendererPane[,0,0,0x0,hidden]
+               javax.swing.CellRendererPane[,0,0,0x0,hidden]
+               javax.swing.CellRendererPane[,0,0,0x0,hidden]
+               javax.swing.CellRendererPane[,0,0,0x0,hidden]
+               javax.swing.CellRendererPane[,0,0,0x0,hidden]
+               javax.swing.CellRendererPane[,0,0,0x0,hidden]
+         com.mathworks.widgets.desk.DTTitleBar[WorkspaceTitleBar,2,2,236x18,alignmentX=0.0,alignmentY=0.0,border=com.mathworks.widgets.desk.DTTitleBar$SingletonBorder@8b057f2,flags=0,maximumSize=,minimumSize=,preferredSize=]
+          com.mathworks.widgets.desk.DTTitleButton[UndockWorkspaceButton,0,0,0x0,hidden,alignmentX=0.0,alignmentY=0.5,border=javax.swing.plaf.basic.BasicBorders$ButtonBorder@14b93d08,flags=20971808,maximumSize=,minimumSize=,preferredSize=,defaultIcon=jar:file:/usr/local/MATLAB/R2017b/java/jar/widgets.jar!/com/mathworks/widgets/desk/resources/undock.gif,disabledIcon=,disabledSelectedIcon=,margin=java.awt.Insets[top=0,left=-1,bottom=0,right=0],paintBorder=false,paintFocus=true,pressedIcon=,rolloverEnabled=true,rolloverIcon=jar:file:/usr/local/MATLAB/R2017b/java/jar/widgets.jar!/com/mathworks/widgets/desk/resources/undock.gif,rolloverSelectedIcon=,selectedIcon=,text=,defaultCapable=false]
+          com.mathworks.widgets.desk.DTTitleButton[MinimizeWorkspaceButton,0,0,0x0,hidden,alignmentX=0.0,alignmentY=0.5,border=javax.swing.plaf.basic.BasicBorders$ButtonBorder@14b93d08,flags=20971808,maximumSize=,minimumSize=,preferredSize=,defaultIcon=jar:file:/usr/local/MATLAB/R2017b/java/jar/widgets.jar!/com/mathworks/widgets/desk/resources/minimizetoeast.gif,disabledIcon=,disabledSelectedIcon=,margin=java.awt.Insets[top=0,left=-1,bottom=0,right=0],paintBorder=false,paintFocus=true,pressedIcon=,rolloverEnabled=true,rolloverIcon=jar:file:/usr/local/MATLAB/R2017b/java/jar/widgets.jar!/com/mathworks/widgets/desk/resources/minimizetoeast.gif,rolloverSelectedIcon=,selectedIcon=,text=,defaultCapable=false]
+          com.mathworks.widgets.desk.DTTitleButton[MaximizeWorkspaceButton,0,0,0x0,hidden,alignmentX=0.0,alignmentY=0.5,border=javax.swing.plaf.basic.BasicBorders$ButtonBorder@14b93d08,flags=20971808,maximumSize=,minimumSize=,preferredSize=,defaultIcon=jar:file:/usr/local/MATLAB/R2017b/java/jar/widgets.jar!/com/mathworks/widgets/desk/resources/maximize.gif,disabledIcon=,disabledSelectedIcon=,margin=java.awt.Insets[top=0,left=-1,bottom=0,right=0],paintBorder=false,paintFocus=true,pressedIcon=,rolloverEnabled=true,rolloverIcon=jar:file:/usr/local/MATLAB/R2017b/java/jar/widgets.jar!/com/mathworks/widgets/desk/resources/maximize.gif,rolloverSelectedIcon=,selectedIcon=,text=,defaultCapable=false]
+          com.mathworks.widgets.desk.DTTitleButton[CloseWorkspaceButton,0,0,0x0,hidden,alignmentX=0.0,alignmentY=0.5,border=javax.swing.plaf.basic.BasicBorders$ButtonBorder@14b93d08,flags=20971808,maximumSize=,minimumSize=,preferredSize=,defaultIcon=jar:file:/usr/local/MATLAB/R2017b/java/jar/widgets.jar!/com/mathworks/widgets/desk/resources/closebox.gif,disabledIcon=,disabledSelectedIcon=,margin=java.awt.Insets[top=0,left=-1,bottom=0,right=0],paintBorder=false,paintFocus=true,pressedIcon=,rolloverEnabled=true,rolloverIcon=jar:file:/usr/local/MATLAB/R2017b/java/jar/widgets.jar!/com/mathworks/widgets/desk/resources/closebox.gif,rolloverSelectedIcon=,selectedIcon=,text=,defaultCapable=false]
+          com.mathworks.widgets.desk.DTTitleButton[Show ActionsWorkspaceButton,216,2,18x14,alignmentX=0.0,alignmentY=0.5,border=javax.swing.plaf.basic.BasicBorders$ButtonBorder@14b93d08,flags=20971808,maximumSize=,minimumSize=,preferredSize=,defaultIcon=jar:file:/usr/local/MATLAB/R2017b/java/jar/widgets.jar!/com/mathworks/widgets/desk/resources/show_actions_dark.png,disabledIcon=,disabledSelectedIcon=,margin=java.awt.Insets[top=0,left=-1,bottom=0,right=0],paintBorder=false,paintFocus=true,pressedIcon=,rolloverEnabled=true,rolloverIcon=jar:file:/usr/local/MATLAB/R2017b/java/jar/widgets.jar!/com/mathworks/widgets/desk/resources/show_actions_dark.png,rolloverSelectedIcon=,selectedIcon=,text=,defaultCapable=false]
+        com.mathworks.widgets.desk.DTSplitPane[DesktopSplitPane,0,0,1122x637,layout=javax.swing.plaf.basic.BasicSplitPaneUI$BasicHorizontalLayoutManager,alignmentX=0.0,alignmentY=0.0,border=com.mathworks.mwswing.MJSplitPane$ConditionalBorder@41f4cd2e,flags=201326920,maximumSize=,minimumSize=,preferredSize=,continuousLayout=true,dividerSize=4,lastDividerLocation=228,oneTouchExpandable=false,orientation=HORIZONTAL_SPLIT]
+         com.jgoodies.looks.plastic.PlasticSplitPaneDivider[,156,0,4x637,layout=javax.swing.plaf.basic.BasicSplitPaneDivider$DividerLayout]
+         com.mathworks.widgets.desk.DTSplitPane[DesktopSplitPane,160,0,962x637,layout=javax.swing.plaf.basic.BasicSplitPaneUI$BasicHorizontalLayoutManager,alignmentX=0.0,alignmentY=0.0,border=com.mathworks.mwswing.MJSplitPane$ConditionalBorder@269d79ce,flags=201326920,maximumSize=,minimumSize=,preferredSize=,continuousLayout=true,dividerSize=4,lastDividerLocation=350,oneTouchExpandable=false,orientation=VERTICAL_SPLIT]
+          com.jgoodies.looks.plastic.PlasticSplitPaneDivider[,0,350,962x4,layout=javax.swing.plaf.basic.BasicSplitPaneDivider$DividerLayout]
+          com.mathworks.widgets.desk.DTGroupFrame[Live EditorGroupFrame,0,0,962x350,alignmentX=0.0,alignmentY=0.0,border=com.mathworks.widgets.desk.DTBorderFactory$DockedFrameBorder@248e22cb,flags=320,maximumSize=,minimumSize=,preferredSize=,optimizedDrawingPossible=true]
+           javax.swing.JPanel[,2,21,958x327,layout=java.awt.BorderLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=73,maximumSize=,minimumSize=,preferredSize=]
+            com.mathworks.widgets.desk.DTToolBarContainer[ToolBarContainer,0,0,958x0,alignmentX=0.0,alignmentY=0.0,border=com.mathworks.widgets.desk.DTBorderFactory$ToolBarContainerBorder@7915859a,flags=0,maximumSize=,minimumSize=,preferredSize=,optimizedDrawingPossible=true]
+             javax.swing.Box[,0,0,0x0,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=0,maximumSize=,minimumSize=,preferredSize=]
+              com.mathworks.widgets.desk.DTGroupFrame$ArrangementControls[,0,0,43x0,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+               com.mathworks.mwswing.MJToolBar[ArrangementToolBar,44,0,96x0,layout=javax.swing.JToolBar$DefaultToolBarLayout,alignmentX=0.0,alignmentY=0.0,border=javax.swing.border.EmptyBorder@5385786f,flags=328,maximumSize=,minimumSize=,preferredSize=,floatable=false,margin=,orientation=HORIZONTAL,paintBorder=true]
+                com.mathworks.mwswing.MJButton[MoreButton,0,0,0x0,hidden,alignmentX=0.0,alignmentY=0.5,border=javax.swing.border.CompoundBorder@6068438e,flags=20971808,maximumSize=,minimumSize=,preferredSize=,defaultIcon=jar:file:/usr/local/MATLAB/R2017b/java/jar/mwswing.jar!/com/mathworks/mwswing/resources/more.gif,disabledIcon=,disabledSelectedIcon=,margin=java.awt.Insets[top=3,left=0,bottom=3,right=0],paintBorder=false,paintFocus=true,pressedIcon=,rolloverEnabled=false,rolloverIcon=,rolloverSelectedIcon=,selectedIcon=,text=null,defaultCapable=false]
+                com.mathworks.mwswing.MJToggleButton[TileDocumentsButton,0,0,24x0,alignmentX=0.0,alignmentY=0.5,border=javax.swing.border.CompoundBorder@6068438e,flags=296,maximumSize=,minimumSize=,preferredSize=,defaultIcon=com.mathworks.mwswing.ContrastingIcon@2c18b528,disabledIcon=,disabledSelectedIcon=,margin=java.awt.Insets[top=1,left=1,bottom=2,right=1],paintBorder=false,paintFocus=false,pressedIcon=,rolloverEnabled=false,rolloverIcon=,rolloverSelectedIcon=,selectedIcon=,text=null]
+                com.mathworks.mwswing.MJToggleButton[SplitLeftRightButton,24,0,24x0,alignmentX=0.0,alignmentY=0.5,border=javax.swing.border.CompoundBorder@6068438e,flags=4194600,maximumSize=,minimumSize=,preferredSize=,defaultIcon=com.mathworks.mwswing.ContrastingIcon@71148cde,disabledIcon=,disabledSelectedIcon=,margin=java.awt.Insets[top=1,left=1,bottom=2,right=1],paintBorder=false,paintFocus=true,pressedIcon=,rolloverEnabled=false,rolloverIcon=,rolloverSelectedIcon=,selectedIcon=,text=null]
+                com.mathworks.mwswing.MJToggleButton[SplitTopBottomButton,48,0,24x0,alignmentX=0.0,alignmentY=0.5,border=javax.swing.border.CompoundBorder@6068438e,flags=4194600,maximumSize=,minimumSize=,preferredSize=,defaultIcon=com.mathworks.mwswing.ContrastingIcon@166eb26f,disabledIcon=,disabledSelectedIcon=,margin=java.awt.Insets[top=1,left=1,bottom=2,right=1],paintBorder=false,paintFocus=true,pressedIcon=,rolloverEnabled=false,rolloverIcon=,rolloverSelectedIcon=,selectedIcon=,text=null]
+                com.mathworks.mwswing.MJToggleButton[FloatButton,72,0,0x0,hidden,alignmentX=0.0,alignmentY=0.5,border=javax.swing.border.CompoundBorder@6068438e,flags=4194600,maximumSize=,minimumSize=,preferredSize=,defaultIcon=com.mathworks.mwswing.ContrastingIcon@5bf0ea65,disabledIcon=,disabledSelectedIcon=,margin=java.awt.Insets[top=1,left=1,bottom=2,right=1],paintBorder=false,paintFocus=true,pressedIcon=,rolloverEnabled=false,rolloverIcon=,rolloverSelectedIcon=,selectedIcon=,text=null]
+                com.mathworks.mwswing.MJToggleButton[MaximizeButton,72,0,24x0,alignmentX=0.0,alignmentY=0.5,border=javax.swing.border.CompoundBorder@6068438e,flags=4194600,maximumSize=,minimumSize=,preferredSize=,defaultIcon=com.mathworks.mwswing.ContrastingIcon@3228b5c6,disabledIcon=,disabledSelectedIcon=,margin=java.awt.Insets[top=1,left=1,bottom=2,right=1],paintBorder=true,paintFocus=true,pressedIcon=,rolloverEnabled=false,rolloverIcon=,rolloverSelectedIcon=,selectedIcon=,text=null]
+               com.mathworks.widgets.desk.DTGroupFrame$SureFireComboBox[ArrangementComboBox,0,1,41x-4,layout=com.jgoodies.looks.plastic.PlasticComboBoxUI$PlasticComboBoxLayoutManager,alignmentX=0.0,alignmentY=0.0,border=,flags=328,maximumSize=,minimumSize=,preferredSize=,isEditable=false,lightWeightPopupEnabled=false,maximumRowCount=8,selectedItemReminder=com.mathworks.widgets.desk.DTDocumentContainer$MaximizeAction@33d848e]
+                com.jgoodies.looks.plastic.PlasticComboBoxButton[,0,0,41x-4,alignmentX=0.0,alignmentY=0.5,border=javax.swing.border.CompoundBorder@670fad21,flags=12583208,maximumSize=,minimumSize=,preferredSize=,defaultIcon=,disabledIcon=,disabledSelectedIcon=,margin=java.awt.Insets[top=0,left=2,bottom=0,right=2],paintBorder=true,paintFocus=true,pressedIcon=,rolloverEnabled=false,rolloverIcon=,rolloverSelectedIcon=,selectedIcon=,text=,defaultCapable=true]
+                javax.swing.CellRendererPane[,0,0,0x0,hidden]
+              com.mathworks.widgets.desk.DTMaximizedButtonPanel[,43,0,38x0,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=javax.swing.border.EmptyBorder@4918665,flags=16777217,maximumSize=,minimumSize=,preferredSize=]
+               com.mathworks.widgets.desk.DTTitleButton[Undockbksub.mButton,2,2,17x-4,alignmentX=0.0,alignmentY=0.5,border=javax.swing.plaf.BorderUIResource$CompoundBorderUIResource@45289095,flags=20971808,maximumSize=,minimumSize=,preferredSize=,defaultIcon=jar:file:/usr/local/MATLAB/R2017b/java/jar/widgets.jar!/com/mathworks/widgets/desk/resources/undock.gif,disabledIcon=,disabledSelectedIcon=,margin=java.awt.Insets[top=0,left=-1,bottom=0,right=0],paintBorder=false,paintFocus=true,pressedIcon=,rolloverEnabled=true,rolloverIcon=jar:file:/usr/local/MATLAB/R2017b/java/jar/widgets.jar!/com/mathworks/widgets/desk/resources/undock.gif,rolloverSelectedIcon=,selectedIcon=,text=,defaultCapable=false]
+               com.mathworks.widgets.desk.DTTitleButton[Closebksub.mButton,19,2,17x-4,alignmentX=0.0,alignmentY=0.5,border=javax.swing.plaf.BorderUIResource$CompoundBorderUIResource@45289095,flags=20971808,maximumSize=,minimumSize=,preferredSize=,defaultIcon=jar:file:/usr/local/MATLAB/R2017b/java/jar/widgets.jar!/com/mathworks/widgets/desk/resources/closebox.gif,disabledIcon=,disabledSelectedIcon=,margin=java.awt.Insets[top=0,left=-1,bottom=0,right=0],paintBorder=false,paintFocus=true,pressedIcon=,rolloverEnabled=true,rolloverIcon=jar:file:/usr/local/MATLAB/R2017b/java/jar/widgets.jar!/com/mathworks/widgets/desk/resources/closebox.gif,rolloverSelectedIcon=,selectedIcon=,text=,defaultCapable=false]
+            com.mathworks.widgets.desk.DTDocumentContainer[DesktopDocumentContainer,0,0,958x327,alignmentX=0.0,alignmentY=0.0,border=,flags=329,maximumSize=,minimumSize=,preferredSize=]
+             com.mathworks.widgets.desk.DTMaximizedPane[,0,0,958x327,alignmentX=0.0,alignmentY=0.0,border=,flags=73,maximumSize=,minimumSize=,preferredSize=]
+              com.mathworks.widgets.desk.DTDocumentTabs[,0,0,958x21,alignmentX=0.0,alignmentY=0.0,border=com.mathworks.widgets.desk.DTDocumentTabs$CustomBorder@586ef750,flags=16777224,maximumSize=,minimumSize=,preferredSize=,optimizedDrawingPossible=false]
+               com.mathworks.widgets.desk.DTDocumentTabs$Tab[SelectuntitledButton,8,0,115x21,alignmentX=0.0,alignmentY=0.0,border=,flags=16777216,maximumSize=,minimumSize=,preferredSize=]
+                com.mathworks.widgets.desk.DTDocumentTabs$CloseButton[CloseDocumentEditorViewContainer,86,3,16x16,alignmentX=0.0,alignmentY=0.5,border=javax.swing.plaf.BorderUIResource$CompoundBorderUIResource@45289095,flags=20971808,maximumSize=,minimumSize=,preferredSize=,defaultIcon=jar:file:/usr/local/MATLAB/R2017b/java/jar/common.jar!/com/mathworks/common/icons/resources/close_tab.png,disabledIcon=,disabledSelectedIcon=,margin=javax.swing.plaf.InsetsUIResource[top=1,left=14,bottom=1,right=14],paintBorder=true,paintFocus=true,pressedIcon=jar:file:/usr/local/MATLAB/R2017b/java/jar/common.jar!/com/mathworks/common/icons/resources/close_tab_pressed.png,rolloverEnabled=true,rolloverIcon=jar:file:/usr/local/MATLAB/R2017b/java/jar/common.jar!/com/mathworks/common/icons/resources/close_tab_hover.png,rolloverSelectedIcon=,selectedIcon=,text=,defaultCapable=true]
+               com.jidesoft.swing.Gripper[,0,0,8x20,alignmentX=0.0,alignmentY=0.0,border=,flags=0,maximumSize=,minimumSize=,preferredSize=]
+               com.mathworks.widgets.desk.DTDocumentTabs$Tab[Selectlu.mButton,101,0,88x21,alignmentX=0.0,alignmentY=0.0,border=,flags=16777216,maximumSize=,minimumSize=,preferredSize=]
+                com.mathworks.widgets.desk.DTDocumentTabs$CloseButton[CloseDocumentEditorViewContainer,59,3,16x16,alignmentX=0.0,alignmentY=0.5,border=javax.swing.plaf.BorderUIResource$CompoundBorderUIResource@45289095,flags=20971808,maximumSize=,minimumSize=,preferredSize=,defaultIcon=jar:file:/usr/local/MATLAB/R2017b/java/jar/common.jar!/com/mathworks/common/icons/resources/close_tab.png,disabledIcon=,disabledSelectedIcon=,margin=javax.swing.plaf.InsetsUIResource[top=1,left=14,bottom=1,right=14],paintBorder=true,paintFocus=true,pressedIcon=jar:file:/usr/local/MATLAB/R2017b/java/jar/common.jar!/com/mathworks/common/icons/resources/close_tab_pressed.png,rolloverEnabled=true,rolloverIcon=jar:file:/usr/local/MATLAB/R2017b/java/jar/common.jar!/com/mathworks/common/icons/resources/close_tab_hover.png,rolloverSelectedIcon=,selectedIcon=,text=,defaultCapable=true]
+               com.mathworks.widgets.desk.DTDocumentTabs$OverflowButton[Live EditorDocumentOverflowButton,"",layout<HORIZONTAL>,NORMAL]
+               com.mathworks.widgets.desk.DTDocumentTabs$Tab[MfileButton,167,0,52x21,alignmentX=0.0,alignmentY=0.0,border=,flags=16777216,maximumSize=,minimumSize=,preferredSize=]
+              com.mathworks.widgets.desk.DTClientFrame[EditorViewContainerInternalFrame,0,21,958x306,alignmentX=0.0,alignmentY=0.0,border=,flags=320,maximumSize=,minimumSize=,preferredSize=,optimizedDrawingPossible=true]
+               javax.swing.JPanel[,0,0,958x306,layout=java.awt.BorderLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=73,maximumSize=,minimumSize=,preferredSize=]
+                com.mathworks.widgets.desk.DTToolBarContainer[ToolBarContainer,0,0,958x0,alignmentX=0.0,alignmentY=0.0,border=com.mathworks.widgets.desk.DTBorderFactory$ToolBarContainerBorder@7915859a,flags=0,maximumSize=,minimumSize=,preferredSize=,optimizedDrawingPossible=true]
+                com.mathworks.mde.editor.EditorViewClient[EditorViewContainer,0,0,958x306,layout=java.awt.BorderLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777281,maximumSize=,minimumSize=,preferredSize=]
+                 com.mathworks.mde.editor.EditorView[EditorView,0,0,958x306,layout=java.awt.BorderLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777281,maximumSize=,minimumSize=,preferredSize=]
+                  com.mathworks.mwswing.MJPanel[,0,0,958x306,layout=java.awt.BorderLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777281,maximumSize=,minimumSize=,preferredSize=]
+                   com.mathworks.mwswing.MJPanel[,0,0,958x306,layout=java.awt.BorderLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=73,maximumSize=,minimumSize=,preferredSize=]
+                    javax.swing.JPanel[,0,0,958x306,layout=java.awt.BorderLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=73,maximumSize=,minimumSize=,preferredSize=]
+                     javax.swing.JPanel[,0,306,958x0,layout=java.awt.GridBagLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+                     com.mathworks.mwswing.MJScrollPane[,0,0,942x306,layout=com.mathworks.widgets.text.MWEditorUI$FancyLayout,alignmentX=0.0,alignmentY=0.0,border=javax.swing.border.EmptyBorder@5385786f,flags=328,maximumSize=,minimumSize=,preferredSize=,columnHeader=,horizontalScrollBar=javax.swing.JScrollPane$ScrollBar[,5,289,6145x17,hidden,layout=com.jgoodies.looks.plastic.PlasticScrollBarUI,alignmentX=0.0,alignmentY=0.0,border=,flags=4194632,maximumSize=,minimumSize=,preferredSize=,blockIncrement=10,orientation=HORIZONTAL,unitIncrement=1],horizontalScrollBarPolicy=HORIZONTAL_SCROLLBAR_AS_NEEDED,lowerLeft=,lowerRight=,rowHeader=javax.swing.JViewport[,0,0,61x306,layout=javax.swing.ViewportLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=25165832,maximumSize=,minimumSize=,preferredSize=,isViewSizeSet=true,lastPaintPosition=java.awt.Point[x=0,y=0],scrollUnderway=false],upperLeft=,upperRight=,verticalScrollBar=javax.swing.JScrollPane$ScrollBar[,0,4360,0x-4360,hidden,layout=com.jgoodies.looks.plastic.PlasticScrollBarUI,alignmentX=0.0,alignmentY=0.0,border=,flags=4194632,maximumSize=,minimumSize=,preferredSize=,blockIncrement=10,orientation=VERTICAL,unitIncrement=1],verticalScrollBarPolicy=VERTICAL_SCROLLBAR_AS_NEEDED,viewport=javax.swing.JViewport[,61,0,881x306,layout=javax.swing.ViewportLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=25165896,maximumSize=,minimumSize=java.awt.Dimension[width=4,height=4],preferredSize=,isViewSizeSet=true,lastPaintPosition=java.awt.Point[x=0,y=0],scrollUnderway=false],viewportBorder=javax.swing.border.EmptyBorder@2f1fef1e]
+                      javax.swing.JViewport[,61,0,881x306,layout=javax.swing.ViewportLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=25165896,maximumSize=,minimumSize=java.awt.Dimension[width=4,height=4],preferredSize=,isViewSizeSet=true,lastPaintPosition=java.awt.Point[x=0,y=0],scrollUnderway=false]
+                       com.mathworks.mde.editor.EditorSyntaxTextPane[EditorTextPane,0,0,881x306,layout=javax.swing.plaf.basic.BasicTextUI$UpdateHandler,alignmentX=0.0,alignmentY=0.0,border=javax.swing.plaf.basic.BasicBorders$MarginBorder@3d49330e,flags=360,maximumSize=,minimumSize=,preferredSize=,caretColor=java.awt.SystemColor[i=13],disabledTextColor=javax.swing.plaf.ColorUIResource[r=167,g=166,b=170],editable=true,margin=java.awt.Insets[top=0,left=0,bottom=0,right=0],selectedTextColor=javax.swing.plaf.ColorUIResource[r=255,g=255,b=255],selectionColor=javax.swing.plaf.ColorUIResource[r=51,g=94,b=168],kit=com.mathworks.mde.editor.EditorMKit@35e32979,typeHandlers={text/m-MATLAB=com.mathworks.mde.editor.EditorMKit@35e32979}]
+                      javax.swing.JScrollPane$ScrollBar[,0,4360,0x-4360,hidden,layout=com.jgoodies.looks.plastic.PlasticScrollBarUI,alignmentX=0.0,alignmentY=0.0,border=,flags=4194632,maximumSize=,minimumSize=,preferredSize=,blockIncrement=10,orientation=VERTICAL,unitIncrement=1]
+                       com.jgoodies.looks.plastic.PlasticArrowButton[,0,-2180,0x-2180,alignmentX=0.0,alignmentY=0.5,border=javax.swing.plaf.BorderUIResource$CompoundBorderUIResource@45289095,flags=4194600,maximumSize=,minimumSize=,preferredSize=,defaultIcon=,disabledIcon=,disabledSelectedIcon=,margin=javax.swing.plaf.InsetsUIResource[top=1,left=14,bottom=1,right=14],paintBorder=true,paintFocus=true,pressedIcon=,rolloverEnabled=false,rolloverIcon=,rolloverSelectedIcon=,selectedIcon=,text=,defaultCapable=true]
+                       com.jgoodies.looks.plastic.PlasticArrowButton[,0,0,0x-2180,alignmentX=0.0,alignmentY=0.5,border=javax.swing.plaf.BorderUIResource$CompoundBorderUIResource@45289095,flags=4194600,maximumSize=,minimumSize=,preferredSize=,defaultIcon=,disabledIcon=,disabledSelectedIcon=,margin=javax.swing.plaf.InsetsUIResource[top=1,left=14,bottom=1,right=14],paintBorder=true,paintFocus=true,pressedIcon=,rolloverEnabled=false,rolloverIcon=,rolloverSelectedIcon=,selectedIcon=,text=,defaultCapable=true]
+                      javax.swing.JScrollPane$ScrollBar[,5,289,6145x17,hidden,layout=com.jgoodies.looks.plastic.PlasticScrollBarUI,alignmentX=0.0,alignmentY=0.0,border=,flags=4194632,maximumSize=,minimumSize=,preferredSize=,blockIncrement=10,orientation=HORIZONTAL,unitIncrement=1]
+                       com.jgoodies.looks.plastic.PlasticArrowButton[,6129,0,16x17,alignmentX=0.0,alignmentY=0.5,border=javax.swing.plaf.BorderUIResource$CompoundBorderUIResource@45289095,flags=4194600,maximumSize=,minimumSize=,preferredSize=,defaultIcon=,disabledIcon=,disabledSelectedIcon=,margin=javax.swing.plaf.InsetsUIResource[top=1,left=14,bottom=1,right=14],paintBorder=true,paintFocus=true,pressedIcon=,rolloverEnabled=false,rolloverIcon=,rolloverSelectedIcon=,selectedIcon=,text=,defaultCapable=true]
+                       com.jgoodies.looks.plastic.PlasticArrowButton[,0,0,15x17,alignmentX=0.0,alignmentY=0.5,border=javax.swing.plaf.BorderUIResource$CompoundBorderUIResource@45289095,flags=4194600,maximumSize=,minimumSize=,preferredSize=,defaultIcon=,disabledIcon=,disabledSelectedIcon=,margin=javax.swing.plaf.InsetsUIResource[top=1,left=14,bottom=1,right=14],paintBorder=true,paintFocus=true,pressedIcon=,rolloverEnabled=false,rolloverIcon=,rolloverSelectedIcon=,selectedIcon=,text=,defaultCapable=true]
+                      javax.swing.JViewport[,0,0,61x306,layout=javax.swing.ViewportLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=25165832,maximumSize=,minimumSize=,preferredSize=,isViewSizeSet=true,lastPaintPosition=java.awt.Point[x=0,y=0],scrollUnderway=false]
+                       com.mathworks.mwswing.MJPanel[,0,0,61x5576,layout=java.awt.BorderLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+                        org.netbeans.editor.GlyphGutter[LineNumberPanel,0,0,22x5576,alignmentX=0.0,alignmentY=0.0,border=,flags=16777224,maximumSize=java.awt.Dimension[width=2147483647,height=2147483647],minimumSize=,preferredSize=java.awt.Dimension[width=22,height=5576]]
+                        com.mathworks.widgets.text.fold.MWCodeFoldingSideBar[MWCodeFoldingSideBar,48,0,13x5576,alignmentX=0.0,alignmentY=0.0,border=,flags=16777224,maximumSize=java.awt.Dimension[width=2147483647,height=2147483647],minimumSize=,preferredSize=java.awt.Dimension[width=13,height=0]]
+                        com.mathworks.mwswing.MJPanel[Breakpoint-Margin-Panel,22,0,26x5576,layout=java.awt.BorderLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+                         com.mathworks.mde.editor.ExecutionArrowDisplay$ExecutionPanel[ExecutionArrowDisplay,12,0,14x5576,layout=java.awt.FlowLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+                         com.mathworks.widgets.editor.breakpoints.BreakpointView$2[BreakpointView,0,0,12x5576,layout=java.awt.FlowLayout,alignmentX=0.0,alignmentY=0.0,border=javax.swing.border.MatteBorder@12328780,flags=9,maximumSize=,minimumSize=,preferredSize=]
+                      com.mathworks.widgets.SyntaxTextPaneMultiView$DragButton[VerticalSplitWidget,0,4355,0x5,layout=java.awt.FlowLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=java.awt.Dimension[width=1,height=5],preferredSize=java.awt.Dimension[width=1,height=5]]
+                      com.mathworks.widgets.SyntaxTextPaneMultiView$DragButton[HorizontalSplitWidget,0,289,5x17,layout=java.awt.FlowLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=java.awt.Dimension[width=5,height=1],preferredSize=java.awt.Dimension[width=5,height=1]]
+                     com.mathworks.mwswing.MJPanel[,942,0,16x306,layout=java.awt.BorderLayout,alignmentX=0.0,alignmentY=0.0,border=javax.swing.border.MatteBorder@4285fdc7,flags=9,maximumSize=,minimumSize=,preferredSize=]
+                      com.mathworks.widgets.text.STPMessagePanel$3[EditorMessagePanel,1,0,15x306,alignmentX=0.0,alignmentY=0.0,border=,flags=0,maximumSize=,minimumSize=,preferredSize=java.awt.Dimension[width=15,height=30]]
+                  com.mathworks.mwswing.MJPanel[,0,0,0x306,layout=java.awt.BorderLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777217,maximumSize=,minimumSize=,preferredSize=]
+               com.mathworks.widgets.desk.DTTitleBar[untitledTitleBar,0,0,0x0,hidden,alignmentX=0.0,alignmentY=0.0,border=,flags=0,maximumSize=,minimumSize=,preferredSize=]
+                com.mathworks.widgets.desk.DTTitleButton[UndockuntitledButton,-38,-7,18x14,alignmentX=0.0,alignmentY=0.5,border=javax.swing.plaf.basic.BasicBorders$ButtonBorder@14b93d08,flags=20971808,maximumSize=,minimumSize=,preferredSize=,defaultIcon=jar:file:/usr/local/MATLAB/R2017b/java/jar/widgets.jar!/com/mathworks/widgets/desk/resources/undock.gif,disabledIcon=,disabledSelectedIcon=,margin=java.awt.Insets[top=0,left=-1,bottom=0,right=0],paintBorder=false,paintFocus=true,pressedIcon=,rolloverEnabled=true,rolloverIcon=jar:file:/usr/local/MATLAB/R2017b/java/jar/widgets.jar!/com/mathworks/widgets/desk/resources/undock.gif,rolloverSelectedIcon=,selectedIcon=,text=,defaultCapable=false]
+                com.mathworks.widgets.desk.DTTitleButton[CloseuntitledButton,-20,-7,18x14,alignmentX=0.0,alignmentY=0.5,border=javax.swing.plaf.basic.BasicBorders$ButtonBorder@14b93d08,flags=20971808,maximumSize=,minimumSize=,preferredSize=,defaultIcon=jar:file:/usr/local/MATLAB/R2017b/java/jar/widgets.jar!/com/mathworks/widgets/desk/resources/closebox.gif,disabledIcon=,disabledSelectedIcon=,margin=java.awt.Insets[top=0,left=-1,bottom=0,right=0],paintBorder=false,paintFocus=true,pressedIcon=,rolloverEnabled=true,rolloverIcon=jar:file:/usr/local/MATLAB/R2017b/java/jar/widgets.jar!/com/mathworks/widgets/desk/resources/closebox.gif,rolloverSelectedIcon=,selectedIcon=,text=,defaultCapable=false]
+              com.mathworks.widgets.desk.DTClientFrame[EditorViewContainerInternalFrame,0,21,958x306,hidden,alignmentX=0.0,alignmentY=0.0,border=,flags=320,maximumSize=,minimumSize=,preferredSize=,optimizedDrawingPossible=true]
+               javax.swing.JPanel[,0,0,958x306,layout=java.awt.BorderLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=73,maximumSize=,minimumSize=,preferredSize=]
+                com.mathworks.widgets.desk.DTToolBarContainer[ToolBarContainer,0,0,958x0,alignmentX=0.0,alignmentY=0.0,border=com.mathworks.widgets.desk.DTBorderFactory$ToolBarContainerBorder@7915859a,flags=0,maximumSize=,minimumSize=,preferredSize=,optimizedDrawingPossible=true]
+                com.mathworks.mde.editor.EditorViewClient[EditorViewContainer,0,0,958x306,layout=java.awt.BorderLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777281,maximumSize=,minimumSize=,preferredSize=]
+                 com.mathworks.mde.editor.EditorView[EditorView,0,0,958x306,layout=java.awt.BorderLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777281,maximumSize=,minimumSize=,preferredSize=]
+                  com.mathworks.mwswing.MJPanel[,0,0,958x306,layout=java.awt.BorderLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777281,maximumSize=,minimumSize=,preferredSize=]
+                   com.mathworks.mwswing.MJPanel[,0,0,958x306,layout=java.awt.BorderLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=73,maximumSize=,minimumSize=,preferredSize=]
+                    javax.swing.JPanel[,0,0,958x306,layout=java.awt.BorderLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=73,maximumSize=,minimumSize=,preferredSize=]
+                     javax.swing.JPanel[,0,306,958x0,layout=java.awt.GridBagLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+                     com.mathworks.mwswing.MJScrollPane[,0,0,942x306,layout=com.mathworks.widgets.text.MWEditorUI$FancyLayout,alignmentX=0.0,alignmentY=0.0,border=javax.swing.border.EmptyBorder@5385786f,flags=328,maximumSize=,minimumSize=,preferredSize=,columnHeader=,horizontalScrollBar=javax.swing.JScrollPane$ScrollBar[,5,289,4735x17,hidden,layout=com.jgoodies.looks.plastic.PlasticScrollBarUI,alignmentX=0.0,alignmentY=0.0,border=,flags=4194632,maximumSize=,minimumSize=,preferredSize=,blockIncrement=10,orientation=HORIZONTAL,unitIncrement=1],horizontalScrollBarPolicy=HORIZONTAL_SCROLLBAR_AS_NEEDED,lowerLeft=,lowerRight=,rowHeader=javax.swing.JViewport[,0,0,61x306,layout=javax.swing.ViewportLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=25165832,maximumSize=,minimumSize=,preferredSize=,isViewSizeSet=true,lastPaintPosition=java.awt.Point[x=0,y=0],scrollUnderway=false],upperLeft=,upperRight=,verticalScrollBar=javax.swing.JScrollPane$ScrollBar[,925,5,17x301,layout=com.jgoodies.looks.plastic.PlasticScrollBarUI,alignmentX=0.0,alignmentY=0.0,border=,flags=4194632,maximumSize=,minimumSize=,preferredSize=,blockIncrement=10,orientation=VERTICAL,unitIncrement=1],verticalScrollBarPolicy=VERTICAL_SCROLLBAR_AS_NEEDED,viewport=javax.swing.JViewport[,61,0,864x306,layout=javax.swing.ViewportLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=25165896,maximumSize=,minimumSize=java.awt.Dimension[width=4,height=4],preferredSize=,isViewSizeSet=true,lastPaintPosition=java.awt.Point[x=0,y=0],scrollUnderway=false],viewportBorder=javax.swing.border.EmptyBorder@6e81ac0f]
+                      javax.swing.JViewport[,61,0,864x306,layout=javax.swing.ViewportLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=25165896,maximumSize=,minimumSize=java.awt.Dimension[width=4,height=4],preferredSize=,isViewSizeSet=true,lastPaintPosition=java.awt.Point[x=0,y=0],scrollUnderway=false]
+                       com.mathworks.mde.editor.EditorSyntaxTextPane[EditorTextPane,0,0,864x1275,layout=javax.swing.plaf.basic.BasicTextUI$UpdateHandler,alignmentX=0.0,alignmentY=0.0,border=javax.swing.plaf.basic.BasicBorders$MarginBorder@3d49330e,flags=360,maximumSize=,minimumSize=,preferredSize=,caretColor=java.awt.SystemColor[i=13],disabledTextColor=javax.swing.plaf.ColorUIResource[r=167,g=166,b=170],editable=true,margin=java.awt.Insets[top=0,left=0,bottom=0,right=0],selectedTextColor=javax.swing.plaf.ColorUIResource[r=255,g=255,b=255],selectionColor=javax.swing.plaf.ColorUIResource[r=51,g=94,b=168],kit=com.mathworks.mde.editor.EditorMKit@1aa43392,typeHandlers={text/m-MATLAB=com.mathworks.mde.editor.EditorMKit@1aa43392}]
+                      javax.swing.JScrollPane$ScrollBar[,925,5,17x301,layout=com.jgoodies.looks.plastic.PlasticScrollBarUI,alignmentX=0.0,alignmentY=0.0,border=,flags=4194632,maximumSize=,minimumSize=,preferredSize=,blockIncrement=10,orientation=VERTICAL,unitIncrement=1]
+                       com.jgoodies.looks.plastic.PlasticArrowButton[,0,285,17x16,alignmentX=0.0,alignmentY=0.5,border=javax.swing.plaf.BorderUIResource$CompoundBorderUIResource@45289095,flags=4194600,maximumSize=,minimumSize=,preferredSize=,defaultIcon=,disabledIcon=,disabledSelectedIcon=,margin=javax.swing.plaf.InsetsUIResource[top=1,left=14,bottom=1,right=14],paintBorder=true,paintFocus=true,pressedIcon=,rolloverEnabled=false,rolloverIcon=,rolloverSelectedIcon=,selectedIcon=,text=,defaultCapable=true]
+                       com.jgoodies.looks.plastic.PlasticArrowButton[,0,0,17x15,alignmentX=0.0,alignmentY=0.5,border=javax.swing.plaf.BorderUIResource$CompoundBorderUIResource@45289095,flags=4194600,maximumSize=,minimumSize=,preferredSize=,defaultIcon=,disabledIcon=,disabledSelectedIcon=,margin=javax.swing.plaf.InsetsUIResource[top=1,left=14,bottom=1,right=14],paintBorder=true,paintFocus=true,pressedIcon=,rolloverEnabled=false,rolloverIcon=,rolloverSelectedIcon=,selectedIcon=,text=,defaultCapable=true]
+                      javax.swing.JScrollPane$ScrollBar[,5,289,4735x17,hidden,layout=com.jgoodies.looks.plastic.PlasticScrollBarUI,alignmentX=0.0,alignmentY=0.0,border=,flags=4194632,maximumSize=,minimumSize=,preferredSize=,blockIncrement=10,orientation=HORIZONTAL,unitIncrement=1]
+                       com.jgoodies.looks.plastic.PlasticArrowButton[,4719,0,16x17,alignmentX=0.0,alignmentY=0.5,border=javax.swing.plaf.BorderUIResource$CompoundBorderUIResource@45289095,flags=4194600,maximumSize=,minimumSize=,preferredSize=,defaultIcon=,disabledIcon=,disabledSelectedIcon=,margin=javax.swing.plaf.InsetsUIResource[top=1,left=14,bottom=1,right=14],paintBorder=true,paintFocus=true,pressedIcon=,rolloverEnabled=false,rolloverIcon=,rolloverSelectedIcon=,selectedIcon=,text=,defaultCapable=true]
+                       com.jgoodies.looks.plastic.PlasticArrowButton[,0,0,15x17,alignmentX=0.0,alignmentY=0.5,border=javax.swing.plaf.BorderUIResource$CompoundBorderUIResource@45289095,flags=4194600,maximumSize=,minimumSize=,preferredSize=,defaultIcon=,disabledIcon=,disabledSelectedIcon=,margin=javax.swing.plaf.InsetsUIResource[top=1,left=14,bottom=1,right=14],paintBorder=true,paintFocus=true,pressedIcon=,rolloverEnabled=false,rolloverIcon=,rolloverSelectedIcon=,selectedIcon=,text=,defaultCapable=true]
+                      javax.swing.JViewport[,0,0,61x306,layout=javax.swing.ViewportLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=25165832,maximumSize=,minimumSize=,preferredSize=,isViewSizeSet=true,lastPaintPosition=java.awt.Point[x=0,y=0],scrollUnderway=false]
+                       com.mathworks.mwswing.MJPanel[,0,0,61x7650,layout=java.awt.BorderLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+                        org.netbeans.editor.GlyphGutter[LineNumberPanel,0,0,22x7650,alignmentX=0.0,alignmentY=0.0,border=,flags=16777224,maximumSize=java.awt.Dimension[width=2147483647,height=2147483647],minimumSize=,preferredSize=java.awt.Dimension[width=22,height=7650]]
+                        com.mathworks.widgets.text.fold.MWCodeFoldingSideBar[MWCodeFoldingSideBar,48,0,13x7650,alignmentX=0.0,alignmentY=0.0,border=,flags=16777224,maximumSize=java.awt.Dimension[width=2147483647,height=2147483647],minimumSize=,preferredSize=java.awt.Dimension[width=13,height=0]]
+                        com.mathworks.mwswing.MJPanel[Breakpoint-Margin-Panel,22,0,26x7650,layout=java.awt.BorderLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+                         com.mathworks.widgets.editor.breakpoints.BreakpointView$2[BreakpointView,0,0,12x7650,layout=java.awt.FlowLayout,alignmentX=0.0,alignmentY=0.0,border=javax.swing.border.MatteBorder@1c2ca9c1,flags=9,maximumSize=,minimumSize=,preferredSize=]
+                         com.mathworks.mde.editor.ExecutionArrowDisplay$ExecutionPanel[ExecutionArrowDisplay,12,0,14x7650,layout=java.awt.FlowLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+                      com.mathworks.widgets.SyntaxTextPaneMultiView$DragButton[VerticalSplitWidget,925,0,17x5,layout=java.awt.FlowLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=java.awt.Dimension[width=1,height=5],preferredSize=java.awt.Dimension[width=1,height=5]]
+                      com.mathworks.widgets.SyntaxTextPaneMultiView$DragButton[HorizontalSplitWidget,0,289,5x17,layout=java.awt.FlowLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=java.awt.Dimension[width=5,height=1],preferredSize=java.awt.Dimension[width=5,height=1]]
+                     com.mathworks.mwswing.MJPanel[,942,0,16x306,layout=java.awt.BorderLayout,alignmentX=0.0,alignmentY=0.0,border=javax.swing.border.MatteBorder@71aa0446,flags=9,maximumSize=,minimumSize=,preferredSize=]
+                      com.mathworks.widgets.text.STPMessagePanel$3[EditorMessagePanel,1,0,15x306,alignmentX=0.0,alignmentY=0.0,border=,flags=0,maximumSize=,minimumSize=,preferredSize=java.awt.Dimension[width=15,height=30]]
+                  com.mathworks.mwswing.MJPanel[,0,0,0x306,layout=java.awt.BorderLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777217,maximumSize=,minimumSize=,preferredSize=]
+               com.mathworks.widgets.desk.DTTitleBar[lu.mTitleBar,0,0,0x0,hidden,alignmentX=0.0,alignmentY=0.0,border=,flags=0,maximumSize=,minimumSize=,preferredSize=]
+                com.mathworks.widgets.desk.DTTitleButton[Undocklu.mButton,-38,-7,18x14,alignmentX=0.0,alignmentY=0.5,border=javax.swing.plaf.basic.BasicBorders$ButtonBorder@14b93d08,flags=20971808,maximumSize=,minimumSize=,preferredSize=,defaultIcon=jar:file:/usr/local/MATLAB/R2017b/java/jar/widgets.jar!/com/mathworks/widgets/desk/resources/undock.gif,disabledIcon=,disabledSelectedIcon=,margin=java.awt.Insets[top=0,left=-1,bottom=0,right=0],paintBorder=false,paintFocus=true,pressedIcon=,rolloverEnabled=true,rolloverIcon=jar:file:/usr/local/MATLAB/R2017b/java/jar/widgets.jar!/com/mathworks/widgets/desk/resources/undock.gif,rolloverSelectedIcon=,selectedIcon=,text=,defaultCapable=false]
+                com.mathworks.widgets.desk.DTTitleButton[Closelu.mButton,-20,-7,18x14,alignmentX=0.0,alignmentY=0.5,border=javax.swing.plaf.basic.BasicBorders$ButtonBorder@14b93d08,flags=20971808,maximumSize=,minimumSize=,preferredSize=,defaultIcon=jar:file:/usr/local/MATLAB/R2017b/java/jar/widgets.jar!/com/mathworks/widgets/desk/resources/closebox.gif,disabledIcon=,disabledSelectedIcon=,margin=java.awt.Insets[top=0,left=-1,bottom=0,right=0],paintBorder=false,paintFocus=true,pressedIcon=,rolloverEnabled=true,rolloverIcon=jar:file:/usr/local/MATLAB/R2017b/java/jar/widgets.jar!/com/mathworks/widgets/desk/resources/closebox.gif,rolloverSelectedIcon=,selectedIcon=,text=,defaultCapable=false]
+           com.mathworks.widgets.desk.DTTitleBar[Live EditorTitleBar,2,2,958x19,alignmentX=0.0,alignmentY=0.0,border=com.mathworks.widgets.desk.DTTitleBar$SingletonBorder@8b057f2,flags=0,maximumSize=,minimumSize=,preferredSize=]
+            com.mathworks.widgets.desk.DTTitleButton[UndockEditorButton,0,0,0x0,hidden,alignmentX=0.0,alignmentY=0.5,border=javax.swing.plaf.basic.BasicBorders$ButtonBorder@14b93d08,flags=20971808,maximumSize=,minimumSize=,preferredSize=,defaultIcon=jar:file:/usr/local/MATLAB/R2017b/java/jar/widgets.jar!/com/mathworks/widgets/desk/resources/undock.gif,disabledIcon=,disabledSelectedIcon=,margin=java.awt.Insets[top=0,left=-1,bottom=0,right=0],paintBorder=false,paintFocus=true,pressedIcon=,rolloverEnabled=true,rolloverIcon=jar:file:/usr/local/MATLAB/R2017b/java/jar/widgets.jar!/com/mathworks/widgets/desk/resources/undock.gif,rolloverSelectedIcon=,selectedIcon=,text=,defaultCapable=false]
+            com.mathworks.widgets.desk.DTTitleButton[MinimizeEditorButton,0,0,0x0,hidden,alignmentX=0.0,alignmentY=0.5,border=javax.swing.plaf.basic.BasicBorders$ButtonBorder@14b93d08,flags=20971808,maximumSize=,minimumSize=,preferredSize=,defaultIcon=jar:file:/usr/local/MATLAB/R2017b/java/jar/widgets.jar!/com/mathworks/widgets/desk/resources/minimizetowest.gif,disabledIcon=,disabledSelectedIcon=,margin=java.awt.Insets[top=0,left=-1,bottom=0,right=0],paintBorder=false,paintFocus=true,pressedIcon=,rolloverEnabled=true,rolloverIcon=jar:file:/usr/local/MATLAB/R2017b/java/jar/widgets.jar!/com/mathworks/widgets/desk/resources/minimizetowest.gif,rolloverSelectedIcon=,selectedIcon=,text=,defaultCapable=false]
+            com.mathworks.widgets.desk.DTTitleButton[MaximizeEditorButton,0,0,0x0,hidden,alignmentX=0.0,alignmentY=0.5,border=javax.swing.plaf.basic.BasicBorders$ButtonBorder@14b93d08,flags=20971808,maximumSize=,minimumSize=,preferredSize=,defaultIcon=jar:file:/usr/local/MATLAB/R2017b/java/jar/widgets.jar!/com/mathworks/widgets/desk/resources/maximize.gif,disabledIcon=,disabledSelectedIcon=,margin=java.awt.Insets[top=0,left=-1,bottom=0,right=0],paintBorder=false,paintFocus=true,pressedIcon=,rolloverEnabled=true,rolloverIcon=jar:file:/usr/local/MATLAB/R2017b/java/jar/widgets.jar!/com/mathworks/widgets/desk/resources/maximize.gif,rolloverSelectedIcon=,selectedIcon=,text=,defaultCapable=false]
+            com.mathworks.widgets.desk.DTTitleButton[CloseEditorButton,938,2,18x15,alignmentX=0.0,alignmentY=0.5,border=javax.swing.plaf.basic.BasicBorders$ButtonBorder@14b93d08,flags=20971808,maximumSize=,minimumSize=,preferredSize=,defaultIcon=jar:file:/usr/local/MATLAB/R2017b/java/jar/widgets.jar!/com/mathworks/widgets/desk/resources/closebox.gif,disabledIcon=,disabledSelectedIcon=,margin=java.awt.Insets[top=0,left=-1,bottom=0,right=0],paintBorder=false,paintFocus=true,pressedIcon=,rolloverEnabled=true,rolloverIcon=jar:file:/usr/local/MATLAB/R2017b/java/jar/widgets.jar!/com/mathworks/widgets/desk/resources/closebox.gif,rolloverSelectedIcon=,selectedIcon=,text=,defaultCapable=false]
+            com.mathworks.widgets.desk.DTTitleButton[Show ActionsEditorButton,920,2,18x15,alignmentX=0.0,alignmentY=0.5,border=javax.swing.plaf.basic.BasicBorders$ButtonBorder@14b93d08,flags=20971808,maximumSize=,minimumSize=,preferredSize=,defaultIcon=jar:file:/usr/local/MATLAB/R2017b/java/jar/widgets.jar!/com/mathworks/widgets/desk/resources/show_actions_dark.png,disabledIcon=,disabledSelectedIcon=,margin=java.awt.Insets[top=0,left=-1,bottom=0,right=0],paintBorder=false,paintFocus=true,pressedIcon=,rolloverEnabled=true,rolloverIcon=jar:file:/usr/local/MATLAB/R2017b/java/jar/widgets.jar!/com/mathworks/widgets/desk/resources/show_actions_dark.png,rolloverSelectedIcon=,selectedIcon=,text=,defaultCapable=false]
+          com.mathworks.widgets.desk.DTClientFrame[cw_DTClientBaseInternalFrame,0,354,962x283,alignmentX=0.0,alignmentY=0.0,border=com.mathworks.widgets.desk.DTBorderFactory$DockedFrameBorder@248e22cb,flags=320,maximumSize=,minimumSize=,preferredSize=,optimizedDrawingPossible=true]
+           javax.swing.JPanel[,2,20,958x261,layout=java.awt.BorderLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=73,maximumSize=,minimumSize=,preferredSize=]
+            com.mathworks.widgets.desk.DTToolBarContainer[ToolBarContainer,0,0,958x0,alignmentX=0.0,alignmentY=0.0,border=com.mathworks.widgets.desk.DTBorderFactory$ToolBarContainerBorder@7915859a,flags=0,maximumSize=,minimumSize=,preferredSize=,optimizedDrawingPossible=true]
+            com.mathworks.mde.cmdwin.CmdWin[cw_DTClientBase,0,0,958x261,layout=java.awt.BorderLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=73,maximumSize=,minimumSize=,preferredSize=]
+             com.mathworks.mwswing.MJScrollPane[cw_ScrollPane,18,1,940x260,layout=javax.swing.ScrollPaneLayout$UIResource,alignmentX=0.0,alignmentY=0.0,border=javax.swing.border.EmptyBorder@12282fa8,flags=328,maximumSize=,minimumSize=,preferredSize=,columnHeader=,horizontalScrollBar=javax.swing.JScrollPane$ScrollBar[,0,243,923x17,layout=com.jgoodies.looks.plastic.PlasticScrollBarUI,alignmentX=0.0,alignmentY=0.0,border=,flags=4194632,maximumSize=,minimumSize=,preferredSize=,blockIncrement=10,orientation=HORIZONTAL,unitIncrement=1],horizontalScrollBarPolicy=HORIZONTAL_SCROLLBAR_AS_NEEDED,lowerLeft=,lowerRight=,rowHeader=,upperLeft=,upperRight=,verticalScrollBar=javax.swing.JScrollPane$ScrollBar[,923,0,17x243,layout=com.jgoodies.looks.plastic.PlasticScrollBarUI,alignmentX=0.0,alignmentY=0.0,border=,flags=4194632,maximumSize=,minimumSize=,preferredSize=,blockIncrement=10,orientation=VERTICAL,unitIncrement=1],verticalScrollBarPolicy=VERTICAL_SCROLLBAR_AS_NEEDED,viewport=javax.swing.JViewport[,0,0,923x243,layout=javax.swing.ViewportLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=25165896,maximumSize=,minimumSize=,preferredSize=,isViewSizeSet=true,lastPaintPosition=java.awt.Point[x=0,y=-11882],scrollUnderway=false],viewportBorder=]
+              javax.swing.JViewport[,0,0,923x243,layout=javax.swing.ViewportLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=25165896,maximumSize=,minimumSize=,preferredSize=,isViewSizeSet=true,lastPaintPosition=java.awt.Point[x=0,y=-11882],scrollUnderway=false]
+               com.mathworks.mde.cmdwin.XCmdWndView[cw_view,0,-11882,1136x12125,layout=javax.swing.plaf.basic.BasicTextUI$UpdateHandler,alignmentX=0.0,alignmentY=0.0,border=javax.swing.border.EmptyBorder@29aba6dc,flags=360,maximumSize=,minimumSize=,preferredSize=,caretColor=java.awt.SystemColor[i=13],disabledTextColor=javax.swing.plaf.ColorUIResource[r=167,g=166,b=170],editable=true,margin=javax.swing.plaf.InsetsUIResource[top=2,left=1,bottom=2,right=1],selectedTextColor=javax.swing.plaf.ColorUIResource[r=0,g=0,b=0],selectionColor=javax.swing.plaf.ColorUIResource[r=235,g=233,b=237],colums=0,columWidth=0,rows=0,rowHeight=17,word=true,wrap=false]
+              javax.swing.JScrollPane$ScrollBar[,923,0,17x243,layout=com.jgoodies.looks.plastic.PlasticScrollBarUI,alignmentX=0.0,alignmentY=0.0,border=,flags=4194632,maximumSize=,minimumSize=,preferredSize=,blockIncrement=10,orientation=VERTICAL,unitIncrement=1]
+               com.jgoodies.looks.plastic.PlasticArrowButton[,0,227,17x16,alignmentX=0.0,alignmentY=0.5,border=javax.swing.plaf.BorderUIResource$CompoundBorderUIResource@45289095,flags=4194600,maximumSize=,minimumSize=,preferredSize=,defaultIcon=,disabledIcon=,disabledSelectedIcon=,margin=javax.swing.plaf.InsetsUIResource[top=1,left=14,bottom=1,right=14],paintBorder=true,paintFocus=true,pressedIcon=,rolloverEnabled=false,rolloverIcon=,rolloverSelectedIcon=,selectedIcon=,text=,defaultCapable=true]
+               com.jgoodies.looks.plastic.PlasticArrowButton[,0,0,17x15,alignmentX=0.0,alignmentY=0.5,border=javax.swing.plaf.BorderUIResource$CompoundBorderUIResource@45289095,flags=4194600,maximumSize=,minimumSize=,preferredSize=,defaultIcon=,disabledIcon=,disabledSelectedIcon=,margin=javax.swing.plaf.InsetsUIResource[top=1,left=14,bottom=1,right=14],paintBorder=true,paintFocus=true,pressedIcon=,rolloverEnabled=false,rolloverIcon=,rolloverSelectedIcon=,selectedIcon=,text=,defaultCapable=true]
+              javax.swing.JScrollPane$ScrollBar[,0,243,923x17,layout=com.jgoodies.looks.plastic.PlasticScrollBarUI,alignmentX=0.0,alignmentY=0.0,border=,flags=4194632,maximumSize=,minimumSize=,preferredSize=,blockIncrement=10,orientation=HORIZONTAL,unitIncrement=1]
+               com.jgoodies.looks.plastic.PlasticArrowButton[,907,0,16x17,alignmentX=0.0,alignmentY=0.5,border=javax.swing.plaf.BorderUIResource$CompoundBorderUIResource@45289095,flags=4194600,maximumSize=,minimumSize=,preferredSize=,defaultIcon=,disabledIcon=,disabledSelectedIcon=,margin=javax.swing.plaf.InsetsUIResource[top=1,left=14,bottom=1,right=14],paintBorder=true,paintFocus=true,pressedIcon=,rolloverEnabled=false,rolloverIcon=,rolloverSelectedIcon=,selectedIcon=,text=,defaultCapable=true]
+               com.jgoodies.looks.plastic.PlasticArrowButton[,0,0,15x17,alignmentX=0.0,alignmentY=0.5,border=javax.swing.plaf.BorderUIResource$CompoundBorderUIResource@45289095,flags=4194600,maximumSize=,minimumSize=,preferredSize=,defaultIcon=,disabledIcon=,disabledSelectedIcon=,margin=javax.swing.plaf.InsetsUIResource[top=1,left=14,bottom=1,right=14],paintBorder=true,paintFocus=true,pressedIcon=,rolloverEnabled=false,rolloverIcon=,rolloverSelectedIcon=,selectedIcon=,text=,defaultCapable=true]
+             com.mathworks.mde.cmdwin.FunctionBrowserRowHeader[FunctionBrowserRowHeader,0,1,18x260,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=java.awt.Dimension[width=18,height=-1]]
+              com.mathworks.mwswing.MJButton[FunctionBrowserRowHeader:fFunctionBrowserBtn,0,225,18x18,alignmentX=0.0,alignmentY=0.5,border=javax.swing.plaf.BorderUIResource$CompoundBorderUIResource@45289095,flags=20971936,maximumSize=,minimumSize=,preferredSize=java.awt.Dimension[width=18,height=18],defaultIcon=jar:file:/usr/local/MATLAB/R2017b/java/jar/common.jar!/com/mathworks/common/icons/resources/fx_pulldown_16.png,disabledIcon=sun.swing.ImageIconUIResource@50b06089,disabledSelectedIcon=,margin=java.awt.Insets[top=0,left=0,bottom=0,right=0],paintBorder=false,paintFocus=true,pressedIcon=,rolloverEnabled=false,rolloverIcon=,rolloverSelectedIcon=,selectedIcon=,text=null,defaultCapable=true]
+             com.mathworks.mde.cmdwin.CmdWin$2[,0,0,958x1,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+           com.mathworks.widgets.desk.DTTitleBar[Command WindowTitleBar,2,2,958x18,alignmentX=0.0,alignmentY=0.0,border=com.mathworks.widgets.desk.DTTitleBar$SingletonBorder@8b057f2,flags=0,maximumSize=,minimumSize=,preferredSize=]
+            com.mathworks.widgets.desk.DTTitleButton[UndockCommand WindowButton,0,0,0x0,hidden,alignmentX=0.0,alignmentY=0.5,border=javax.swing.plaf.basic.BasicBorders$ButtonBorder@14b93d08,flags=20971808,maximumSize=,minimumSize=,preferredSize=,defaultIcon=jar:file:/usr/local/MATLAB/R2017b/java/jar/widgets.jar!/com/mathworks/widgets/desk/resources/undock.gif,disabledIcon=,disabledSelectedIcon=,margin=java.awt.Insets[top=0,left=-1,bottom=0,right=0],paintBorder=false,paintFocus=true,pressedIcon=,rolloverEnabled=true,rolloverIcon=jar:file:/usr/local/MATLAB/R2017b/java/jar/widgets.jar!/com/mathworks/widgets/desk/resources/undock.gif,rolloverSelectedIcon=,selectedIcon=,text=,defaultCapable=false]
+            com.mathworks.widgets.desk.DTTitleButton[MinimizeCommand WindowButton,0,0,0x0,hidden,alignmentX=0.0,alignmentY=0.5,border=javax.swing.plaf.basic.BasicBorders$ButtonBorder@14b93d08,flags=20971808,maximumSize=,minimumSize=,preferredSize=,defaultIcon=jar:file:/usr/local/MATLAB/R2017b/java/jar/widgets.jar!/com/mathworks/widgets/desk/resources/minimizetowest.gif,disabledIcon=,disabledSelectedIcon=,margin=java.awt.Insets[top=0,left=-1,bottom=0,right=0],paintBorder=false,paintFocus=true,pressedIcon=,rolloverEnabled=true,rolloverIcon=jar:file:/usr/local/MATLAB/R2017b/java/jar/widgets.jar!/com/mathworks/widgets/desk/resources/minimizetowest.gif,rolloverSelectedIcon=,selectedIcon=,text=,defaultCapable=false]
+            com.mathworks.widgets.desk.DTTitleButton[MaximizeCommand WindowButton,0,0,0x0,hidden,alignmentX=0.0,alignmentY=0.5,border=javax.swing.plaf.basic.BasicBorders$ButtonBorder@14b93d08,flags=20971808,maximumSize=,minimumSize=,preferredSize=,defaultIcon=jar:file:/usr/local/MATLAB/R2017b/java/jar/widgets.jar!/com/mathworks/widgets/desk/resources/maximize.gif,disabledIcon=,disabledSelectedIcon=,margin=java.awt.Insets[top=0,left=-1,bottom=0,right=0],paintBorder=false,paintFocus=true,pressedIcon=,rolloverEnabled=true,rolloverIcon=jar:file:/usr/local/MATLAB/R2017b/java/jar/widgets.jar!/com/mathworks/widgets/desk/resources/maximize.gif,rolloverSelectedIcon=,selectedIcon=,text=,defaultCapable=false]
+            com.mathworks.widgets.desk.DTTitleButton[Show ActionsCommand WindowButton,938,2,18x14,alignmentX=0.0,alignmentY=0.5,border=javax.swing.plaf.basic.BasicBorders$ButtonBorder@14b93d08,flags=20971808,maximumSize=,minimumSize=,preferredSize=,defaultIcon=jar:file:/usr/local/MATLAB/R2017b/java/jar/widgets.jar!/com/mathworks/widgets/desk/resources/show_actions_dark.png,disabledIcon=,disabledSelectedIcon=,margin=java.awt.Insets[top=0,left=-1,bottom=0,right=0],paintBorder=false,paintFocus=true,pressedIcon=,rolloverEnabled=true,rolloverIcon=jar:file:/usr/local/MATLAB/R2017b/java/jar/widgets.jar!/com/mathworks/widgets/desk/resources/show_actions_dark.png,rolloverSelectedIcon=,selectedIcon=,text=,defaultCapable=false]
+         com.mathworks.widgets.desk.DTClientFrame[Current DirectoryInternalFrame,0,0,156x637,alignmentX=0.0,alignmentY=0.0,border=com.mathworks.widgets.desk.DTBorderFactory$DockedFrameBorder@248e22cb,flags=320,maximumSize=,minimumSize=,preferredSize=,optimizedDrawingPossible=true]
+          javax.swing.JPanel[,2,20,152x615,layout=java.awt.BorderLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=73,maximumSize=,minimumSize=,preferredSize=]
+           com.mathworks.widgets.desk.DTToolBarContainer[ToolBarContainer,0,0,152x0,alignmentX=0.0,alignmentY=0.0,border=com.mathworks.widgets.desk.DTBorderFactory$ToolBarContainerBorder@7915859a,flags=0,maximumSize=,minimumSize=,preferredSize=,optimizedDrawingPossible=true]
+           com.mathworks.mde.explorer.Explorer[Current Directory,0,0,152x615,layout=java.awt.BorderLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=73,maximumSize=,minimumSize=,preferredSize=]
+            com.mathworks.mlwidgets.explorer.ExplorerSplitPane$1[,0,0,152x615,layout=javax.swing.plaf.basic.BasicSplitPaneUI$BasicHorizontalLayoutManager,alignmentX=0.0,alignmentY=0.0,border=com.mathworks.mwswing.MJSplitPane$ConditionalBorder@7199d6ed,flags=201326920,maximumSize=,minimumSize=,preferredSize=,continuousLayout=true,dividerSize=2,lastDividerLocation=-1,oneTouchExpandable=false,orientation=VERTICAL_SPLIT]
+             com.jgoodies.looks.plastic.PlasticSplitPaneDivider[,0,592,152x2,layout=javax.swing.plaf.basic.BasicSplitPaneDivider$DividerLayout]
+             com.mathworks.mlwidgets.explorer.SplitPaneTop[CFBSplitPaneTopPanel,0,0,152x592,layout=java.awt.BorderLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=73,maximumSize=,minimumSize=,preferredSize=]
+              com.mathworks.mde.explorer.Explorer$6[CFBScrollableFileList,0,0,152x592,layout=javax.swing.ScrollPaneLayout$UIResource,alignmentX=0.0,alignmentY=0.0,border=,flags=328,maximumSize=,minimumSize=,preferredSize=,columnHeader=javax.swing.JViewport[,0,0,152x20,layout=javax.swing.ViewportLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=25165832,maximumSize=,minimumSize=,preferredSize=,isViewSizeSet=true,lastPaintPosition=java.awt.Point[x=0,y=0],scrollUnderway=false],horizontalScrollBar=javax.swing.JScrollPane$ScrollBar[,0,0,0x0,hidden,layout=com.jgoodies.looks.plastic.PlasticScrollBarUI,alignmentX=0.0,alignmentY=0.0,border=,flags=4194632,maximumSize=,minimumSize=,preferredSize=,blockIncrement=10,orientation=HORIZONTAL,unitIncrement=1],horizontalScrollBarPolicy=HORIZONTAL_SCROLLBAR_AS_NEEDED,lowerLeft=,lowerRight=,rowHeader=,upperLeft=,upperRight=,verticalScrollBar=javax.swing.JScrollPane$ScrollBar[,0,0,0x0,hidden,layout=com.jgoodies.looks.plastic.PlasticScrollBarUI,alignmentX=0.0,alignmentY=0.0,border=,flags=4194632,maximumSize=,minimumSize=,preferredSize=,blockIncrement=10,orientation=VERTICAL,unitIncrement=1],verticalScrollBarPolicy=VERTICAL_SCROLLBAR_AS_NEEDED,viewport=javax.swing.JViewport[,0,20,152x572,layout=javax.swing.ViewportLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=25165896,maximumSize=,minimumSize=,preferredSize=,isViewSizeSet=true,lastPaintPosition=java.awt.Point[x=0,y=0],scrollUnderway=false],viewportBorder=]
+               javax.swing.JViewport[,0,20,152x572,layout=javax.swing.ViewportLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=25165896,maximumSize=,minimumSize=,preferredSize=,isViewSizeSet=true,lastPaintPosition=java.awt.Point[x=0,y=0],scrollUnderway=false]
+                com.mathworks.mlwidgets.explorer.widgets.table.FileTable[DocumentTable,0,0,152x572,alignmentX=0.0,alignmentY=0.0,border=,flags=251658600,maximumSize=,minimumSize=,preferredSize=,autoCreateColumnsFromModel=true,autoResizeMode=AUTO_RESIZE_SUBSEQUENT_COLUMNS,cellSelectionEnabled=false,editingColumn=-1,editingRow=-1,gridColor=java.awt.Color[r=237,g=235,b=239],preferredViewportSize=java.awt.Dimension[width=450,height=400],rowHeight=18,rowMargin=0,rowSelectionAllowed=true,selectionBackground=javax.swing.plaf.ColorUIResource[r=51,g=94,b=168],selectionForeground=javax.swing.plaf.ColorUIResource[r=255,g=255,b=255],showHorizontalLines=false,showVerticalLines=false]
+                 javax.swing.CellRendererPane[,0,0,0x0,hidden]
+               javax.swing.JScrollPane$ScrollBar[,0,0,0x0,hidden,layout=com.jgoodies.looks.plastic.PlasticScrollBarUI,alignmentX=0.0,alignmentY=0.0,border=,flags=4194632,maximumSize=,minimumSize=,preferredSize=,blockIncrement=10,orientation=VERTICAL,unitIncrement=1]
+                com.jgoodies.looks.plastic.PlasticArrowButton[,0,0,0x0,alignmentX=0.0,alignmentY=0.5,border=javax.swing.plaf.BorderUIResource$CompoundBorderUIResource@45289095,flags=4194600,maximumSize=,minimumSize=,preferredSize=,defaultIcon=,disabledIcon=,disabledSelectedIcon=,margin=javax.swing.plaf.InsetsUIResource[top=1,left=14,bottom=1,right=14],paintBorder=true,paintFocus=true,pressedIcon=,rolloverEnabled=false,rolloverIcon=,rolloverSelectedIcon=,selectedIcon=,text=,defaultCapable=true]
+                com.jgoodies.looks.plastic.PlasticArrowButton[,0,0,0x0,alignmentX=0.0,alignmentY=0.5,border=javax.swing.plaf.BorderUIResource$CompoundBorderUIResource@45289095,flags=4194600,maximumSize=,minimumSize=,preferredSize=,defaultIcon=,disabledIcon=,disabledSelectedIcon=,margin=javax.swing.plaf.InsetsUIResource[top=1,left=14,bottom=1,right=14],paintBorder=true,paintFocus=true,pressedIcon=,rolloverEnabled=false,rolloverIcon=,rolloverSelectedIcon=,selectedIcon=,text=,defaultCapable=true]
+               javax.swing.JScrollPane$ScrollBar[,0,0,0x0,hidden,layout=com.jgoodies.looks.plastic.PlasticScrollBarUI,alignmentX=0.0,alignmentY=0.0,border=,flags=4194632,maximumSize=,minimumSize=,preferredSize=,blockIncrement=10,orientation=HORIZONTAL,unitIncrement=1]
+                com.jgoodies.looks.plastic.PlasticArrowButton[,0,0,0x0,alignmentX=0.0,alignmentY=0.5,border=javax.swing.plaf.BorderUIResource$CompoundBorderUIResource@45289095,flags=4194600,maximumSize=,minimumSize=,preferredSize=,defaultIcon=,disabledIcon=,disabledSelectedIcon=,margin=javax.swing.plaf.InsetsUIResource[top=1,left=14,bottom=1,right=14],paintBorder=true,paintFocus=true,pressedIcon=,rolloverEnabled=false,rolloverIcon=,rolloverSelectedIcon=,selectedIcon=,text=,defaultCapable=true]
+                com.jgoodies.looks.plastic.PlasticArrowButton[,0,0,0x0,alignmentX=0.0,alignmentY=0.5,border=javax.swing.plaf.BorderUIResource$CompoundBorderUIResource@45289095,flags=4194600,maximumSize=,minimumSize=,preferredSize=,defaultIcon=,disabledIcon=,disabledSelectedIcon=,margin=javax.swing.plaf.InsetsUIResource[top=1,left=14,bottom=1,right=14],paintBorder=true,paintFocus=true,pressedIcon=,rolloverEnabled=false,rolloverIcon=,rolloverSelectedIcon=,selectedIcon=,text=,defaultCapable=true]
+               javax.swing.JViewport[,0,0,152x20,layout=javax.swing.ViewportLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=25165832,maximumSize=,minimumSize=,preferredSize=,isViewSizeSet=true,lastPaintPosition=java.awt.Point[x=0,y=0],scrollUnderway=false]
+                com.jidesoft.grid.SortableTableHeader[,0,0,152x20,alignmentX=0.0,alignmentY=0.0,border=,flags=16777544,maximumSize=,minimumSize=,preferredSize=,draggedDistance=0,reorderingAllowed=true,resizingAllowed=true,updateTableInRealTime=true]
+                 javax.swing.CellRendererPane[,0,0,0x0,hidden]
+                  sun.swing.table.DefaultTableCellHeaderRenderer[Table.cellRenderer,-40,-20,0x0,invalid,alignmentX=0.0,alignmentY=0.0,border=javax.swing.plaf.BorderUIResource@56f62dc0,flags=25165832,maximumSize=,minimumSize=,preferredSize=,defaultIcon=javax.swing.ImageIcon@221ff219,disabledIcon=,horizontalAlignment=CENTER,horizontalTextPosition=TRAILING,iconTextGap=4,labelFor=,text=,verticalAlignment=CENTER,verticalTextPosition=CENTER]
+                  sun.swing.table.DefaultTableCellHeaderRenderer[Table.cellRenderer,-184,-20,0x0,invalid,alignmentX=0.0,alignmentY=0.0,border=javax.swing.plaf.BorderUIResource@56f62dc0,flags=25165832,maximumSize=,minimumSize=,preferredSize=,defaultIcon=jar:file:/usr/local/MATLAB/R2017b/java/jar/mwswing.jar!/com/mathworks/mwswing/resources/sort_arrow_up_win.gif,disabledIcon=,horizontalAlignment=LEFT,horizontalTextPosition=LEFT,iconTextGap=4,labelFor=,text=Name,verticalAlignment=CENTER,verticalTextPosition=CENTER]
+                  sun.swing.table.DefaultTableCellHeaderRenderer[Table.cellRenderer,-40,-20,0x0,invalid,alignmentX=0.0,alignmentY=0.0,border=javax.swing.plaf.BorderUIResource@56f62dc0,flags=25165832,maximumSize=,minimumSize=,preferredSize=,defaultIcon=javax.swing.ImageIcon@221ff219,disabledIcon=,horizontalAlignment=CENTER,horizontalTextPosition=TRAILING,iconTextGap=4,labelFor=,text=,verticalAlignment=CENTER,verticalTextPosition=CENTER]
+                  sun.swing.table.DefaultTableCellHeaderRenderer[Table.cellRenderer,-112,-20,0x0,invalid,alignmentX=0.0,alignmentY=0.0,border=javax.swing.plaf.BorderUIResource@56f62dc0,flags=25165832,maximumSize=,minimumSize=,preferredSize=,defaultIcon=jar:file:/usr/local/MATLAB/R2017b/java/jar/mwswing.jar!/com/mathworks/mwswing/resources/sort_arrow_up_win.gif,disabledIcon=,horizontalAlignment=LEFT,horizontalTextPosition=LEFT,iconTextGap=4,labelFor=,text=Name,verticalAlignment=CENTER,verticalTextPosition=CENTER]
+             com.mathworks.mlwidgets.explorer.DetailViewer$1[DetailViewer,0,594,152x21,layout=java.awt.BorderLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+              com.mathworks.mlwidgets.explorer.DetailViewer$Header[,0,0,152x21,layout=java.awt.GridBagLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+               com.mathworks.mlwidgets.explorer.DetailViewer$HeaderLabel[,4,3,116x15,alignmentX=0.0,alignmentY=0.0,border=,flags=25165824,maximumSize=,minimumSize=,preferredSize=,defaultIcon=,disabledIcon=,horizontalAlignment=LEADING,horizontalTextPosition=TRAILING,iconTextGap=4,labelFor=,text=Details,verticalAlignment=CENTER,verticalTextPosition=CENTER]
+               com.mathworks.mwswing.MJButton[preview-panel-button-name,124,0,24x21,alignmentX=0.0,alignmentY=0.5,border=javax.swing.plaf.BorderUIResource$CompoundBorderUIResource@45289095,flags=16777504,maximumSize=,minimumSize=,preferredSize=,defaultIcon=javax.swing.ImageIcon@591bbbf,disabledIcon=,disabledSelectedIcon=,margin=java.awt.Insets[top=1,left=1,bottom=2,right=1],paintBorder=false,paintFocus=true,pressedIcon=,rolloverEnabled=false,rolloverIcon=,rolloverSelectedIcon=,selectedIcon=,text=null,defaultCapable=true]
+              com.mathworks.mwswing.MJPanel[,0,21,152x0,layout=java.awt.FlowLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+          com.mathworks.widgets.desk.DTTitleBar[Current DirectoryTitleBar,2,2,152x18,alignmentX=0.0,alignmentY=0.0,border=com.mathworks.widgets.desk.DTTitleBar$SingletonBorder@8b057f2,flags=0,maximumSize=,minimumSize=,preferredSize=]
+           com.mathworks.widgets.desk.DTTitleButton[UndockCurrent DirectoryButton,0,0,0x0,hidden,alignmentX=0.0,alignmentY=0.5,border=javax.swing.plaf.basic.BasicBorders$ButtonBorder@14b93d08,flags=20971808,maximumSize=,minimumSize=,preferredSize=,defaultIcon=javax.swing.ImageIcon@3a803b5e,disabledIcon=,disabledSelectedIcon=,margin=java.awt.Insets[top=0,left=-1,bottom=0,right=0],paintBorder=false,paintFocus=true,pressedIcon=,rolloverEnabled=true,rolloverIcon=javax.swing.ImageIcon@3a803b5e,rolloverSelectedIcon=,selectedIcon=,text=,defaultCapable=false]
+           com.mathworks.widgets.desk.DTTitleButton[MinimizeCurrent DirectoryButton,0,0,0x0,hidden,alignmentX=0.0,alignmentY=0.5,border=javax.swing.plaf.basic.BasicBorders$ButtonBorder@14b93d08,flags=20971808,maximumSize=,minimumSize=,preferredSize=,defaultIcon=javax.swing.ImageIcon@67d2992d,disabledIcon=,disabledSelectedIcon=,margin=java.awt.Insets[top=0,left=-1,bottom=0,right=0],paintBorder=false,paintFocus=true,pressedIcon=,rolloverEnabled=true,rolloverIcon=javax.swing.ImageIcon@67d2992d,rolloverSelectedIcon=,selectedIcon=,text=,defaultCapable=false]
+           com.mathworks.widgets.desk.DTTitleButton[MaximizeCurrent DirectoryButton,0,0,0x0,hidden,alignmentX=0.0,alignmentY=0.5,border=javax.swing.plaf.basic.BasicBorders$ButtonBorder@14b93d08,flags=20971808,maximumSize=,minimumSize=,preferredSize=,defaultIcon=javax.swing.ImageIcon@ad203a,disabledIcon=,disabledSelectedIcon=,margin=java.awt.Insets[top=0,left=-1,bottom=0,right=0],paintBorder=false,paintFocus=true,pressedIcon=,rolloverEnabled=true,rolloverIcon=javax.swing.ImageIcon@ad203a,rolloverSelectedIcon=,selectedIcon=,text=,defaultCapable=false]
+           com.mathworks.widgets.desk.DTTitleButton[CloseCurrent DirectoryButton,0,0,0x0,hidden,alignmentX=0.0,alignmentY=0.5,border=javax.swing.plaf.basic.BasicBorders$ButtonBorder@14b93d08,flags=20971808,maximumSize=,minimumSize=,preferredSize=,defaultIcon=javax.swing.ImageIcon@8e93fd3,disabledIcon=,disabledSelectedIcon=,margin=java.awt.Insets[top=0,left=-1,bottom=0,right=0],paintBorder=false,paintFocus=true,pressedIcon=,rolloverEnabled=true,rolloverIcon=javax.swing.ImageIcon@8e93fd3,rolloverSelectedIcon=,selectedIcon=,text=,defaultCapable=false]
+           com.mathworks.widgets.desk.DTTitleButton[Show ActionsCurrent DirectoryButton,132,2,18x14,alignmentX=0.0,alignmentY=0.5,border=javax.swing.plaf.basic.BasicBorders$ButtonBorder@14b93d08,flags=20971808,maximumSize=,minimumSize=,preferredSize=,defaultIcon=jar:file:/usr/local/MATLAB/R2017b/java/jar/widgets.jar!/com/mathworks/widgets/desk/resources/show_actions_light.png,disabledIcon=,disabledSelectedIcon=,margin=java.awt.Insets[top=0,left=-1,bottom=0,right=0],paintBorder=false,paintFocus=true,pressedIcon=,rolloverEnabled=true,rolloverIcon=jar:file:/usr/local/MATLAB/R2017b/java/jar/widgets.jar!/com/mathworks/widgets/desk/resources/show_actions_light.png,rolloverSelectedIcon=,selectedIcon=,text=,defaultCapable=false]
+%^ignora
+
+
+
+
+
+edit lutx
+%isequal: confronta due strutture campo per campo (molto utile). Es: confronto due array, se uso notequal mi restituisce un array di logici (non è un buon argomento per if); isequal restituisce uno scalare logico
+[1 2]==[1 3]
+
+ans =
+
+  1×2 <a href="matlab:helpPopup logical" style="font-weight:bold">logical</a> array
+
+   1   0
+
+isequal([1 2],[1 3])
+
+ans =
+
+  <a href="matlab:helpPopup logical" style="font-weight:bold">logical</a>
+
+   0
+
+%in mylutx: fa quello che lugui fa visivamente: fa le operazioni su A e poi sputa fuori le due matrici splittate (vedi come funziona lugui per capire a fondo)
+help max
+ <strong>max</strong>    Largest component.
+    For vectors, <strong>max</strong>(X) is the largest element in X. For matrices,
+    <strong>max</strong>(X) is a row vector containing the maximum element from each
+    column. For N-D arrays, <strong>max</strong>(X) operates along the first
+    non-singleton dimension.
+ 
+    [Y,I] = <strong>max</strong>(X) returns the indices of the maximum values in vector I.
+    If the values along the first non-singleton dimension contain more
+    than one maximal element, the index of the first one is returned.
+ 
+    <strong>max</strong>(X,Y) returns an array with the largest elements taken from X or Y.
+    X and Y must have compatible sizes. In the simplest cases, they can be
+    the same size or one can be a scalar. Two inputs have compatible sizes
+    if, for every dimension, the dimension sizes of the inputs are either
+    the same or one of them is 1.
+ 
+    [Y,I] = <strong>max</strong>(X,[],DIM) operates along the dimension DIM. 
+ 
+    When X is complex, the maximum is computed using the magnitude
+    <strong>max</strong>(ABS(X)). In the case of equal magnitude elements, then the phase
+    angle <strong>max</strong>(ANGLE(X)) is used.
+ 
+    <strong>max</strong>(...,NANFLAG) specifies how NaN (Not-A-Number) values are treated.
+    NANFLAG can be:
+    'omitnan'    - Ignores all NaN values and returns the maximum of the 
+                   non-NaN elements.  If all elements are NaN, then the
+                   first one is returned.
+    'includenan' - Returns NaN if there is any NaN value.  The index points
+                   to the first NaN element.
+    Default is 'omitnan'.
+ 
+    Example: 
+        X = [2 8 4; 7 3 9]
+        max(X,[],1)
+        max(X,[],2)
+        max(X,5)
+ 
+    See also <a href="matlab:help min">min</a>, <a href="matlab:help cummax">cummax</a>, <a href="matlab:help median">median</a>, <a href="matlab:help mean">mean</a>, <a href="matlab:help sort">sort</a>.
+
+    <a href="matlab:doc max">Reference page for max</a>
+    <a href="matlab:matlab.internal.language.introspective.overloads.displayOverloads('max')">Other functions named max</a>
+
+doc max
+m(2:3,3)
+
+ans =
+
+     3
+     7
+
+%ora ha perso le posizione di queste entrate nella matrice quindi in mylutx devo aggiungere k-1 per tornare alla posizione iniziale
+
+m=randi(7,5)
+
+m =
+
+     7     4     5     2     4
+     1     7     5     1     7
+     6     3     4     7     5
+     2     7     5     2     2
+     3     3     5     1     3
+
+[L,U,P] = lu(m)
+
+L =
+
+    1.0000         0         0         0         0
+    0.1429    1.0000         0         0         0
+    0.4286    0.2000    1.0000         0         0
+    0.8571   -0.0667    0.0000    1.0000         0
+    0.2857    0.9111   -0.1667    0.1458    1.0000
+
+
+U =
+
+    7.0000    4.0000    5.0000    2.0000    4.0000
+         0    6.4286    4.2857    0.7143    6.4286
+         0         0    2.0000         0         0
+         0         0         0    5.3333    2.0000
+         0         0         0         0   -5.2917
+
+
+P =
+
+     1     0     0     0     0
+     0     1     0     0     0
+     0     0     0     0     1
+     0     0     1     0     0
+     0     0     0     1     0
+
+[L,U,P] = lutx(m)
+
+L =
+
+    1.0000         0         0         0         0
+    0.1429    1.0000         0         0         0
+    0.4286    0.2000    1.0000         0         0
+    0.8571   -0.0667         0    1.0000         0
+    0.2857    0.9111   -0.1667    0.1458    1.0000
+
+
+U =
+
+    7.0000    4.0000    5.0000    2.0000    4.0000
+         0    6.4286    4.2857    0.7143    6.4286
+         0         0    2.0000    0.0000         0
+         0         0         0    5.3333    2.0000
+         0         0         0         0   -5.2917
+
+
+P =
+
+     1
+     2
+     5
+     3
+     4
+
+[L1,U,P] = lutx(m)
+
+L1 =
+
+    1.0000         0         0         0         0
+    0.1429    1.0000         0         0         0
+    0.4286    0.2000    1.0000         0         0
+    0.8571   -0.0667         0    1.0000         0
+    0.2857    0.9111   -0.1667    0.1458    1.0000
+
+
+U =
+
+    7.0000    4.0000    5.0000    2.0000    4.0000
+         0    6.4286    4.2857    0.7143    6.4286
+         0         0    2.0000    0.0000         0
+         0         0         0    5.3333    2.0000
+         0         0         0         0   -5.2917
+
+
+P =
+
+     1
+     2
+     5
+     3
+     4
+
+isequal(L,L1)
+
+ans =
+
+  <a href="matlab:helpPopup logical" style="font-weight:bold">logical</a>
+
+   1
+
+[L,U,P] = lu(m)
+
+L =
+
+    1.0000         0         0         0         0
+    0.1429    1.0000         0         0         0
+    0.4286    0.2000    1.0000         0         0
+    0.8571   -0.0667    0.0000    1.0000         0
+    0.2857    0.9111   -0.1667    0.1458    1.0000
+
+
+U =
+
+    7.0000    4.0000    5.0000    2.0000    4.0000
+         0    6.4286    4.2857    0.7143    6.4286
+         0         0    2.0000         0         0
+         0         0         0    5.3333    2.0000
+         0         0         0         0   -5.2917
+
+
+P =
+
+     1     0     0     0     0
+     0     1     0     0     0
+     0     0     0     0     1
+     0     0     1     0     0
+     0     0     0     1     0
+
+[L1,U,P] = lutx(m)
+
+L1 =
+
+    1.0000         0         0         0         0
+    0.1429    1.0000         0         0         0
+    0.4286    0.2000    1.0000         0         0
+    0.8571   -0.0667         0    1.0000         0
+    0.2857    0.9111   -0.1667    0.1458    1.0000
+
+
+U =
+
+    7.0000    4.0000    5.0000    2.0000    4.0000
+         0    6.4286    4.2857    0.7143    6.4286
+         0         0    2.0000    0.0000         0
+         0         0         0    5.3333    2.0000
+         0         0         0         0   -5.2917
+
+
+P =
+
+     1
+     2
+     5
+     3
+     4
+
+isequal(L,L1)
+
+ans =
+
+  <a href="matlab:helpPopup logical" style="font-weight:bold">logical</a>
+
+   0
+
+L-L1
+
+ans =
+
+   1.0e-16 *
+
+         0         0         0         0         0
+         0         0         0         0         0
+         0         0         0         0         0
+         0         0    0.5326         0         0
+         0         0    0.2776         0         0
+
+[L1,U1,P] = lutx(m)
+
+L1 =
+
+    1.0000         0         0         0         0
+    0.1429    1.0000         0         0         0
+    0.4286    0.2000    1.0000         0         0
+    0.8571   -0.0667         0    1.0000         0
+    0.2857    0.9111   -0.1667    0.1458    1.0000
+
+
+U1 =
+
+    7.0000    4.0000    5.0000    2.0000    4.0000
+         0    6.4286    4.2857    0.7143    6.4286
+         0         0    2.0000    0.0000         0
+         0         0         0    5.3333    2.0000
+         0         0         0         0   -5.2917
+
+
+P =
+
+     1
+     2
+     5
+     3
+     4
+
+[L,U,P] = lu(m)
+
+L =
+
+    1.0000         0         0         0         0
+    0.1429    1.0000         0         0         0
+    0.4286    0.2000    1.0000         0         0
+    0.8571   -0.0667    0.0000    1.0000         0
+    0.2857    0.9111   -0.1667    0.1458    1.0000
+
+
+U =
+
+    7.0000    4.0000    5.0000    2.0000    4.0000
+         0    6.4286    4.2857    0.7143    6.4286
+         0         0    2.0000         0         0
+         0         0         0    5.3333    2.0000
+         0         0         0         0   -5.2917
+
+
+P =
+
+     1     0     0     0     0
+     0     1     0     0     0
+     0     0     0     0     1
+     0     0     1     0     0
+     0     0     0     1     0
+
+U-U1
+
+ans =
+
+   1.0e-15 *
+
+         0         0         0         0         0
+         0         0         0         0         0
+         0         0         0   -0.0278         0
+         0         0         0         0         0
+         0         0         0         0   -0.8882
+
+%giustapposizione e annidamento funzioni (mybslashtx)
+%la funzione principale apre un suo stack (workspace), automaticamente la funzione giustapposte sono note solo all'interno dello stack.
+%tecnicamente, hanno uno scopo locale
+%sono giustapposte se prima di definire una nuova funzione si chiude la principale.
+%in questo caso le funzioni sono giustapposte perchè ogni funzione ha il proprio stack; in realtà qui potrei annidarle (rendere tutte le variabili globali)
+%annidare però è pericoloso
+%se aggiungo end alla fine delle due funzioni alla fine n cambia colore: The scope of variable 'n' spans multiple functions. La riga 42 (e 56) è pleonastica
+%il programma funziona ancora ma è molto pericoloso lavorare con le variabili locali (non è preferibile)
+%se elimino gli argomenti di backsubs il programma "funzionerebbe" ancora ma non farebbe più quello che voglio fare. Ci sarebbero dei warning nell'editor
+%nella risoluzione di eq diff è preferibile usare una struttra nested (si vedrà più avanti)
+diary off
