@@ -1,0 +1,39 @@
+INFORMATION
+In this program the potential function MUST be a continuous function in the
+interval I of definition, in the variable x.
+It must be written using the Matlab syntax and using the dots in operations
+(ex. x.^2, exp(x).*x./sin(x)).
+
+INTERESTING POTENTIALS EXAMPLE:
+1 Harmonic Oscillator (DEFAULT POTENTIAL)
+By default the program starts with the harmonic oscillator so it use:
+
+V(x) = x^2/2
+
+The solution to this problem is know exactly and the binding states are 
+described by the formula
+E(n) = n + 1/2
+Using the AEA MODE the program shows the eigenvalues and the eigenfunctions.
+
+2 V(x) = cos(x).*x.^2/5+1; I = [-8 8]; x0 = 3
+3 V(x) = x.^2/5+0.01*x.^4; I = [-8 8]; x0 = 1
+4 V(x) = x.^2/5+3*exp(-(x/2).^2)-4/5*(1+log(15/4)); I = [-10 10]; x0 = 2 ( Tunnel Effect )
+
+5 Poschl-Teller Potential
+This potential is useful to illustrate the AEA Mode, in fact the 
+Poschl-Teller potential is a 1D potential and is formula is:
+
+V(x, k) = - k(k+1)/2 * (sech(x))^2
+
+Where k is a natural number, the Shrodinger equation with this potential
+can be solved analytically, in particular the binding states are:
+E(n) = -n^2/2 with n = 1,2,...,k
+And the corresponding eigenfunctions are the Legendre functions L(n,k,tgh(x)).
+So the potential to write in the program is:
+
+V(x) = -0.5*k*(k+1)*(sech(x)).^2
+
+Example:
+k = 5
+V(x) = -0.5*5*(5+1)*(sech(x)).^2
+I = [-5 5]
