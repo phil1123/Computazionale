@@ -1,4 +1,4 @@
-% /.git da https: trasferire tutti i file su github in una cartella locale
+% genero /.git da https: trasferire tutti i file su github in una cartella locale
 
 cd <Cartella>
 git init
