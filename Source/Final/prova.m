@@ -3,8 +3,8 @@ clc; clear;
 
 h = 1; % hbar 
 
-N = 100;
-% N = 2048;
+% N = 10;
+ N = 2048;
 % N = 8;
 
 xLim = 50;
@@ -33,13 +33,16 @@ H0 = full(K);
 E0 = diag(D0);
 E1 = diag(D1);
 
+K0 = sqrt(2*E0);
+K1 = sqrt(2*E1);
+
 analyticT = transmission(E0,V0,2*b); %Coefficiente teorico
 %% Plot delle funzioni d'onda
-J = 5;
+J = 3;
 
 figure
 subplot(2,1,1)
-y0 = M0(:,J);
+y0 = M0(:,J);   
 plot(x, y0)
 ylim([-0.2 0.2])
 
@@ -93,4 +96,47 @@ plot(E0/V0,analyticT,'-b');
 xlabel('E/V0')
 ylabel('Transmission coefficient')
 title('Analytical')
+
+%% Calcolo coefficiente di trasmissione come 1 - R
+
+A1 = (M1+M0).^2;
+A2 = M1.^2;
+A3 = M0.^2;
+
+Kn = (K1-K0)*x';
+Km = (K1+K0)*x';
+
+for i=1:mb
+    f1 = A2 - A3 - A1 - 2*cos(Kn) * 10000;
+end
+
+I1 = sum(f1);
+
+for i=1:mb
+    f2 = 2*cos(Km);
+end
+
+I2 = sum(f2);
+
+R = I1./I2;
+
+T = 1-R;
+
+figure
+subplot(1,2,1)
+plot(E0/V0,T,'-r');
+
+xlabel('E/V0')
+ylabel('Transmission coefficient')
+title('Experimental')
+
+subplot(1,2,2)
+plot(E0/V0,analyticT,'-b');
+
+xlabel('E/V0')
+ylabel('Transmission coefficient')
+title('Analytical')
+
+
+
 
