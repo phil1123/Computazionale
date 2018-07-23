@@ -1,0 +1,47 @@
+\section{Introduzione}
+Si vuole studiare il problema agli autovalori:
+$$ -\nabla^2\psi + V(x)\psi = E \psi $$
+dove si è posto $\hbar = 1$ e $m = 1$. Il potenziale è assegnato da:
+$$ V(x)  = \begin{cases}
+        0       & \mbox{se } x<-b \\
+        4/b^2   & \mbox{se } -b \leq x \leq b \\
+        0       & \mbox{se } x>b \\
+         \end{cases}
+$$
+Siano:
+$$ \begin{cases}
+    \mbox{ZonaI} & = \{x<-b \} \\
+    \mbox{ZonaII} & = \{-b \leq x \leq b\} \\
+    \mbox{ZonaIII} & = \{x>b\}
+\end{cases} $$
+\\
+Sia $k^2 = 2E$ e sia $q^2 = 2(E-V0)$. La soluzione analitica più generale è data da:
+$$\psi_k(x) =
+    \begin{cases}
+        Ae^{ikx}+Be^{-ikx} & \mbox{in ZonaI} \\
+        f(x) & \mbox{in ZonaII} \\
+        Ce^{ikx}+De^{-ikx} & \mbox{in ZonaIII} \\
+    \end{cases}
+$$
+Non siamo per il momento interessati alla ZonaII, quindi indichiamo con
+$f(x)$ la $\psi_k(x)$ in tale zona, che a rigore sarebbe
+    $$f(x)= Ee^{iqx}+Fe^{-iqx}$$
+Le costanti $A,B,C,D$ sono determinate dalle condizioni di raccordo di continuità della
+funzione d'onda e della sua derivata nei punti $x=\pm b$.\\
+Per la conservazione del flusso di probabilità, si possono riscrivere nella seguente forma:
+$$
+\begin{pmatrix} C \\ B \end{pmatrix} =
+\begin{pmatrix} \tau & \rho \\ \rho & \tau \end{pmatrix} \cdot
+\begin{pmatrix} A \\ D \end{pmatrix} = \quad (S)\cdot \begin{pmatrix} A \\ D \end{pmatrix}
+$$
+Ove la matrice S è una matrice unitaria, ossia che verifica le condizioni:
+$$ \tau\rho^* + \tau^*\rho = 0 \quad,\quad |\tau|^2 + |\rho|^2 = 1$$
+(Si è indicato con $z^*$ il numero complesso coniugato di $z$). Segue immediatamente che:
+$$ |\tau \pm \rho|^2 = |\tau|^2 + |\rho|^2 + \tau\rho^* + \tau^*\rho = |\tau|^2 + |\rho|^2 + 0 = 1$$
+Cioè $\tau \pm \rho$ differiscono per una fase:
+$$ |\tau \pm \rho|^2 = 1 \Rightarrow (\tau \pm \rho) = e^{2i\theta_\pm}$$
+Si osservi che poichè $A,B,C,D$ dipendono dagli autostati $\psi_k$, anche le fasi $\theta_\pm$ dipenderanno dall'autovalore $k$.\\
+Si vuole quindi cercare una stima numerica di $\theta\pm$ per determinare $\tau$ da:
+    $$ (\tau \pm \rho) = e^{2i\theta_\pm} \Rightarrow \tau = 1/2(e^{2i\theta_+}+e^{-2i\theta_-})$$
+    $$ \Rightarrow \tau^2 = sin^2(\theta_+ - \theta_-)$$
+(due conti per dimostrarlo plis)
