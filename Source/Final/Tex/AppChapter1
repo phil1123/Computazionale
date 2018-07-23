@@ -1,0 +1,31 @@
+\subsection*{Appendice: Discretizzazione numerica}
+Si vuole anzitutto discretizzare lo spazio si lavoro.
+Dall'intera retta reale $\mathbb{R}$ si passa a un segmento chiuso $[-L,L]$ per un opportuno
+parametro $L>0$, dopodichè scelto opportunamente un numero di punti $N$ in cui suddividere
+l'intervallo in un reticolo di passo $1/N$, si definisce la griglia:
+    $$ \Gg = \{ x_j \in [-L,L] : x_j = -L + 2j/N ,\quad j = 0, ..., N \} $$
+Fissato $b > 0$ parametro del potenziale, siano $nb$ e $mb$ gli indici per cui
+    $$ x_{mb} = -b \quad , \quad x_{nb} = b $$
+\bigskip
+Si è scelto di lavorare in condizioni di periodicità, quindi un'approssimazione
+numerica del laplaciano $-\frac{d^2}{dx^2}$ sarà data da (come visto a lezione):
+$$  T = \begin{pmatrix}
+        2 & -1 & 0 & \cdots & 0 & -1 \\
+        -1 & 2 & -1 & 0 &\cdots & 0 \\
+        \vdots & \vdots & \vdots &\vdots & \vdots & \vdots\\
+        -1 & 0 & \cdots & 0 & 2 & -1\\
+\end{pmatrix}  $$
+Un'approssimazione del potenziale sarà invece data da una matrice diagonale con
+i valori che la funzione $V(x)$ assume sui punti della griglia:
+    $$ V = \mbox{diag}(V(x_1), \cdots, V(x_N)) $$
+Allora l'approssimazione discreta della Hamiltoniana $\Hh$ sarà data dalla matrice:
+    $$ H = T + V \approx \Hh $$
+Sia ora $M0$ la matrice degli autovettori di $H$ e $E0$ il vettore degli autovalori di $H$
+\\
+Degenerazione spezzata dalla discretizzazione
+\\
+Gli sbatti dei teta fuori dalla griglia $Gg$ ->
+fittare perchè i teta sono fuori dalla griglia
+Phil dice: autovalori leggermente diversi fanno due griglie leggermente diverse
+(scattering phase-shift)
+\\
