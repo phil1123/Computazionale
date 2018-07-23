@@ -1,28 +1,38 @@
 \subsection*{Introduzione teorica}
+
 Si vuole studiare il problema agli autovalori:
 $$ -\nabla^2\psi + V(x)\psi = E \psi $$
 dove si è posto $\hbar = 1$ e $m = 1$. Il potenziale è assegnato da:
-$$ V(x)  = \begin{cases}
+$$ 
+V(x)  = \begin{cases}
         0       & \mbox{se } x<-b \\
         4/b^2   & \mbox{se } -b \leq x \leq b \\
         0       & \mbox{se } x>b \\
          \end{cases}
 $$
+
+\bigskip
 Siano:
-$$ \begin{cases}
+$$ 
+\begin{cases}
     \mbox{ZonaI} & = \{x<-b \} \\
     \mbox{ZonaII} & = \{-b \leq x \leq b\} \\
     \mbox{ZonaIII} & = \{x>b\}
 \end{cases} $$
-\\
+
+\bigskip
 Sia $k^2 = 2E$ e sia $q^2 = 2(E-V0)$. La soluzione analitica più generale è data da:
-$$\psi_k(x) =
+
+$$
+\psi_k(x) =
     \begin{cases}
         Ae^{ikx}+Be^{-ikx} & \mbox{in ZonaI} \\
         f(x) & \mbox{in ZonaII} \\
         Ce^{ikx}+De^{-ikx} & \mbox{in ZonaIII} \\
     \end{cases}
 $$
+
+\bigskip
 Non siamo per il momento interessati alla ZonaII, quindi indichiamo con
 $f(x)$ la $\psi_k(x)$ in tale zona, che a rigore sarebbe
     $$f(x)= Ee^{iqx}+Fe^{-iqx}$$
