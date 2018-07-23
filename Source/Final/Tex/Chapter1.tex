@@ -1,4 +1,4 @@
-\section{Introduzione}
+\subsection{Introduzione teorica}
 Si vuole studiare il problema agli autovalori:
 $$ -\nabla^2\psi + V(x)\psi = E \psi $$
 dove si è posto $\hbar = 1$ e $m = 1$. Il potenziale è assegnato da:
@@ -28,11 +28,15 @@ $f(x)$ la $\psi_k(x)$ in tale zona, che a rigore sarebbe
     $$f(x)= Ee^{iqx}+Fe^{-iqx}$$
 Le costanti $A,B,C,D$ sono determinate dalle condizioni di raccordo di continuità della
 funzione d'onda e della sua derivata nei punti $x=\pm b$.\\
+Si osserverà che dalla diagonalizzazione della versione discreta della Hamiltoniana
+(vedi sezione apposita) risultano autofunzioni a parità definita (pari o dispari).
+Allora, senza perdita di generalità, si pone la ulteriore condizione di simmetria alle $\psi_k$, che porta:
+    $$ A = D \mbox{ se funzioni, e } A = -D \mbox{ se funzioni dispari}$$
 Per la conservazione del flusso di probabilità, si possono riscrivere nella seguente forma:
 $$
-\begin{pmatrix} C \\ B \end{pmatrix} =
-\begin{pmatrix} \tau & \rho \\ \rho & \tau \end{pmatrix} \cdot
-\begin{pmatrix} A \\ D \end{pmatrix} = \quad (S)\cdot \begin{pmatrix} A \\ D \end{pmatrix}
+    \begin{pmatrix} C \\ B \end{pmatrix} =
+    \begin{pmatrix} \tau & \rho \\ \rho & \tau \end{pmatrix} \cdot
+    \begin{pmatrix} A \\ D \end{pmatrix} = \quad (S)\cdot \begin{pmatrix} A \\ D \end{pmatrix}
 $$
 Ove la matrice S è una matrice unitaria, ossia che verifica le condizioni:
 $$ \tau\rho^* + \tau^*\rho = 0 \quad,\quad |\tau|^2 + |\rho|^2 = 1$$
@@ -45,3 +49,9 @@ Si vuole quindi cercare una stima numerica di $\theta\pm$ per determinare $\tau$
     $$ (\tau \pm \rho) = e^{2i\theta_\pm} \Rightarrow \tau = 1/2(e^{2i\theta_+}+e^{-2i\theta_-})$$
     $$ \Rightarrow \tau^2 = sin^2(\theta_+ - \theta_-)$$
 (due conti per dimostrarlo plis)
+\\
+Il coefficiente di trasmissione sarà qundi dato da:
+    $$T = \tau^2$$
+
+\subsection{Discretizzazione numerica}
+questioni sulla grid, cazzi e mazzi.

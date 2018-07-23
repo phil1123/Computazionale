@@ -4,6 +4,7 @@ clc; clear;
 h = 1; % hbar 
 
 N = 100+1;
+N = 1000;
 
 xLim = 50;
 b = 4;
@@ -22,6 +23,7 @@ K = h^2/2*(g.laplacian/dx/dx); % Cinetica
 % Calcolo autovalori e vettori
 V = diag(stepfunction(x,b));
 V0 = 4/b^2;
+% V = diag(exp(-0.2*x.^2)); % barriera gaussiana
 H1 = K + V;
 H0 = full(K);
 
@@ -41,49 +43,49 @@ analyticT = transmission(E0,V0,2*b); %Coefficiente teorico
 
 A1 = (M1+M0).^2;
 A1 = A1(1:mb,1:N);
-A1 = sum(A1);
+A1 = sum(A1)./norm(x);
 
 A2 = M1.^2;
 A2 = A2(1:mb,1:N);
-A2 = sum(A2);
+A2 = sum(A2)./norm(x);
 
 A3 = M0.^2;
 A3 = A3(1:mb,1:N);
-A3 = sum(A3);
+A3 = sum(A3)./norm(x);
 
 B1 = 2*cos((K1-K0)*x')';
 B1 = B1(1:mb,1:N);
-B1 = sum(B1);
+B1 = sum(B1)./norm(x);
 
 B2 = 2*cos((K1+K0)*x')';
 B2 = B2(1:mb,1:N);
-B2 = sum(B2);
+B2 = sum(B2)./norm(x);
 
-R = (A1-A2-A3-B1)./B2;
-% R = A1-A2-A3-B1;
+% R = (A1-A2-A3-B1)./B2;
+R = A1-A2-A3-B1;
 T = 1-R;
 
-% figure
-% subplot(1,2,1)
-% plot(E0/V0,T,'-r');
-% 
-% xlabel('E/V0')
-% ylabel('Transmission coefficient')
-% title('Experimental')
-% 
-% subplot(1,2,2)
-% plot(E0/V0,analyticT,'-b');
-% 
-% xlabel('E/V0')
-% ylabel('Transmission coefficient')
-% title('Analytical')
+figure
+subplot(1,2,1)
+plot(E0/V0,T,'-r');
+
+xlabel('E/V0')
+ylabel('Transmission coefficient')
+title('Experimental')
+
+subplot(1,2,2)
+plot(E0/V0,analyticT,'-b');
+
+xlabel('E/V0')
+ylabel('Transmission coefficient')
+title('Analytical')
 
 
-%%
+%% Calcolo della FFT
 
 Fsymmetric = true;
 
-omega = exp(-2*pi*i/(N-1));
+omega = exp(-2*pi*1i/(N-1));
 j = -(N-1)/2:(N-1)/2;
 k = j';
 
@@ -115,8 +117,8 @@ deltaAut = [ (1:N)', E0, E1, E1-E0]
 plot(E1-E0)
 
 %% Plot delle funzioni d'onda
-J = [7:11];
-
+% J = [7:11];
+J = [8:2:11];
 figure
 subplot(2,1,1)
 y0 = M0(:,J);   
@@ -135,24 +137,54 @@ line([-b -b],[-0.2 0.2])
 
 grid on
 
-
 %%
 
 % le funzioni d'onda sono periodiche, anche se la peridicità è
 % verificabile con approssimazione crescente solo per N grande
-M0(1,J)-M0(end,J)
+% M0(1,J)-M0(end,J)
 
 % le funzioni sono dispari per indici pari degli autovalori
-plot(M0(:,[2 4]));
-plot(M1(:,[2 4]));
+figure
+J = 5;
+plot([M0(:,J) M1(:,J)]);
+legend('Imperturbata','Perturbata')
+grid on
+title('Imperturbata vs Perturbata. Parità.');
 
+% OSS: per lo stesso indice cambia tipo di parità
 % sembra che siano in relazione di differenza di fase 
-plot([M1(:,4) M0(:,4)]);
 
-plot((real(F*[M1(:,46) M0(:,46)])));
+%%
+J = 23;
+massimo = 5;
+Lx = length(x)./2;
+figure
+subplot(3,1,1)
+plot((real(F*[M0(:,J) M1(:,J)])),'-');
+% xlim([Lx-massimo Lx + massimo])
+title('Real part of eigenvectors FFT')
+% legend('Imperturbata','Perturbata')
+grid
 
-plot((imag(F*[M0(:,2) M0(:,2)])))
+subplot(3,1,2)
+plot((imag(F*[M0(:,J) M1(:,J)])),'-')
+% xlim([Lx-massimo Lx + massimo])
+title('Imaginary part of eigenvectors FFT')
+% legend('Imperturbata','Perturbata')
+grid
 
+subplot(3,1,3)
+plot((abs(F*[M0(:,J) M1(:,J)])),'-')
+% xlim([Lx-massimo Lx + massimo])
+title('Absolute value of eigenvectors FFT')
+% legend('Imperturbata','Perturbata')
+grid
+%%
+J = 1:N;
+figure
+% plot( 1-max(abs(F*M0(:,J))))
+hold
+plot(1-max(abs(F*M1(:,J))))
 
 %%
 
@@ -168,8 +200,6 @@ d0 = sort(diag(F*V*F'));
 %%
 
 figure
-
-
 
 y0 = F*M0(:,3:3)/norm(M0(:,3:3));
 y1 = F*M1(:,3:3)/norm(M1(:,3:3));
