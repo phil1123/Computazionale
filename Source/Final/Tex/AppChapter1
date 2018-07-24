@@ -22,10 +22,12 @@ Allora l'approssimazione discreta della Hamiltoniana $\Hh$ sarà data dalla matr
     $$ H = T + V \approx \Hh $$
 Sia ora $M0$ la matrice degli autovettori di $H$ e $E0$ il vettore degli autovalori di $H$
 \\
-Degenerazione spezzata dalla discretizzazione
-\\
-Gli sbatti dei teta fuori dalla griglia $Gg$ ->
-fittare perchè i teta sono fuori dalla griglia
-Phil dice: autovalori leggermente diversi fanno due griglie leggermente diverse
-(scattering phase-shift)
-\\
+
+\begin{itemize}
+    \item Degenerazione spezzata dalla discretizzazione
+    \item osservare parità disparità autostati con plot
+    \item Gli sbatti dei teta fuori dalla griglia $Gg$ ->
+    fittare perchè i teta sono fuori dalla griglia
+    Phil dice: autovalori leggermente diversi fanno due griglie leggermente diverse
+    (scattering phase-shift)
+\end{itemize}

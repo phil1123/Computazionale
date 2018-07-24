@@ -1,6 +1,6 @@
 \subsection*{Introduzione teorica}
 
-Si vuole studiare il problema agli autovalori,dove si è posto $\hbar = 1$ e $m = 1$:
+Si vuole studiare il problema agli autovalori:
 $$ \Hh\psi = E \psi $$
 %
 Siano $k^2 = 2E$ e  $q^2 = 2(E-V0)$. La soluzione analitica più generale è data da:
@@ -33,7 +33,7 @@ $$
     \begin{pmatrix} \tau & \rho \\ \rho & \tau \end{pmatrix} \cdot
     \begin{pmatrix} A \\ D \end{pmatrix} = \quad (S)\cdot \begin{pmatrix} A \\ D \end{pmatrix}
 $$
-Ove la matrice S è una matrice unitaria, ossia che verifica le condizioni:
+Ove la matrice S è una matrice unitaria, che di conseguenza verifica le condizioni:
 $$ \tau\rho^* + \tau^*\rho = 0 \quad,\quad |\tau|^2 + |\rho|^2 = 1$$
 (Si è indicato con $z^*$ il numero complesso coniugato di $z$). Segue immediatamente che:
 $$ |\tau \pm \rho|^2 = |\tau|^2 + |\rho|^2 + \tau\rho^* + \tau^*\rho = |\tau|^2 + |\rho|^2 + 0 = 1$$
@@ -43,7 +43,7 @@ Si osservi che poichè $A,B,C,D$ dipendono dagli autostati $\psi_k$, anche le fa
 Si vuole quindi cercare una stima numerica di $\theta\pm$ per determinare $\tau$ da:
     $$ (\tau \pm \rho) = e^{2i\theta^\pm} \Rightarrow \tau = 1/2(e^{2i\theta^+}+e^{-2i\theta^-})$$
     $$ \Rightarrow \tau^2 = \sin^2(\theta^+ - \theta^-)$$
-(due conti per dimostrarlo plis)
+(due conti per dimostrarlo plis) (OCCHIO che esce un coseno)
 \\
 Il coefficiente di trasmissione sarà qundi dato da:
     $$T = \tau^2$$
