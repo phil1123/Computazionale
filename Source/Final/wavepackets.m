@@ -1,107 +1,111 @@
 %% init simulation space
-% disp('Insert max time (0 = default)')
-nt = input('Insert max time (0 = default): ');
-if nt==0
-    nt=100;
+function [T,k,kk] = wavepackets(T0,~)
+% Metodo dei pacchetti d'onda per determinare coefficiente di trasmissione
+% per un pacchetto gaussiano con potenziale scelto.
+%
+% WAVEPACKETS() avvia riproduzione grafica con tempo max default T0 = 10000
+% WAVEPACKETS(T0) calcola evoluzione fino a tempo T0, senza grafica
+%
+% T = WAVEPACKETS() restituisce coefficente di trasmissione alla fine 
+
+gFlag = false; % Flag per avviare la riproduzione grafica
+if nargin == 0
+    gFlag = true;
+    nt = 10000;
+else
+    nt = T0; % Tempo max di esecuzione
 end
-N = 1000;
-%N = 1023;  % 2^m-1 to use dst() below
-L = 56;
-mybox = [-L L];
-x = linspace(mybox(1),mybox(2),N)';
+
+N = 1000; % N°punti griglia
+L = 1000; % Lunghezza scatola
+xl = 0.2; % Scaling lunghezza scatola nel plot
+
+% grid
+x = linspace(-L,L,N)';
 dx = x(2)-x(1); 
-g = squarelattice(N);
-L = g.laplacian/dx/dx;
-% wavenumbers and khat's
-n = floor(N/2);
-nn = floor((N-1)/2);
-k = (2*pi/(dx*N))*(-n:nn)';
-khat = (2/dx)*sin((pi/N)*(0:N-1)');
-khatd = (2/dx)*sin((pi/(N+1)/2)*(1:N)'); % for Dirichlet bc
-%L(1,N) = 0; L(N,1) = 0; % Dirichlet bc
 
-%% init vars and plot
+% energia cinetica
+% g = squarelattice(N);
+% Del2 = g.laplacian/dx/dx;
 
-%%% POTENZIALI
-Yscaling = 1/2;
-Xscaling = 1;
+% wavenumbers per calcolo
+% don't break working code
+n = floor(N/2);                 % interi k = 2PI/L * n
+nn = floor((N-1)/2);            % interi k = 2PI/L * n
+k = (2*pi/(dx*N))*(-n:nn)';     % momento coniugato (vettore d'onda)
+% k = 5*(2*pi/(dx*N))*(-n:nn)';     % momento coniugato (vettore d'onda)
+
+%% potenziali
+ys = 1;   % scaling plot funzione onda asse y
+xs = 1;   % scaling plot funzione onda asse x
 
 % Altro
 % V = 0.25*x.^4;
 % V = 0.5*x.^2;
 
 % Gaussiano
-V = 2*exp(-0.5*x.^2);
+x0 = 0;
+sigma = 5;
+V0 = 0.5;
+V = V0.*exp(-(x-x0).^2./sigma.^2);
 
-% % Scalino
-% b = 20;
-% V = zeros(N,1);
-% V0 = 4/b^2;
+% Scalino
+% b = 10;
 % V0 = 1;
-% V(N*0.5-b:1:N*0.5+b) = V0;
-% Yscaling = 1/V0;
+% 
+% V = stepfunction(x,b,V0);
 
-% Hamiltoniana
-H = L + V;
-[M,D]= eig(H);
-
-%%% DATO INIZIALE
+%% dato iniziale
 % Gaussiano
-x0 = 15; % Traslazione
-sigma = 0.05; % Varianza gaussiana
+x0 = -20; % Traslazione
+sigma = 1/2; % Varianza gaussiana
 
-psi = exp(-(x-33.5).^2/sigma);
+psi = exp(-(x-x0).^2/sigma);
 psi = psi/(sqrt(dx)*norm(psi));
 
-% Autostato di H
-% psi = M(:,1); %Primo autostato
-% psi = psi/(sqrt(dx)*norm(psi));
-% 
-plot(Xscaling*x,Yscaling*V)
-axis([mybox(1) mybox(2) -1 1.25])
-
-hold on
-box on
-h = plot(x,real(psi));
-% kpsi = sfft(psi);
-% h = plot(x,s*real(kpsi));
-% axis([-1 1 -1 1])
-grid
-nplot = 2;
+%% plot
+if gFlag == true
+    figure
+    plot(xs*x,ys*V)       % plot potenziale
+%     line([-xl*L xl*L],[max(V) max(V)])
+    xlim([-xl*L xl*L])
+    ylim([0 1])
+    hold on
+    box on
+    % h = plot(x,real(psi));
+    h = plot(x,abs(psi));
+    grid
+    nplot = 10; % frame da skippare
+end
 
 %% init run
-kk = fftshift(k);
-%kk = khat;
-%kk = khatd;
+kk = fftshift(k); % shift dei k centrandoli
 dt = 0.01;
-%dt = -1i*0.01;
-% nt = 10000;
-% nt = 1000;
-% nt = 2;
-upsi = psi;
-%upsi = conj(upsi);
+upsi = psi; % funzione d'onda temporale
 
 %% run
-
+% Applicazione evoluzione temporale U = exp(-i*dt*H), applicato nella forma
+% U = exp(-i*dt*H) = exp(-i*dt*V/2)exp(-i*dt*T)exp(-i*dt*V/2)
+% Inoltre l'operatore T = d^2/dx^2 = p^2 viene fatto agire sulla
+% rappresentazione della psi nello spazio dei momenti (in cui è più
+% semplice come operatore)
 for j = 1:nt
-    %upsi = upsi - (dx*psi0'*upsi)*psi0;
     upsi = exp(-1i*dt*V/2).*upsi;
-    upsi = ifft(exp(-1i*dt*kk.^2/2).*fft(upsi));
-    %upsi = idst(exp(-1i*dt*kk.^2/2).*dst(upsi));
-    %upsi = sinft(exp(-1i*dt*kk.^2/2).*sinft(upsi));
+    upsi = ifft(exp(-1i*dt*kk.^2/2).*fft(upsi)); % T = p^2 = kk^2
     upsi = exp(-1i*dt*V/2).*upsi;
-    %upsi = upsi/(sqrt(dx)*norm(upsi));
-    if mod(j,nplot) == 0
-        set(h,'Ydata',abs(upsi));
-        set(h,'Xdata',Xscaling*x);
-        %set(h,'Ydata',real(upsi));
-        %kpsi = sfft(upsi);
-        %set(h,'Ydata',real(kpsi));
-        drawnow
-        %pause(0.2)
+    if gFlag == true
+        if mod(j,nplot) == 0
+            set(h,'Ydata',abs(upsi));
+            set(h,'Xdata',xs*x);
+            drawnow
+            %pause(0.2)
+        end
     end
 end
-%%
-x0 = find(x>0);
-U = abs(upsi);
-T = sum(U(1:x0))./sum(U(1:N))
+
+%% transmission
+if nargout > 0
+    xZero = find(x>0);
+    U = abs(upsi).^2;
+    T = sum(U(xZero:end))./sum(U(1:N));
+end

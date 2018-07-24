@@ -39,7 +39,7 @@ K0 = sqrt(2*E0);
 K1 = sqrt(2*E1);
 
 analyticT = transmission(E1,V0,2*b); %Coefficiente teorico
-
+%%
 pdelta = zeros(N,1);
 mdelta = zeros(N,1);
 
