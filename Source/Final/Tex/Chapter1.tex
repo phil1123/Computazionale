@@ -89,3 +89,30 @@ $$ \psi_k^{odd} = \begin{cases}
     A\cos(kx + \theta_k) & \mbox{in ZonaIII} \\
 \end{cases}
 $$
+
+\begin{paragraph}{Secondo Metodo}
+Si considerino i punti $x = \pm 2\pi$, siano $y(\pm 2\pi)$ i valori degli autovettori
+numerici in quei punti, separatamente pari e dispari. Si ha allora che:
+$$ \begin{cases}
+    y^{odd}(2\pi)   = \sin(k2\pi  + \theta_o^+)  & \Rightarrow \theta_o^+ = \arcsin(y^{odd}(2\pi)) - k2\pi\\
+    y^{odd}(-2\pi)  = \sin(-k2\pi + \theta_o^-)  & \Rightarrow \theta_o^- = \arcsin(y^{odd}(-2\pi)) + k2\pi\\
+    y^{even}(2\pi)  = \cos(k2\pi  + \theta_e^+)  & \Rightarrow \theta_e^+ = \arccos(y^{even}(2\pi)) - k2\pi\\
+    y^{even}(-2\pi) = \cos(-k2\pi + \theta_e^-)  & \Rightarrow \theta_e^- = \arccos(y^{even}(-2\pi)) + k2\pi\\
+\end{cases}$$
+\end{paragraph}
+Di seguito il plot del risultato\\
+%% Sarebbe bello che stesse sulla stessa pagina
+\begin{figure}[h]
+  \centering
+  \includegraphics{fasi.eps}
+\end{figure}
+%
+\newpage
+\subsection*{Risultati}
+Di seguito il plot del coefficiente di trasmissione calcolato numericamente contro
+il risultato analitico
+
+%% Immagine da mettere sotto la frase, possibilmente in una unica pagina
+\begin{figure}[h]
+  \includegraphics{tr_coeff_square.eps}
+\end{figure}
