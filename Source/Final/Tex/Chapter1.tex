@@ -22,26 +22,38 @@ Le costanti $A,B,C,D$ sono determinate dalle condizioni di raccordo di continuit
 funzione d'onda e della sua derivata nei punti $x=\pm b$.\\
 Si osserverà che dalla diagonalizzazione della versione discreta della Hamiltoniana
 (vedi sezione apposita) risultano autofunzioni a parità definita (pari o dispari).
-Allora, senza perdita di generalità, si pone la ulteriore condizione di simmetria alle $\psi_k$, che porta:
-$$\begin{cases}
-    A = D, \qquad  B = C = (\tau + \rho)A &\mbox{per funzioni pari} \\
-    A = -D, \quad B = -C = -(\tau + \rho)A &\mbox{per funzioni dispari}\\
-\end{cases}$$
-Per la conservazione del flusso di probabilità, si possono riscrivere nella seguente forma:
+Il problema consiste in due onde una progressiva e una regressiva, che perturbate
+dalla barriera vengono entrambe riflesse e trasmesse e interferiscono l'una con
+l'altra e con se stesse.
+Per la simmetria del problema, il coefficiente di riflessione e di trasmissione
+relativi all'onda progressiva e quella regressiva sono gli stessi.
+Si può allora parametrizzare ciascuna onda come:
+    $$ Ae^{ikx} + Be^{-ikx} = Ae^{ikx} + A(\rho + \tau)e^{-ikx} $$
+Dove $\rho$ e $\tau$ sono i coefficienti il cui modulo quadro dà, rispettivamente
+il coefficiente di riflessione e trasmissione.
+In forma matriciale:
 $$
     \begin{pmatrix} C \\ B \end{pmatrix} =
     \begin{pmatrix} \tau & \rho \\ \rho & \tau \end{pmatrix} \cdot
     \begin{pmatrix} A \\ D \end{pmatrix} = \quad (S)\cdot \begin{pmatrix} A \\ D \end{pmatrix}
 $$
+%
 Ove la matrice S è una matrice unitaria, che di conseguenza verifica le condizioni:
 $$ \tau\rho^* + \tau^*\rho = 0 \quad,\quad |\tau|^2 + |\rho|^2 = 1$$
 (Si è indicato con $z^*$ il numero complesso coniugato di $z$). Segue immediatamente che:
 $$ |\tau \pm \rho|^2 = |\tau|^2 + |\rho|^2 + \tau\rho^* + \tau^*\rho = |\tau|^2 + |\rho|^2 + 0 = 1$$
 Cioè $\tau \pm \rho$ differiscono per una fase:
 $$ |\tau \pm \rho|^2 = 1 \Rightarrow (\tau \pm \rho) = e^{2i\theta^\pm}$$
+%
+Allora, senza perdita di generalità, si pone la ulteriore condizione di simmetria alle $\psi_k$, che porta:
+$$\begin{cases}
+    A = D, \qquad  B = C = (\tau + \rho)A &\mbox{per funzioni pari} \\
+    A = -D, \quad B = -C = -(\tau + \rho)A &\mbox{per funzioni dispari}\\
+\end{cases}$$
+%
 Si osservi che poichè $A,B,C,D$ dipendono dagli autostati $\psi_k$, anche le fasi $\theta^\pm$ dipenderanno dall'autovalore $k$.\\
 Si vuole quindi cercare una stima numerica di $\theta\pm$ per determinare $\tau$ da:
-    $$ (\tau \pm \rho) = e^{2i\theta^\pm} \Rightarrow \tau = 1/2(e^{2i\theta^+}+e^{-2i\theta^-})$$
+    $$ (\tau \pm \rho) = e^{2i\theta^\pm} \Rightarrow \tau = 1/2(e^{2i\theta^+}+e^{2i\theta^-})$$
     $$ \Rightarrow \tau^2 = \sin^2(\theta^+ - \theta^-)$$
 (due conti per dimostrarlo plis) (OCCHIO che esce un coseno)
 \\
