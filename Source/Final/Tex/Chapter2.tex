@@ -22,9 +22,13 @@ Si possono riscontrare le seguenti difficoltà:
     questo introduce errori di approssimazione maggiori nel valutarne il valor medio
 \end{itemize}
 \bigskip
-Di seguito i risultati.\\
-\subsection*{Confronto dei due metodi}
+Di seguito i risultati.
+\\
 
+\subsection*{Confronto dei due metodi}
+%Non so cosa vuoi mettere in questa sezione. Se intendi cancellarla basta togliere la subsection e eliminare il \newpage qui sotto. Dovrebbe rimanere tutto bello
+
+\newpage
 \subsection*{Conclusioni}
 Il metodo dei pacchetti d'onda non funziona con il potenziale a barriera quadrata
 del punto 1, a causa della discontinuità del potenziale. La discontinuità
@@ -37,13 +41,20 @@ ad arrivare ai bordi della scatola e riflettersi, interagendo con sè stesso.
 Il metodo risulta quindi inefficiente. Di seguito alcuni plot che mostrano
 quanto detto.
 
-% Metterle in un unico 'box' tutte e tre affiancate
 \begin{figure}[h]
- \includegraphics{square_transmission1.eps}
-\end{figure}
-\begin{figure}[h]
- \includegraphics{square_transmission2.eps}
-\end{figure}
-\begin{figure}[h]
- \includegraphics{square_transmission3.eps}
+	\begin{subfigure}
+		{
+			\includegraphics[width=6cm, height=5cm]{square_transmission1.eps}
+			\includegraphics[width=6cm, height=5cm]{square_transmission2.eps}
+	 	}
+	\end{subfigure}
+	\begin{subfigure}
+		{
+			\includegraphics[width=6cm, height=5cm]{square_transmission3.eps}
+			%\includegraphics[width=6cm, height=5cm]{square_transmission4.eps}
+			%chiama la quarta figura square_transmission4.eps e decommenta la linea sopra
+		}
+	\end{subfigure}
+	%
+	\caption{Plot a diversi istanti dell'evoluzione temporale}
 \end{figure}

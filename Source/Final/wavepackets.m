@@ -7,7 +7,7 @@ function [T,k,kk] = wavepackets(x,V,T0,~)
 % WAVEPACKETS(T0) calcola evoluzione fino a tempo T0, senza grafica
 %
 % T = WAVEPACKETS() restituisce coefficente di trasmissione alla fine 
-
+%%
 gFlag = false; % Flag per avviare la riproduzione grafica
 if nargin > 2 
     nt = T0; % Tempo max di esecuzione
@@ -15,7 +15,7 @@ else
     gFlag = true;
     nt = 10000;
 end
-
+%%
 N = length(V); % N°punti griglia
 L = max(x); % Lunghezza scatola
 xl = 0.2; % Scaling lunghezza scatola nel plot
@@ -40,11 +40,14 @@ xs = 1;   % scaling plot funzione onda asse x
 
 %% dato iniziale
 % Gaussiano
-x0 = -20; % Traslazione
-sigma = 1/2; % Varianza gaussiana
+x0 = -30; % Traslazione
+sigma = 0.5; % Varianza gaussiana
 
 psi = exp(-(x-x0).^2/sigma);
 psi = psi/(sqrt(dx)*norm(psi));
+y = abs(fftshift(psi)).^2;
+figure
+plot(y)
 
 %% plot
 if gFlag == true

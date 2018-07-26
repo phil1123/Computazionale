@@ -13,10 +13,25 @@ V = diag(U);
 %% autovalori e autovettori
 
 H = L + V;
-% [M,D] = eig(H);
-E = eig(H);
+[M,D] = eig(H);
+% E = eig(H);
 % E = diag(D);
+% plot(E)
 k = sqrt(2*E);
+
+subplot(1,2,1)
+plot(x,M(:,4:2:8))
+title('Autostati per k= 2,4,6,8')
+xlabel('x')
+ylabel('Psi_k')
+legend('2','4','6','8')
+subplot(1,2,2)
+plot(x,M(:,3:2:9))
+title('Autostati per k= 3,5,7,9')
+xlabel('x')
+ylabel('Psi_k')
+legend('3','5','7','9')
+
 
 % hamiltoniana libera
 % H0 = full(L);

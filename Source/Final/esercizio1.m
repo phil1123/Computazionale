@@ -1,6 +1,6 @@
 %% Prima parte
 L = 100;
-N = 2000;
+N = 1000;
 
 x = linspace(-L,L,N)';  
 
@@ -12,10 +12,6 @@ V0 = 4/b^2;
 % coefficienti trasmissione
 [k,T] = tr_coefficient(x,V);        % numerico
 analyticT = transmission(k,V0,2*b); % teorico
-T = T;
-
-plot(k);
-%%
 
 % plot
 plot(k,[T analyticT])
@@ -43,7 +39,7 @@ V = V0.*exp(-(x-x0).^2./sigma.^2);
 
 plot(k,T)
 legend('Numerico','Analitico'); 
-title('Confronto trasmissione barriera quadrata');
+title('Confronto trasmissione barriera gaussiana');
 xlim([0 10])
 xlabel('k')
 ylabel('Coefficiente trasmissione')

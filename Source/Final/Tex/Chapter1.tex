@@ -55,7 +55,7 @@ Si osservi che poichè $A,B,C,D$ dipendono dagli autostati $\psi_k$, anche le fa
 Si vuole quindi cercare una stima numerica di $\theta\pm$ per determinare $\tau$ da:
     $$ (\tau \pm \rho) = e^{2i\theta^\pm} \Rightarrow \tau = 1/2(e^{2i\theta^+}+e^{2i\theta^-})$$
     $$ \Rightarrow \tau^2 = \sin^2(\theta^+ - \theta^-)$$
-(due conti per dimostrarlo plis) (OCCHIO che esce un coseno)
+%(due conti per dimostrarlo plis) (OCCHIO che esce un coseno)
 \\
 Il coefficiente di trasmissione sarà qundi dato da:
     $$T = \tau^2$$
@@ -74,8 +74,9 @@ di onde piane con la stessa frequenza, quindi corrispondono rispettivamente a co
         A\cos(kx + \theta^+_k) & \mbox{in ZonaIII} \\
     \end{cases}
     $$
+ \smallskip
 
-\begin{paragraph}{Terzo Metodo}
+\begin{paragraph}{Metodo:}
 Si considerino gli autostati della Hamiltoniana
 $$ \psi_k^{odd} = \begin{cases}
     A\sin(kx + \theta^-_k) & \mbox{in ZonaI} \\
@@ -89,23 +90,24 @@ $$ \psi_k^{odd} = \begin{cases}
 $$
 Si pongano ora le condizioni di periodicità ai bordi della scatola $x = \pm L$
     $$  \psi_k^{odd}(L) = \psi_k^{odd}(-L) \quad,\quad \psi_k^{even}(L) = \psi_k^{even}(-L)$$
-che portano
+che portano a:
 $$ A\sin(-kL + \theta^-_k) = A\sin(kL + \theta^+_k) \Rightarrow -kL + \theta^-_k = kL + \theta^+_k + 2n\pi $$
 $$ A\cos(-kL + \theta^-_k) = A\cos(kL + \theta^+_k) \Rightarrow -kL + \theta^-_k = kL + \theta^+_k + 2n\pi $$
-Ossia
+ossia,
       $$ \theta^-_k - \theta^+_k = 2kL + 2n\pi $$
-quindi il coefficiente di trasmissione risulta essere
+quindi il coefficiente di trasmissione risulta essere:
     $$ T(k) = \tau^2(k) = \sin^2(\theta_k^+ - \theta_k^-) = \sin^2(\theta_k^- - \theta_k^+) = \sin^2(2kL + 2n\pi) $$
     $$ T = \sin^2(2kL) $$
 \end{paragraph}
 
 %
-%\newpage
+\newpage
 \subsection*{Risultati}
 Di seguito il plot del coefficiente di trasmissione calcolato numericamente contro
 il risultato analitico
 
-%% Immagine da mettere sotto la frase, possibilmente in una unica pagina
+%% Immagine da mettere sotto la frase, possibilmente in una unica pagina - FATTO
 \begin{figure}[h]
-  \includegraphics{tr_coeff_square.eps}
+\centering
+  \includegraphics[width=10cm]{tr_coeff_square.eps}
 \end{figure}

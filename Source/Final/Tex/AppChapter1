@@ -20,14 +20,18 @@ i valori che la funzione $V(x)$ assume sui punti della griglia:
     $$ V = \mbox{diag}(V(x_1), \cdots, V(x_N)) $$
 Allora l'approssimazione discreta della Hamiltoniana $\Hh$ sarà data dalla matrice:
     $$ H = T + V \approx \Hh $$
-Sia ora $M0$ la matrice degli autovettori di $H$ e $E0$ il vettore degli autovalori di $H$
-\\
+Sia ora $M0$ la matrice degli autovettori di $H$ e $E0$ il vettore degli autovalori di $H$\\
+%
+Di seguito un plot di alcuni autostati di $H$. Si noti l'alternanza di funzioni pari e dispari
+\begin{figure}
+    \includegraphics{autostati_quad.eps}
+\end{figure}
 
-\begin{itemize}
-    \item Degenerazione spezzata dalla discretizzazione
-    \item osservare parità disparità autostati con plot
-    \item Gli sbatti dei teta fuori dalla griglia $Gg$ ->
-    fittare perchè i teta sono fuori dalla griglia
-    Phil dice: autovalori leggermente diversi fanno due griglie leggermente diverse
-    (scattering phase-shift)
-\end{itemize}
+%\begin{itemize}
+%    \item Degenerazione spezzata dalla discretizzazione
+%    \item osservare parità disparità autostati con plot
+%    \item Gli sbatti dei teta fuori dalla griglia $Gg$ ->
+%    fittare perchè i teta sono fuori dalla griglia
+%    Phil dice: autovalori leggermente diversi fanno due griglie leggermente %diverse
+%    (scattering phase-shift)
+%\end{itemize}
