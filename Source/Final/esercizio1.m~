@@ -12,10 +12,9 @@ V0 = 4/b^2;
 % coefficienti trasmissione
 [k,T] = tr_coefficient(x,V);        % numerico
 analyticT = transmission(k,V0,2*b); % teorico
-T = T;
+T = T./(k*L).^2
+plot(T);
 
-plot(k);
-%%
 
 % plot
 plot(k,[T analyticT])
