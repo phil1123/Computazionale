@@ -1,5 +1,5 @@
 %% init simulation space
-function [T,k,kk] = wavepackets(T0,~)
+function [T,k,kk] = wavepackets(x,V,T0,~)
 % Metodo dei pacchetti d'onda per determinare coefficiente di trasmissione
 % per un pacchetto gaussiano con potenziale scelto.
 %
@@ -9,19 +9,19 @@ function [T,k,kk] = wavepackets(T0,~)
 % T = WAVEPACKETS() restituisce coefficente di trasmissione alla fine 
 
 gFlag = false; % Flag per avviare la riproduzione grafica
-if nargin == 0
+if nargin > 2 
+    nt = T0; % Tempo max di esecuzione
+else
     gFlag = true;
     nt = 10000;
-else
-    nt = T0; % Tempo max di esecuzione
 end
 
-N = 1000; % N°punti griglia
-L = 1000; % Lunghezza scatola
+N = length(V); % N°punti griglia
+L = max(x); % Lunghezza scatola
 xl = 0.2; % Scaling lunghezza scatola nel plot
 
 % grid
-x = linspace(-L,L,N)';
+% x = linspace(-L,L,N)';
 dx = x(2)-x(1); 
 
 % energia cinetica
@@ -33,27 +33,10 @@ dx = x(2)-x(1);
 n = floor(N/2);                 % interi k = 2PI/L * n
 nn = floor((N-1)/2);            % interi k = 2PI/L * n
 k = (2*pi/(dx*N))*(-n:nn)';     % momento coniugato (vettore d'onda)
-% k = 5*(2*pi/(dx*N))*(-n:nn)';     % momento coniugato (vettore d'onda)
 
-%% potenziali
 ys = 1;   % scaling plot funzione onda asse y
 xs = 1;   % scaling plot funzione onda asse x
 
-% Altro
-% V = 0.25*x.^4;
-% V = 0.5*x.^2;
-
-% Gaussiano
-x0 = 0;
-sigma = 5;
-V0 = 0.5;
-V = V0.*exp(-(x-x0).^2./sigma.^2);
-
-% Scalino
-% b = 10;
-% V0 = 1;
-% 
-% V = stepfunction(x,b,V0);
 
 %% dato iniziale
 % Gaussiano
@@ -67,13 +50,12 @@ psi = psi/(sqrt(dx)*norm(psi));
 if gFlag == true
     figure
     plot(xs*x,ys*V)       % plot potenziale
-%     line([-xl*L xl*L],[max(V) max(V)])
     xlim([-xl*L xl*L])
     ylim([0 1])
     hold on
     box on
     % h = plot(x,real(psi));
-    h = plot(x,abs(psi));
+    h = plot(x,abs(psi).^2);
     grid
     nplot = 10; % frame da skippare
 end

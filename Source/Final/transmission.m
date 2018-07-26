@@ -1,4 +1,4 @@
-function y = transmission(E,V0,L)
+function y = transmission(K,V0,L)
 % Transmission coefficient for the square potential barrier
 % with heigh V0 and width L. E being the energy
 
@@ -13,12 +13,13 @@ if ~isscalar(V0)
     error('Potential must be a scalar');
 end
 if ~isscalar(L)
-    error('box lenght must me a scalar');
+    error('Box lenght must me a scalar');
 end
 
 m = 1; h = 1; % hbar
 
-x =  E/V0;
+% x =  E/V0;
+x =  K.^2/2/V0;
 
 % if ( any(x(:,1)<0) )
 %     error('energies must be positive')

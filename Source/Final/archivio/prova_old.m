@@ -38,49 +38,6 @@ K1 = sqrt(2*E1);
 
 analyticT = transmission(E0,V0,2*b); %Coefficiente teorico
 
-
-%%
-
-A1 = (M1+M0).^2;
-A1 = A1(1:mb,1:N);
-A1 = sum(A1)./norm(x);
-
-A2 = M1.^2;
-A2 = A2(1:mb,1:N);
-A2 = sum(A2)./norm(x);
-
-A3 = M0.^2;
-A3 = A3(1:mb,1:N);
-A3 = sum(A3)./norm(x);
-
-B1 = 2*cos((K1-K0)*x')';
-B1 = B1(1:mb,1:N);
-B1 = sum(B1)./norm(x);
-
-B2 = 2*cos((K1+K0)*x')';
-B2 = B2(1:mb,1:N);
-B2 = sum(B2)./norm(x);
-
-% R = (A1-A2-A3-B1)./B2;
-R = A1-A2-A3-B1;
-T = 1-R;
-
-figure
-subplot(1,2,1)
-plot(E0/V0,T,'-r');
-
-xlabel('E/V0')
-ylabel('Transmission coefficient')
-title('Experimental')
-
-subplot(1,2,2)
-plot(E0/V0,analyticT,'-b');
-
-xlabel('E/V0')
-ylabel('Transmission coefficient')
-title('Analytical')
-
-
 %% Calcolo della FFT
 
 Fsymmetric = true;
