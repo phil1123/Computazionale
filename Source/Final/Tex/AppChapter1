@@ -23,15 +23,24 @@ Allora l'approssimazione discreta della Hamiltoniana $\Hh$ sarà data dalla matr
 Sia ora $M0$ la matrice degli autovettori di $H$ e $E0$ il vettore degli autovalori di $H$\\
 %
 Di seguito un plot di alcuni autostati di $H$. Si noti l'alternanza di funzioni pari e dispari
-\begin{figure}
-    \includegraphics{autostati_quad.eps}
+
+\begin{figure}[h]
+    \includegraphics[width=13cm]{autostati_quad.eps}
+    \caption{questo grafico è da rifare bisogna spezzare le due immagini e metterle una dopo l'altra altrimenti sono troppo piccole. il codice per disegnarli è quello commentato qui sotto, con autostatiquad1 e 2}
 \end{figure}
 
-%\begin{itemize}
-%    \item Degenerazione spezzata dalla discretizzazione
-%    \item osservare parità disparità autostati con plot
-%    \item Gli sbatti dei teta fuori dalla griglia $Gg$ ->
-%    fittare perchè i teta sono fuori dalla griglia
-%    Phil dice: autovalori leggermente diversi fanno due griglie leggermente %diverse
-%    (scattering phase-shift)
-%\end{itemize}
+%\begin{figure}[h]
+%	\begin{subfigure}
+%		{
+%			\includegraphics[width=6cm, height=5cm]{autostati_quad1.eps}
+%	 	}
+%	\end{subfigure}
+%	\begin{subfigure}
+%		{
+%			\includegraphics[width=6cm, height=5cm]{autostati_quad2.eps}
+%		}
+%	\end{subfigure}
+%	\caption{}
+%\end{figure}
+
+
