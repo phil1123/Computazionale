@@ -25,22 +25,17 @@ Sia ora $M0$ la matrice degli autovettori di $H$ e $E0$ il vettore degli autoval
 Di seguito un plot di alcuni autostati di $H$. Si noti l'alternanza di funzioni pari e dispari
 
 \begin{figure}[h]
-    \includegraphics[width=13cm]{autostati_quad.eps}
-    \caption{questo grafico è da rifare bisogna spezzare le due immagini e metterle una dopo l'altra altrimenti sono troppo piccole. il codice per disegnarli è quello commentato qui sotto, con autostatiquad1 e 2}
+	\begin{subfigure}
+		{
+			\includegraphics[width=6.5cm, height=5cm]{autostati_quad1.eps}
+	 	}
+	\end{subfigure}
+	\begin{subfigure}
+		{
+			\includegraphics[width=6.5cm, height=5cm]{autostati_quad2.eps}
+		}
+	\end{subfigure}
+	\caption{Plot autofunzioni Hamiltoniana}
 \end{figure}
-
-%\begin{figure}[h]
-%	\begin{subfigure}
-%		{
-%			\includegraphics[width=6cm, height=5cm]{autostati_quad1.eps}
-%	 	}
-%	\end{subfigure}
-%	\begin{subfigure}
-%		{
-%			\includegraphics[width=6cm, height=5cm]{autostati_quad2.eps}
-%		}
-%	\end{subfigure}
-%	\caption{}
-%\end{figure}
 
 

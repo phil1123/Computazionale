@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018/Arch Linux) (preloaded format=pdflatex 2018.7.2)  27 JUL 2018 10:20
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018/Arch Linux) (preloaded format=pdflatex 2018.7.2)  27 JUL 2018 11:33
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -287,42 +287,124 @@ Package pdftex.def Info: figure/tr_coeff_square-eps-converted-to.pdf  used on i
 nput line 112.
 (pdftex.def)             Requested size: 284.52756pt x 213.39865pt.
 ) (./AppChapter1 [4 <./figure/tr_coeff_square-eps-converted-to.pdf>]
-Package epstopdf Info: Source file: <figure/autostati_quad.eps>
-(epstopdf)                    date: 2018-07-27 10:13:45
-(epstopdf)                    size: 244057 bytes
-(epstopdf)             Output file: <figure/autostati_quad-eps-converted-to.pdf
->
-(epstopdf)                    date: 2018-07-27 10:14:32
-(epstopdf)                    size: 185624 bytes
-(epstopdf)             Command: <repstopdf --outfile=figure/autostati_quad-eps-
-converted-to.pdf figure/autostati_quad.eps>
-(epstopdf)             \includegraphics on input line 28.
+Package epstopdf Info: Source file: <figure/autostati_quad1.eps>
+(epstopdf)                    date: 2018-07-27 11:22:13
+(epstopdf)                    size: 69133 bytes
+(epstopdf)             Output file: <figure/autostati_quad1-eps-converted-to.pd
+f>
+(epstopdf)                    date: 2018-07-27 11:22:57
+(epstopdf)                    size: 28841 bytes
+(epstopdf)             Command: <repstopdf --outfile=figure/autostati_quad1-eps
+-converted-to.pdf figure/autostati_quad1.eps>
+(epstopdf)             \includegraphics on input line 31.
 Package epstopdf Info: Output file is already uptodate.
-<figure/autostati_quad-eps-converted-to.pdf, id=44, 1174.3875pt x 634.37pt>
-File: figure/autostati_quad-eps-converted-to.pdf Graphic file (type pdf)
-<use figure/autostati_quad-eps-converted-to.pdf>
-Package pdftex.def Info: figure/autostati_quad-eps-converted-to.pdf  used on in
-put line 28.
-(pdftex.def)             Requested size: 369.88582pt x 199.79855pt.
+<figure/autostati_quad1-eps-converted-to.pdf, id=44, 421.575pt x 316.18124pt>
+File: figure/autostati_quad1-eps-converted-to.pdf Graphic file (type pdf)
+<use figure/autostati_quad1-eps-converted-to.pdf>
+Package pdftex.def Info: figure/autostati_quad1-eps-converted-to.pdf  used on i
+nput line 31.
+(pdftex.def)             Requested size: 184.94678pt x 142.26576pt.
+Package epstopdf Info: Source file: <figure/autostati_quad2.eps>
+(epstopdf)                    date: 2018-07-27 11:22:14
+(epstopdf)                    size: 87055 bytes
+(epstopdf)             Output file: <figure/autostati_quad2-eps-converted-to.pd
+f>
+(epstopdf)                    date: 2018-07-27 11:22:57
+(epstopdf)                    size: 32227 bytes
+(epstopdf)             Command: <repstopdf --outfile=figure/autostati_quad2-eps
+-converted-to.pdf figure/autostati_quad2.eps>
+(epstopdf)             \includegraphics on input line 36.
+Package epstopdf Info: Output file is already uptodate.
+<figure/autostati_quad2-eps-converted-to.pdf, id=45, 421.575pt x 316.18124pt>
+File: figure/autostati_quad2-eps-converted-to.pdf Graphic file (type pdf)
+<use figure/autostati_quad2-eps-converted-to.pdf>
+Package pdftex.def Info: figure/autostati_quad2-eps-converted-to.pdf  used on i
+nput line 36.
+(pdftex.def)             Requested size: 184.94678pt x 142.26576pt.
 
-Overfull \hbox (9.88582pt too wide) in paragraph at lines 28--29
-[][] 
+Overfull \hbox (29.25894pt too wide) in paragraph at lines 31--38
+[][]  []
  []
 
-) (./Chapter2.tex [5 <./figure/autostati_quad-eps-converted-to.pdf>]
+
+Underfull \hbox (badness 10000) in paragraph at lines 31--38
+
+ []
+
+) (./Chapter2.tex
 Overfull \hbox (16.12479pt too wide) in paragraph at lines 9--17
 \T1/cmr/m/n/10.95 Essendo un pac-chetto d'onda una sovrap-po-sizione lin-eare d
 i più onde stazionarie,
  []
 
+[5 <./figure/autostati_quad1-eps-converted-to.pdf> <./figure/autostati_quad2-ep
+s-converted-to.pdf>]
 LaTeX Font Info:    Try loading font information for OMS+cmr on input line 18.
-(/usr/share/texmf-dist/tex/latex/base/omscmr.fd
+ (/usr/share/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.95> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 18.
 
 Underfull \hbox (badness 10000) in paragraph at lines 25--27
+
+ []
+
+
+LaTeX Warning: File `tr_coeff_gauss1.eps' not found on input line 32.
+
+Package epstopdf Info: Source file: <tr_coeff_gauss1.eps>
+(epstopdf)             Output file: <tr_coeff_gauss1-eps-converted-to.pdf>
+(epstopdf)             Command: <repstopdf --outfile=tr_coeff_gauss1-eps-conver
+ted-to.pdf tr_coeff_gauss1.eps>
+(epstopdf)             \includegraphics on input line 32.
+Package epstopdf Info: Output file is already uptodate.
+
+! Package pdftex.def Error: File `tr_coeff_gauss1-eps-converted-to.pdf' not fou
+nd: using draft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.32 		}
+        
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+LaTeX Font Info:    Try loading font information for T1+cmtt on input line 32.
+(/usr/share/texmf-dist/tex/latex/base/t1cmtt.fd
+File: t1cmtt.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+)
+
+LaTeX Warning: File `tr_coeff_gauss2.eps' not found on input line 37.
+
+Package epstopdf Info: Source file: <tr_coeff_gauss2.eps>
+(epstopdf)             Output file: <tr_coeff_gauss2-eps-converted-to.pdf>
+(epstopdf)             Command: <repstopdf --outfile=tr_coeff_gauss2-eps-conver
+ted-to.pdf tr_coeff_gauss2.eps>
+(epstopdf)             \includegraphics on input line 37.
+Package epstopdf Info: Output file is already uptodate.
+
+! Package pdftex.def Error: File `tr_coeff_gauss2-eps-converted-to.pdf' not fou
+nd: using draft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.37 		}
+        
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Overfull \hbox (29.27267pt too wide) in paragraph at lines 32--39
+[][]  []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 32--39
 
  []
 
@@ -336,14 +418,14 @@ to.pdf>
 (epstopdf)                    size: 6166 bytes
 (epstopdf)             Command: <repstopdf --outfile=figure/square_transmission
 1-eps-converted-to.pdf figure/square_transmission1.eps>
-(epstopdf)             \includegraphics on input line 49.
+(epstopdf)             \includegraphics on input line 62.
 Package epstopdf Info: Output file is already uptodate.
-<figure/square_transmission1-eps-converted-to.pdf, id=55, 421.575pt x 316.18124
+<figure/square_transmission1-eps-converted-to.pdf, id=70, 421.575pt x 316.18124
 pt>
 File: figure/square_transmission1-eps-converted-to.pdf Graphic file (type pdf)
 <use figure/square_transmission1-eps-converted-to.pdf>
 Package pdftex.def Info: figure/square_transmission1-eps-converted-to.pdf  used
- on input line 49.
+ on input line 62.
 (pdftex.def)             Requested size: 170.71764pt x 142.26576pt.
 Package epstopdf Info: Source file: <figure/square_transmission2.eps>
 (epstopdf)                    date: 2018-07-26 10:44:40
@@ -354,14 +436,14 @@ to.pdf>
 (epstopdf)                    size: 6770 bytes
 (epstopdf)             Command: <repstopdf --outfile=figure/square_transmission
 2-eps-converted-to.pdf figure/square_transmission2.eps>
-(epstopdf)             \includegraphics on input line 49.
+(epstopdf)             \includegraphics on input line 62.
 Package epstopdf Info: Output file is already uptodate.
-<figure/square_transmission2-eps-converted-to.pdf, id=56, 421.575pt x 316.18124
+<figure/square_transmission2-eps-converted-to.pdf, id=71, 421.575pt x 316.18124
 pt>
 File: figure/square_transmission2-eps-converted-to.pdf Graphic file (type pdf)
 <use figure/square_transmission2-eps-converted-to.pdf>
 Package pdftex.def Info: figure/square_transmission2-eps-converted-to.pdf  used
- on input line 49.
+ on input line 62.
 (pdftex.def)             Requested size: 170.71764pt x 142.26576pt.
 Package epstopdf Info: Source file: <figure/square_transmission3.eps>
 (epstopdf)                    date: 2018-07-26 10:44:40
@@ -372,17 +454,17 @@ to.pdf>
 (epstopdf)                    size: 6679 bytes
 (epstopdf)             Command: <repstopdf --outfile=figure/square_transmission
 3-eps-converted-to.pdf figure/square_transmission3.eps>
-(epstopdf)             \includegraphics on input line 56.
+(epstopdf)             \includegraphics on input line 68.
 Package epstopdf Info: Output file is already uptodate.
-<figure/square_transmission3-eps-converted-to.pdf, id=57, 421.575pt x 316.18124
+<figure/square_transmission3-eps-converted-to.pdf, id=72, 421.575pt x 316.18124
 pt>
 File: figure/square_transmission3-eps-converted-to.pdf Graphic file (type pdf)
 <use figure/square_transmission3-eps-converted-to.pdf>
 Package pdftex.def Info: figure/square_transmission3-eps-converted-to.pdf  used
- on input line 56.
+ on input line 68.
 (pdftex.def)             Requested size: 170.71764pt x 142.26576pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 49--59
+Underfull \hbox (badness 10000) in paragraph at lines 62--71
 [][]
  []
 
@@ -390,13 +472,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 49--59
 smission2-eps-converted-to.pdf> <./figure/square_transmission3-eps-converted-to
 .pdf>] (./main.aux) ) 
 Here is how much of TeX's memory you used:
- 2833 strings out of 492649
- 36820 string characters out of 6135779
+ 2858 strings out of 492649
+ 37667 string characters out of 6135779
  99808 words of memory out of 5000000
- 6631 multiletter control sequences out of 15000+600000
- 19451 words of font info for 57 fonts, out of 8000000 for 9000
+ 6649 multiletter control sequences out of 15000+600000
+ 19765 words of font info for 58 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 41i,8n,27p,325b,276s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 41i,8n,27p,271b,312s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t
 1.enc}</usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/sh
 are/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-dist
@@ -411,11 +493,12 @@ s/symbols/msbm10.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx109
 re/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr/share/texmf-dist/f
 onts/type1/public/cm-super/sfbx1728.pfb></usr/share/texmf-dist/fonts/type1/publ
 ic/cm-super/sfrm1095.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfr
-m1200.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfti1095.pfb>
-Output written on main.pdf (8 pages, 425901 bytes).
+m1200.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfti1095.pfb></usr
+/share/texmf-dist/fonts/type1/public/cm-super/sftt1095.pfb>
+Output written on main.pdf (8 pages, 318267 bytes).
 PDF statistics:
- 131 PDF objects out of 1000 (max. 8388607)
- 92 compressed objects within 1 object stream
+ 150 PDF objects out of 1000 (max. 8388607)
+ 105 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
- 26 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 31 words of extra memory for PDF output out of 10000 (max. 10000000)
 
